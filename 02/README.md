@@ -15,19 +15,24 @@
 	
 4. 添加外部测试人员，最多2000人（添加完成点击“开始测试”即可）
 	![avatar](./img/外部测试人员.png)
+	
 	添加新测试人员
 	![avatar](./img/添加新测试人员.png)
+	
 	添加现有测试人员
 	![avatar](./img/添加现有测试人员.png)
+	
 	从CVS导入测试人员
 	![avatar](./img/CVS导入测试人员.png)
 	
 	从逗号分隔值 (CSV) 文件中导入外部测试员信息。CSV 文件必须采	用以下格式： 名字、姓氏和电子邮件。 <br>
 	附件：`tester_impost.csv`
+	
 	![avatar](./img/tester_impost.png)
 	
 5. 构建iOS版本
 	![avatar](./img/构建版本.png)
+	
 6. 进一步了解TestFlight 数据
 	![avatar](./img/了解TestFlight数据.png)
 	
