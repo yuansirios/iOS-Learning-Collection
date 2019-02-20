@@ -5,3 +5,4 @@
 | :----:  | :---- |:---- |
 | 01  | 关于iOS打包脚本的整理 | 轻量的打包工具 |
 | 02  | 关于TestFlight的操作整理 | 官方内测平台 |
+| 03  | 数组（字典）中添加弱引用；<br>NSValue、NSPointerArray、NSHashTable、NSMapTable、WeakMutableArray | 示例完善 |
