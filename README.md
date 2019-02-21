@@ -1,6 +1,8 @@
 # iOS-Learning-Collection
 关于iOS日常开发整理，希望能给正在学习的你提供点帮助，原创资料，有不对的地方或者有更好的实现方法，希望大家指正，不胜感激
 
+[简书](https://www.jianshu.com/p/07e110323baf)
+
 | 目录 | 内容说明  |  备注  |
 | :----:  | :---- |:---- |
 | 01  | [关于iOS打包脚本的整理](https://www.jianshu.com/p/816a5259bdf9) | 轻量的打包工具 |
