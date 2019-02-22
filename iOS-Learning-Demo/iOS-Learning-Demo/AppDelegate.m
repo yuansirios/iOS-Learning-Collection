@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "WeakArray.h"
+#import "ViewController.h"
+#import "YSBaseNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -15,17 +16,15 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self testWeakArray];
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.backgroundColor = [UIColor whiteColor];
+    YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:ViewController.new];
+    _window.rootViewController = nv;
+    [_window makeKeyAndVisible];
     
     return YES;
-}
-
-- (void)testWeakArray{
-    WeakArray *arr = WeakArray.new;
-    [arr run];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

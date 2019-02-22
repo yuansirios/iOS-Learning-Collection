@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */; };
 		1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCF221D4B5900B223D4 /* ViewController.m */; };
-		1CF8CDD3221D4B5900B223D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD1221D4B5900B223D4 /* Main.storyboard */; };
 		1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */; };
-		1CF8CDD8221D4B5C00B223D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD6221D4B5C00B223D4 /* LaunchScreen.storyboard */; };
 		1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDDA221D4B5C00B223D4 /* main.m */; };
 		1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDE3221D4CA500B223D4 /* WeakArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDE6221D52A400B223D4 /* WeakMutableArray.m */; };
+		1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDEB221EA29700B223D4 /* YSVedioViewController.m */; };
+		1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDF1221F891B00B223D4 /* YSBaseNavigationController.m */; };
+		1CF8CDF6221F8AD700B223D4 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDF5221F8AD700B223D4 /* UIView+Layout.m */; };
+		1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDF8221F8B9600B223D4 /* YSBaseViewController.m */; };
+		1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CE02221FD4E600B223D4 /* YSRotateViewController.m */; };
+		EB7FF523F45DC3003441DDF9 /* libPods-iOS-Learning-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80EA9629F86107E431BD853 /* libPods-iOS-Learning-Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,15 +27,27 @@
 		1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1CF8CDCE221D4B5900B223D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1CF8CDCF221D4B5900B223D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1CF8CDD2221D4B5900B223D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CF8CDD7221D4B5C00B223D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CF8CDD9221D4B5C00B223D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CF8CDDA221D4B5C00B223D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CF8CDE2221D4CA500B223D4 /* WeakArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakArray.h; sourceTree = "<group>"; };
 		1CF8CDE3221D4CA500B223D4 /* WeakArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakArray.m; sourceTree = "<group>"; };
 		1CF8CDE5221D52A400B223D4 /* WeakMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakMutableArray.h; sourceTree = "<group>"; };
 		1CF8CDE6221D52A400B223D4 /* WeakMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakMutableArray.m; sourceTree = "<group>"; };
+		1CF8CDEA221EA29700B223D4 /* YSVedioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSVedioViewController.h; sourceTree = "<group>"; };
+		1CF8CDEB221EA29700B223D4 /* YSVedioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSVedioViewController.m; sourceTree = "<group>"; };
+		1CF8CDEF221F87F900B223D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1CF8CDF0221F891B00B223D4 /* YSBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSBaseNavigationController.h; sourceTree = "<group>"; };
+		1CF8CDF1221F891B00B223D4 /* YSBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSBaseNavigationController.m; sourceTree = "<group>"; };
+		1CF8CDF4221F8AD700B223D4 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		1CF8CDF5221F8AD700B223D4 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		1CF8CDF7221F8B9600B223D4 /* YSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSBaseViewController.h; sourceTree = "<group>"; };
+		1CF8CDF8221F8B9600B223D4 /* YSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSBaseViewController.m; sourceTree = "<group>"; };
+		1CF8CE01221FD4E600B223D4 /* YSRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSRotateViewController.h; sourceTree = "<group>"; };
+		1CF8CE02221FD4E600B223D4 /* YSRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSRotateViewController.m; sourceTree = "<group>"; };
+		5AA5B22FCC454A2EE8317C4B /* Pods-iOS-Learning-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Learning-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Learning-Demo/Pods-iOS-Learning-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		C80EA9629F86107E431BD853 /* libPods-iOS-Learning-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Learning-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E517468561F480CF7CA7D6C4 /* Pods-iOS-Learning-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Learning-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Learning-Demo/Pods-iOS-Learning-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7FF523F45DC3003441DDF9 /* libPods-iOS-Learning-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +67,8 @@
 			children = (
 				1CF8CDCA221D4B5900B223D4 /* iOS-Learning-Demo */,
 				1CF8CDC9221D4B5900B223D4 /* Products */,
+				821BE7C932A9A0D71790BC7E /* Pods */,
+				9389C1CCC7E4D1B6E41D8583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,16 +83,18 @@
 		1CF8CDCA221D4B5900B223D4 /* iOS-Learning-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1CF8CDE9221EA25A00B223D4 /* Base */,
+				1CF8CDF3221F8ABD00B223D4 /* Categories */,
 				1CF8CDE1221D4C7100B223D4 /* [1]数组（字典）中添加弱引用 */,
+				1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
 				1CF8CDCE221D4B5900B223D4 /* ViewController.h */,
 				1CF8CDCF221D4B5900B223D4 /* ViewController.m */,
-				1CF8CDD1221D4B5900B223D4 /* Main.storyboard */,
 				1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */,
-				1CF8CDD6221D4B5C00B223D4 /* LaunchScreen.storyboard */,
 				1CF8CDD9221D4B5C00B223D4 /* Info.plist */,
 				1CF8CDDA221D4B5C00B223D4 /* main.m */,
+				1CF8CDEF221F87F900B223D4 /* PrefixHeader.pch */,
 			);
 			path = "iOS-Learning-Demo";
 			sourceTree = "<group>";
@@ -89,6 +110,70 @@
 			path = "[1]数组（字典）中添加弱引用";
 			sourceTree = "<group>";
 		};
+		1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CDFA221FC50000B223D4 /* 方案一 */,
+				1CF8CDFB221FC50D00B223D4 /* 方案二 */,
+			);
+			path = "[2]屏幕旋转";
+			sourceTree = "<group>";
+		};
+		1CF8CDE9221EA25A00B223D4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CDF7221F8B9600B223D4 /* YSBaseViewController.h */,
+				1CF8CDF8221F8B9600B223D4 /* YSBaseViewController.m */,
+				1CF8CDF0221F891B00B223D4 /* YSBaseNavigationController.h */,
+				1CF8CDF1221F891B00B223D4 /* YSBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1CF8CDF3221F8ABD00B223D4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CDF4221F8AD700B223D4 /* UIView+Layout.h */,
+				1CF8CDF5221F8AD700B223D4 /* UIView+Layout.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1CF8CDFA221FC50000B223D4 /* 方案一 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CDEA221EA29700B223D4 /* YSVedioViewController.h */,
+				1CF8CDEB221EA29700B223D4 /* YSVedioViewController.m */,
+			);
+			path = "方案一";
+			sourceTree = "<group>";
+		};
+		1CF8CDFB221FC50D00B223D4 /* 方案二 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CE01221FD4E600B223D4 /* YSRotateViewController.h */,
+				1CF8CE02221FD4E600B223D4 /* YSRotateViewController.m */,
+			);
+			path = "方案二";
+			sourceTree = "<group>";
+		};
+		821BE7C932A9A0D71790BC7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E517468561F480CF7CA7D6C4 /* Pods-iOS-Learning-Demo.debug.xcconfig */,
+				5AA5B22FCC454A2EE8317C4B /* Pods-iOS-Learning-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9389C1CCC7E4D1B6E41D8583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C80EA9629F86107E431BD853 /* libPods-iOS-Learning-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CF8CDDE221D4B5C00B223D4 /* Build configuration list for PBXNativeTarget "iOS-Learning-Demo" */;
 			buildPhases = (
+				F86A4ADF3EB50A294E5D8679 /* [CP] Check Pods Manifest.lock */,
 				1CF8CDC4221D4B5900B223D4 /* Sources */,
 				1CF8CDC5221D4B5900B223D4 /* Frameworks */,
 				1CF8CDC6221D4B5900B223D4 /* Resources */,
+				9251F00C67C5018A104959B0 /* [CP] Embed Pods Frameworks */,
+				867F5673F2D3052244ECC826 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +234,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF8CDD8221D4B5C00B223D4 /* LaunchScreen.storyboard in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
-				1CF8CDD3221D4B5900B223D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		867F5673F2D3052244ECC826 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Learning-Demo/Pods-iOS-Learning-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9251F00C67C5018A104959B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Learning-Demo/Pods-iOS-Learning-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86A4ADF3EB50A294E5D8679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CF8CDC4221D4B5900B223D4 /* Sources */ = {
@@ -161,32 +307,18 @@
 			files = (
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
+				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
+				1CF8CDF6221F8AD700B223D4 /* UIView+Layout.m in Sources */,
+				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
+				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
+				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1CF8CDD1221D4B5900B223D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CF8CDD2221D4B5900B223D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1CF8CDD6221D4B5C00B223D4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CF8CDD7221D4B5C00B223D4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1CF8CDDC221D4B5C00B223D4 /* Debug */ = {
@@ -303,12 +435,16 @@
 		};
 		1CF8CDDF221D4B5C00B223D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E517468561F480CF7CA7D6C4 /* Pods-iOS-Learning-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N38YRW4D2Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,12 +457,16 @@
 		};
 		1CF8CDE0221D4B5C00B223D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA5B22FCC454A2EE8317C4B /* Pods-iOS-Learning-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N38YRW4D2Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

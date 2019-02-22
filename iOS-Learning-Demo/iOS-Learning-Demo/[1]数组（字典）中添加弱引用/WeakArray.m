@@ -41,10 +41,7 @@
 }
 
 - (void)dealloc{
-    for (int i = 0; i < 100; i++) {
-        NSLog(@">>>>>> %@ dealloc <<<<<<",NSStringFromClass([self class]));
-    }
-    
+    NSLog(@">>>>>> %@ dealloc <<<<<<",NSStringFromClass([self class]));
     [super dealloc];
 }
 

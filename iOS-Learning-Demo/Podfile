@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+
+target ‘iOS-Learning-Demo’ do
+    pod 'SDAutoLayout'
+end

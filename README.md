@@ -9,3 +9,4 @@
 | 02  | [关于TestFlight的操作整理](https://www.jianshu.com/p/666701b9a85b) | 官方内测平台 |
 | 03  | [数组（字典）中添加弱引用](https://www.jianshu.com/p/a182c322aa33) | 示例完善 |
 | 04  | [Charles抓取https数据的原理，如何防止中间人攻击](https://www.jianshu.com/p/3941410f7378) | 原理解析 |
+| 05  | iOS开发中个别页面横屏操作实战 | 代码示例 |
