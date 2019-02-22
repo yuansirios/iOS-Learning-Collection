@@ -41,7 +41,6 @@ NS_ASSUME_NONNULL_END
 添加如下代码：
 
 ```
-
 - (void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
@@ -111,7 +110,6 @@ NS_ASSUME_NONNULL_END
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskLandscapeRight;
 }
-
 ```
 
 调用方式
@@ -184,4 +182,4 @@ YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRoot
 
 ![](img/方案二.png)
 
-**[注]**方案二的实现只适用于模态视图
+**[注意]** 方案二的实现只适用于模态视图
