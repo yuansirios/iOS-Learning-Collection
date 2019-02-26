@@ -10,6 +10,7 @@
 #import "WeakArray.h"
 #import "YSVedioViewController.h"
 #import "YSRotateViewController.h"
+#import "SDListViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -33,7 +34,8 @@
     
     _itemList = @[@{YSTitleKey:@"[1]数组（字典）中添加弱引用",YSEventKey:@"testWeakArray"},
                   @{YSTitleKey:@"[2]屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
-                  @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"}];
+                  @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
+                  @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -100,6 +102,11 @@
     YSRotateViewController *vc = [[YSRotateViewController alloc]init];
     YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:vc];
     [self presentViewController:nv animated:YES completion:nil];
+}
+
+- (void)testSDAutoLayout{
+    SDListViewController *vc = SDListViewController.new;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

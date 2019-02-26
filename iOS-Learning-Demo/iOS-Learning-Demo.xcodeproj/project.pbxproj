@@ -18,6 +18,9 @@
 		1CF8CDF6221F8AD700B223D4 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDF5221F8AD700B223D4 /* UIView+Layout.m */; };
 		1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDF8221F8B9600B223D4 /* YSBaseViewController.m */; };
 		1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CE02221FD4E600B223D4 /* YSRotateViewController.m */; };
+		1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CE0622250FDB00B223D4 /* SDListViewController.m */; };
+		1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CE0A2225291700B223D4 /* SDTabelViewController.m */; };
+		1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CE0D22252C7500B223D4 /* SDTabelViewCell.m */; };
 		EB7FF523F45DC3003441DDF9 /* libPods-iOS-Learning-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80EA9629F86107E431BD853 /* libPods-iOS-Learning-Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,12 @@
 		1CF8CDF8221F8B9600B223D4 /* YSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSBaseViewController.m; sourceTree = "<group>"; };
 		1CF8CE01221FD4E600B223D4 /* YSRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSRotateViewController.h; sourceTree = "<group>"; };
 		1CF8CE02221FD4E600B223D4 /* YSRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSRotateViewController.m; sourceTree = "<group>"; };
+		1CF8CE0522250FDB00B223D4 /* SDListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDListViewController.h; sourceTree = "<group>"; };
+		1CF8CE0622250FDB00B223D4 /* SDListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDListViewController.m; sourceTree = "<group>"; };
+		1CF8CE092225291700B223D4 /* SDTabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTabelViewController.h; sourceTree = "<group>"; };
+		1CF8CE0A2225291700B223D4 /* SDTabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTabelViewController.m; sourceTree = "<group>"; };
+		1CF8CE0C22252C7500B223D4 /* SDTabelViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTabelViewCell.h; sourceTree = "<group>"; };
+		1CF8CE0D22252C7500B223D4 /* SDTabelViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTabelViewCell.m; sourceTree = "<group>"; };
 		5AA5B22FCC454A2EE8317C4B /* Pods-iOS-Learning-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Learning-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Learning-Demo/Pods-iOS-Learning-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		C80EA9629F86107E431BD853 /* libPods-iOS-Learning-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Learning-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E517468561F480CF7CA7D6C4 /* Pods-iOS-Learning-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Learning-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Learning-Demo/Pods-iOS-Learning-Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +96,7 @@
 				1CF8CDF3221F8ABD00B223D4 /* Categories */,
 				1CF8CDE1221D4C7100B223D4 /* [1]数组（字典）中添加弱引用 */,
 				1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */,
+				1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
 				1CF8CDCE221D4B5900B223D4 /* ViewController.h */,
@@ -155,6 +165,27 @@
 				1CF8CE02221FD4E600B223D4 /* YSRotateViewController.m */,
 			);
 			path = "方案二";
+			sourceTree = "<group>";
+		};
+		1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CE0522250FDB00B223D4 /* SDListViewController.h */,
+				1CF8CE0622250FDB00B223D4 /* SDListViewController.m */,
+				1CF8CE08222528F900B223D4 /* SDTabelViewController */,
+			);
+			path = "[3]SDAutoLayout";
+			sourceTree = "<group>";
+		};
+		1CF8CE08222528F900B223D4 /* SDTabelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8CE092225291700B223D4 /* SDTabelViewController.h */,
+				1CF8CE0A2225291700B223D4 /* SDTabelViewController.m */,
+				1CF8CE0C22252C7500B223D4 /* SDTabelViewCell.h */,
+				1CF8CE0D22252C7500B223D4 /* SDTabelViewCell.m */,
+			);
+			path = SDTabelViewController;
 			sourceTree = "<group>";
 		};
 		821BE7C932A9A0D71790BC7E /* Pods */ = {
@@ -310,10 +341,13 @@
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CF8CDF6221F8AD700B223D4 /* UIView+Layout.m in Sources */,
+				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
+				1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
+				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
 				1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
