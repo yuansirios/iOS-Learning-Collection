@@ -4,4 +4,6 @@ inhibit_all_warnings!
 
 target ‘iOS-Learning-Demo’ do
     pod 'SDAutoLayout'
+    pod 'ReactiveObjC'
+    pod 'YYModel', '~> 1.0.4'
 end

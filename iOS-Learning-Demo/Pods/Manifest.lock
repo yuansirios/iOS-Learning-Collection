@@ -1,12 +1,18 @@
 PODS:
+  - ReactiveObjC (3.1.0)
   - SDAutoLayout (2.2.1)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - ReactiveObjC
   - SDAutoLayout
+  - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 79b387cddaddf1baf89caaf07cbe831cf5e263fc
+PODFILE CHECKSUM: ed205261490cac374d7dbbcdb5f51d75b6aa22a1
 
 COCOAPODS: 1.2.1

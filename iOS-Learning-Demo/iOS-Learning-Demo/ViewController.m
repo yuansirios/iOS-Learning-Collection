@@ -11,6 +11,7 @@
 #import "YSVedioViewController.h"
 #import "YSRotateViewController.h"
 #import "SDListViewController.h"
+#import "HomeViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -35,7 +36,8 @@
     _itemList = @[@{YSTitleKey:@"[1]数组（字典）中添加弱引用",YSEventKey:@"testWeakArray"},
                   @{YSTitleKey:@"[2]屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
                   @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
-                  @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"}];
+                  @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
+                  @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -106,6 +108,11 @@
 
 - (void)testSDAutoLayout{
     SDListViewController *vc = SDListViewController.new;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)testMVVM{
+    HomeViewController *vc = HomeViewController.new;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
