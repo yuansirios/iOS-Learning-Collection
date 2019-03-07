@@ -95,7 +95,7 @@
 @end
 ```
 
-> View模块
+> Controller模块
 
 <img src='./img/Controller.png' width=300 />
 
