@@ -41,10 +41,8 @@
  /* model 为模型实例， keyPath为 model的属性名，通过 kvc统一赋值接口 */
 //keypath:比如你要显示的是str,str对应的model的属性是text
 
-- (CGFloat)cellContentViewWith
-{
+- (CGFloat)cellContentViewWith{
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    
     // 适配ios7横屏
     if ([UIApplication sharedApplication].statusBarOrientation != UIInterfaceOrientationPortrait && [[UIDevice currentDevice].systemVersion floatValue] < 8) {
         width = [UIScreen mainScreen].bounds.size.height;
@@ -53,7 +51,6 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     return [self.listTableView cellHeightForIndexPath:indexPath model:_itemList[indexPath.row] keyPath:@"title" cellClass:[SDTabelViewCell class] contentViewWidth:[self cellContentViewWith]];
 }
 
