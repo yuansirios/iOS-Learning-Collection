@@ -12,4 +12,4 @@
 | 05  | [iOS开发中个别页面横屏操作实战](https://www.jianshu.com/p/3c4b5a748440) | 代码示例 |
 | 06  | [SDAutoLayout使用介绍](https://www.jianshu.com/p/0bc19729bd66) | 代码示例 |
 | 07  | [基于MVVM+RAC架构实践](https://www.jianshu.com/p/274514ad6eeb) | 代码示例 |
-
+| 08  | [YSAppConfigure 环境切换](https://www.jianshu.com/p/95e712870d3c) | 项目示例 |
