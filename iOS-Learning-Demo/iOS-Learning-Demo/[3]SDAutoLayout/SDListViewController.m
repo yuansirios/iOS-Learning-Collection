@@ -9,13 +9,20 @@
 #import "SDListViewController.h"
 #import "SDTabelViewController.h"
 
-@interface SDListViewController ()
+@interface SDListViewController (){
+    UILabel *_autoWidthlabel;
+}
 
 @property (nonatomic,strong) UIScrollView *listView;
 
 @end
 
 @implementation SDListViewController
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [_autoWidthlabel setSingleLineAutoResizeWithMaxWidth:self.view.width - 20*2];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -112,12 +119,13 @@
         .topSpaceToView(lastView, 20)
         .leftEqualToView(lastView)
         .heightIs(20);
-    #warning:设置最大宽度，有点问题，旋转没改变宽度
+        
         [autoWidthlabel setSingleLineAutoResizeWithMaxWidth:self.view.width - 20*2];
         lastView = autoWidthlabel;
+        
+        _autoWidthlabel = autoWidthlabel;
     }
     
-    #warning:高度自适应，有点问题，旋转没改变高度
     //TODO:label高度自适应
     {
         UILabel *autoHeightlabel = [UILabel new];
