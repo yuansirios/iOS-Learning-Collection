@@ -13,3 +13,4 @@
 | 06  | [SDAutoLayout使用介绍](https://www.jianshu.com/p/0bc19729bd66) | 代码示例 |
 | 07  | [基于MVVM+RAC架构实践](https://www.jianshu.com/p/274514ad6eeb) | 代码示例 |
 | 08  | [YSAppConfigure 环境切换](https://www.jianshu.com/p/95e712870d3c) | 项目示例 |
+| 09  | [YSDesignAdapter 机型适配](https://www.jianshu.com/p/6b1bafcdb22b) | 项目示例 |
