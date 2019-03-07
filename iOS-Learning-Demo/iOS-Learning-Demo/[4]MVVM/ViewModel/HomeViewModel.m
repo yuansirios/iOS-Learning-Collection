@@ -12,7 +12,6 @@
 
 - (void)initialize{
     @weakify(self)
-    //轮播
     [self.loadDataCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         @strongify(self)
         if (x == nil) {
@@ -39,6 +38,7 @@
         _loadDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
                 
+                //mock网络请求获取数据
                 NSMutableArray *arr = @[].mutableCopy;
                 for (int i = 0 ; i < 10 ; i++){
                     HomeModel *home = HomeModel.new;
