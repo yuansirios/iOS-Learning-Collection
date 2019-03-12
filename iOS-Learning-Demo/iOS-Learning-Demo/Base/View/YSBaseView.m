@@ -26,7 +26,7 @@
     return self;
 }
 
-- (void)bindViewModel{}
+- (void)racViewModel{}
 
 - (void)setupViews{}
 
