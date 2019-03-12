@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF522375F5500982910 /* CoreGraphicsViewController.m */; };
+		1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF922377CC600982910 /* CoreGraphicsView.m */; };
 		1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */; };
 		1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCF221D4B5900B223D4 /* ViewController.m */; };
 		1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */; };
@@ -34,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C129FF422375F5500982910 /* CoreGraphicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsViewController.h; sourceTree = "<group>"; };
+		1C129FF522375F5500982910 /* CoreGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsViewController.m; sourceTree = "<group>"; };
+		1C129FF822377CC600982910 /* CoreGraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsView.h; sourceTree = "<group>"; };
+		1C129FF922377CC600982910 /* CoreGraphicsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsView.m; sourceTree = "<group>"; };
 		1CF8CDC8221D4B5900B223D4 /* iOS-Learning-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Learning-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +110,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C129FF022375DFB00982910 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				1C129FF722377C7E00982910 /* View */,
+				1C129FF422375F5500982910 /* CoreGraphicsViewController.h */,
+				1C129FF522375F5500982910 /* CoreGraphicsViewController.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		1C129FF722377C7E00982910 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C129FF822377CC600982910 /* CoreGraphicsView.h */,
+				1C129FF922377CC600982910 /* CoreGraphicsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1CF8CDBF221D4B5900B223D4 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +155,7 @@
 				1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */,
 				1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */,
 				1CF8CE2C222635E100B223D4 /* [4]MVVM */,
+				1C129FF022375DFB00982910 /* CoreGraphics */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
 				1CF8CDCE221D4B5900B223D4 /* ViewController.h */,
@@ -466,6 +492,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CF8CE252226284300B223D4 /* YSBaseModel.m in Sources */,
+				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
+				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,

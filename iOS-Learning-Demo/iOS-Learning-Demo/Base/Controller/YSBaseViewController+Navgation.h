@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YSBaseViewController (Navgation)
 
-- (void)setLeftBarButtonWithTitle:(NSString * _Nonnull )title;
+- (void)setLeftBarButtonWithTitle:(NSString * _Nullable )title;
 
 - (void)setRightBarButtonWithTitle:(NSString *)title;
 

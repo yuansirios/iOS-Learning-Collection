@@ -12,6 +12,7 @@
 #import "YSRotateViewController.h"
 #import "SDListViewController.h"
 #import "HomeViewController.h"
+#import "CoreGraphicsViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -37,11 +38,14 @@
                   @{YSTitleKey:@"[2]屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
                   @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
                   @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
-                  @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"}];
+                  @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"},
+                  @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
 }
+
+- (void)layoutNavigation{}
 
 #pragma mark - *********** layout ***********
 
@@ -114,6 +118,10 @@
 - (void)testMVVM{
     HomeViewController *vc = HomeViewController.new;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)testCoreGraphics{
+    [self.navigationController pushViewController:CoreGraphicsViewController.new animated:YES];
 }
 
 @end

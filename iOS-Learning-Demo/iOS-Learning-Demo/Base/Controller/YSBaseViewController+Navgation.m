@@ -10,10 +10,11 @@
 
 @implementation YSBaseViewController (Navgation)
 
-- (void)setLeftBarButtonWithTitle:(NSString * _Nonnull )title{
+- (void)setLeftBarButtonWithTitle:(NSString * _Nullable )title{
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 60, 44);
-    [backBtn setTitle:title == nil?nil:@"返回" forState:UIControlStateNormal];
+    [backBtn setTitle:title == nil?@"返回":title forState:UIControlStateNormal];
+    [backBtn setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(onBack) forControlEvents:UIControlEventTouchUpInside];
     backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     backBtn.imageEdgeInsets = UIEdgeInsetsMake(0, IS_IOS_VERSION_11?4:8, 0, 0);
