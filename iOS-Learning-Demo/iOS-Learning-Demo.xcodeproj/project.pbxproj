@@ -10,6 +10,9 @@
 		1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF522375F5500982910 /* CoreGraphicsViewController.m */; };
 		1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF922377CC600982910 /* CoreGraphicsView.m */; };
 		1C129FFE2237921F00982910 /* YSRunloopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FFD2237921E00982910 /* YSRunloopObserver.m */; };
+		1C12A00222389AC900982910 /* YSBasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A00122389AC900982910 /* YSBasePopView.m */; };
+		1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0052238A00F00982910 /* YSPopViewController.m */; };
+		1C12A00A2238A06200982910 /* YSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0092238A06200982910 /* YSPopView.m */; };
 		1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */; };
 		1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCF221D4B5900B223D4 /* ViewController.m */; };
 		1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */; };
@@ -43,6 +46,12 @@
 		1C129FF922377CC600982910 /* CoreGraphicsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsView.m; sourceTree = "<group>"; };
 		1C129FFC2237921E00982910 /* YSRunloopObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSRunloopObserver.h; sourceTree = "<group>"; };
 		1C129FFD2237921E00982910 /* YSRunloopObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSRunloopObserver.m; sourceTree = "<group>"; };
+		1C12A00022389AC900982910 /* YSBasePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSBasePopView.h; sourceTree = "<group>"; };
+		1C12A00122389AC900982910 /* YSBasePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSBasePopView.m; sourceTree = "<group>"; };
+		1C12A0042238A00F00982910 /* YSPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPopViewController.h; sourceTree = "<group>"; };
+		1C12A0052238A00F00982910 /* YSPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopViewController.m; sourceTree = "<group>"; };
+		1C12A0082238A06200982910 /* YSPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPopView.h; sourceTree = "<group>"; };
+		1C12A0092238A06200982910 /* YSPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopView.m; sourceTree = "<group>"; };
 		1CF8CDC8221D4B5900B223D4 /* iOS-Learning-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Learning-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +150,35 @@
 			path = RunLoop;
 			sourceTree = "<group>";
 		};
+		1C129FFF22389A9500982910 /* [5]自定义PopView */ = {
+			isa = PBXGroup;
+			children = (
+				1C12A00322389FD500982910 /* YSBasePopView */,
+				1C12A0072238A03500982910 /* View */,
+				1C12A0042238A00F00982910 /* YSPopViewController.h */,
+				1C12A0052238A00F00982910 /* YSPopViewController.m */,
+			);
+			path = "[5]自定义PopView";
+			sourceTree = "<group>";
+		};
+		1C12A00322389FD500982910 /* YSBasePopView */ = {
+			isa = PBXGroup;
+			children = (
+				1C12A00022389AC900982910 /* YSBasePopView.h */,
+				1C12A00122389AC900982910 /* YSBasePopView.m */,
+			);
+			path = YSBasePopView;
+			sourceTree = "<group>";
+		};
+		1C12A0072238A03500982910 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C12A0082238A06200982910 /* YSPopView.h */,
+				1C12A0092238A06200982910 /* YSPopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1CF8CDBF221D4B5900B223D4 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +205,7 @@
 				1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */,
 				1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */,
 				1CF8CE2C222635E100B223D4 /* [4]MVVM */,
+				1C129FFF22389A9500982910 /* [5]自定义PopView */,
 				1C129FF022375DFB00982910 /* CoreGraphics */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -511,10 +550,12 @@
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
+				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
+				1C12A00A2238A06200982910 /* YSPopView.m in Sources */,
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
@@ -524,6 +565,7 @@
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
+				1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,

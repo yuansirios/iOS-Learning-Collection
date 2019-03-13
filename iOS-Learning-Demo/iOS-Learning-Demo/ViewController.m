@@ -12,6 +12,7 @@
 #import "YSRotateViewController.h"
 #import "SDListViewController.h"
 #import "HomeViewController.h"
+#import "YSPopViewController.h"
 #import "CoreGraphicsViewController.h"
 
 #define YSTitleKey   @"title"
@@ -39,6 +40,7 @@
                   @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
                   @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
                   @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"},
+                  @{YSTitleKey:@"[5]自定义PopView",YSEventKey:@"testPopView"},
                   @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
@@ -118,6 +120,10 @@
 - (void)testMVVM{
     HomeViewController *vc = HomeViewController.new;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)testPopView{
+    [self.navigationController pushViewController:YSPopViewController.new animated:YES];
 }
 
 - (void)testCoreGraphics{
