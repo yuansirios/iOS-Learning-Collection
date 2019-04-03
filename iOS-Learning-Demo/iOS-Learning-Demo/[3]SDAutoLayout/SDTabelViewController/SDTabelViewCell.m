@@ -44,7 +44,7 @@
     if (!_titleLabel) {
         _titleLabel = UILabel.new;
         [_titleLabel setFont:[UIFont systemFontOfSize:20]];
-        _titleLabel.backgroundColor = randomColor;
+        _titleLabel.backgroundColor = UIColorRandom;
     }
     return _titleLabel;
 }
