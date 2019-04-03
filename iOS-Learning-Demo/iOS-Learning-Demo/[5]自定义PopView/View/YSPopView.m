@@ -31,7 +31,7 @@
         for (int i = 0; i < 10; i++) {
             UIView *view = UIView.new;
             [view setFrame:CGRectMake(0, i * 50, _contentView.width, 50)];
-            view.backgroundColor = randomColor;
+            view.backgroundColor = UIColorRandom;
             [_contentView addSubview:view];
         }
         

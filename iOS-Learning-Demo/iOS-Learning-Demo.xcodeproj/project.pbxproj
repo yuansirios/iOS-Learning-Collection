@@ -13,6 +13,11 @@
 		1C12A00222389AC900982910 /* YSBasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A00122389AC900982910 /* YSBasePopView.m */; };
 		1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0052238A00F00982910 /* YSPopViewController.m */; };
 		1C12A00A2238A06200982910 /* YSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0092238A06200982910 /* YSPopView.m */; };
+		1CD78B992254AB660075662E /* PdiDefectMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78B982254AB660075662E /* PdiDefectMarkViewController.m */; };
+		1CD78BA62254AC370075662E /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78B9E2254AC370075662E /* UIView+Draggable.m */; };
+		1CD78BA72254AC370075662E /* PdiDefectMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78B9F2254AC370075662E /* PdiDefectMarkView.m */; };
+		1CD78BA82254AC370075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BA22254AC370075662E /* PdiMarkModel.m */; };
+		1CD78BA92254AC370075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BA42254AC370075662E /* PdiMarkView.m */; };
 		1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */; };
 		1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCF221D4B5900B223D4 /* ViewController.m */; };
 		1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */; };
@@ -52,6 +57,16 @@
 		1C12A0052238A00F00982910 /* YSPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopViewController.m; sourceTree = "<group>"; };
 		1C12A0082238A06200982910 /* YSPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPopView.h; sourceTree = "<group>"; };
 		1C12A0092238A06200982910 /* YSPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopView.m; sourceTree = "<group>"; };
+		1CD78B972254AB660075662E /* PdiDefectMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PdiDefectMarkViewController.h; sourceTree = "<group>"; };
+		1CD78B982254AB660075662E /* PdiDefectMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdiDefectMarkViewController.m; sourceTree = "<group>"; };
+		1CD78B9B2254AC370075662E /* PdiDefectMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiDefectMarkView.h; sourceTree = "<group>"; };
+		1CD78B9D2254AC370075662E /* UIView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Draggable.h"; sourceTree = "<group>"; };
+		1CD78B9E2254AC370075662E /* UIView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draggable.m"; sourceTree = "<group>"; };
+		1CD78B9F2254AC370075662E /* PdiDefectMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectMarkView.m; sourceTree = "<group>"; };
+		1CD78BA12254AC370075662E /* PdiMarkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkModel.h; sourceTree = "<group>"; };
+		1CD78BA22254AC370075662E /* PdiMarkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkModel.m; sourceTree = "<group>"; };
+		1CD78BA42254AC370075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
+		1CD78BA52254AC370075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
 		1CF8CDC8221D4B5900B223D4 /* iOS-Learning-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Learning-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -179,6 +194,55 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
+			isa = PBXGroup;
+			children = (
+				1CD78B972254AB660075662E /* PdiDefectMarkViewController.h */,
+				1CD78B982254AB660075662E /* PdiDefectMarkViewController.m */,
+				1CD78B9A2254AC370075662E /* PdiDefectMarkView */,
+			);
+			path = "[6]自定义标注视图";
+			sourceTree = "<group>";
+		};
+		1CD78B9A2254AC370075662E /* PdiDefectMarkView */ = {
+			isa = PBXGroup;
+			children = (
+				1CD78B9B2254AC370075662E /* PdiDefectMarkView.h */,
+				1CD78B9F2254AC370075662E /* PdiDefectMarkView.m */,
+				1CD78BA02254AC370075662E /* PdiMarkModel */,
+				1CD78BA32254AC370075662E /* PdiMarkView */,
+				1CD78B9C2254AC370075662E /* UIView+Draggable */,
+			);
+			path = PdiDefectMarkView;
+			sourceTree = "<group>";
+		};
+		1CD78B9C2254AC370075662E /* UIView+Draggable */ = {
+			isa = PBXGroup;
+			children = (
+				1CD78B9D2254AC370075662E /* UIView+Draggable.h */,
+				1CD78B9E2254AC370075662E /* UIView+Draggable.m */,
+			);
+			path = "UIView+Draggable";
+			sourceTree = "<group>";
+		};
+		1CD78BA02254AC370075662E /* PdiMarkModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CD78BA12254AC370075662E /* PdiMarkModel.h */,
+				1CD78BA22254AC370075662E /* PdiMarkModel.m */,
+			);
+			path = PdiMarkModel;
+			sourceTree = "<group>";
+		};
+		1CD78BA32254AC370075662E /* PdiMarkView */ = {
+			isa = PBXGroup;
+			children = (
+				1CD78BA42254AC370075662E /* PdiMarkView.m */,
+				1CD78BA52254AC370075662E /* PdiMarkView.h */,
+			);
+			path = PdiMarkView;
+			sourceTree = "<group>";
+		};
 		1CF8CDBF221D4B5900B223D4 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +270,7 @@
 				1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */,
 				1CF8CE2C222635E100B223D4 /* [4]MVVM */,
 				1C129FFF22389A9500982910 /* [5]自定义PopView */,
+				1CD78B862254A8080075662E /* [6]自定义标注视图 */,
 				1C129FF022375DFB00982910 /* CoreGraphics */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -545,6 +610,8 @@
 			files = (
 				1CF8CE252226284300B223D4 /* YSBaseModel.m in Sources */,
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
+				1CD78BA82254AC370075662E /* PdiMarkModel.m in Sources */,
+				1CD78BA92254AC370075662E /* PdiMarkView.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
@@ -559,12 +626,15 @@
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
+				1CD78BA62254AC370075662E /* UIView+Draggable.m in Sources */,
+				1CD78B992254AB660075662E /* PdiDefectMarkViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
 				1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */,
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
+				1CD78BA72254AC370075662E /* PdiDefectMarkView.m in Sources */,
 				1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,

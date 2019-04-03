@@ -14,6 +14,7 @@
 #import "HomeViewController.h"
 #import "YSPopViewController.h"
 #import "CoreGraphicsViewController.h"
+#import "PdiDefectMarkViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -41,6 +42,7 @@
                   @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
                   @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"},
                   @{YSTitleKey:@"[5]自定义PopView",YSEventKey:@"testPopView"},
+                  @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
@@ -124,6 +126,10 @@
 
 - (void)testPopView{
     [self.navigationController pushViewController:YSPopViewController.new animated:YES];
+}
+
+- (void)testMarkView{
+    [self.navigationController pushViewController:PdiDefectMarkViewController.new animated:YES];
 }
 
 - (void)testCoreGraphics{

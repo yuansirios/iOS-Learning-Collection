@@ -26,7 +26,7 @@
     [btn setTitle:@"点我" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(showPopView) forControlEvents:UIControlEventTouchUpInside];
     btn.frame = CGRectMake(0, 0, 200, 50);
-    btn.backgroundColor = randomColor;
+    btn.backgroundColor = UIColorRandom;
     btn.center = self.view.center;
     [self.view addSubview:btn];
 }

@@ -110,7 +110,7 @@
     //TODO:label宽度自适应
     {
         UILabel *autoWidthlabel = [UILabel new];
-        autoWidthlabel.backgroundColor = randomColor;
+        autoWidthlabel.backgroundColor = UIColorRandom;
         autoWidthlabel.font = [UIFont systemFontOfSize:12];
         autoWidthlabel.text = @"宽度自适应(最大宽度距离父view左、右边距20)宽度自适应(最大宽度距离父view左、右边距20)宽度自适应(最大宽度距离父view左、右边距20)";
         [self.listView addSubview:autoWidthlabel];
@@ -129,7 +129,7 @@
     //TODO:label高度自适应
     {
         UILabel *autoHeightlabel = [UILabel new];
-        autoHeightlabel.backgroundColor = randomColor;
+        autoHeightlabel.backgroundColor = UIColorRandom;
         autoHeightlabel.font = [UIFont systemFontOfSize:12];
         autoHeightlabel.text = @"高度自适应(距离父view顶部左边距20，宽度为100)";
         [self.listView addSubview:autoHeightlabel];
@@ -161,7 +161,7 @@
             
             UIView *view = [UIView new];
             
-            view.backgroundColor = randomColor;
+            view.backgroundColor = UIColorRandom;
             
             [autoWidthViewsContainer addSubview:view];
             
@@ -206,7 +206,7 @@
             
             UIView *view = [UIView new];
             
-            view.backgroundColor = randomColor;
+            view.backgroundColor = UIColorRandom;
             
             [autoMarginViewsContainer addSubview:view];
             
@@ -231,7 +231,7 @@
     //cell自定义高度
     {
         UIButton *btn = UIButton.new;
-        btn.backgroundColor = randomColor;
+        btn.backgroundColor = UIColorRandom;
         [btn setTitle:@"cell自定义高度" forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(turnToCellDemo) forControlEvents:UIControlEventTouchUpInside];
         [self.listView addSubview:btn];
