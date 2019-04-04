@@ -6,6 +6,8 @@
 //  Copyright © 2019 yuan. All rights reserved.
 //
 
+#pragma mark - *********** BaseHeader ***********
+
 #import "YSBase.h"
 
 #pragma mark - *********** PodHeader ***********
@@ -19,6 +21,11 @@
 
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+static inline void showAlertWithTitle(NSString *title){
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:title delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+}
 
 #pragma mark - *********** UIColor ***********
 

@@ -14,7 +14,7 @@
 #import "HomeViewController.h"
 #import "YSPopViewController.h"
 #import "CoreGraphicsViewController.h"
-#import "PdiDefectMarkViewController.h"
+#import "PdiDefectViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -129,7 +129,7 @@
 }
 
 - (void)testMarkView{
-    [self.navigationController pushViewController:PdiDefectMarkViewController.new animated:YES];
+    [self.navigationController pushViewController:PdiDefectViewController.new animated:YES];
 }
 
 - (void)testCoreGraphics{

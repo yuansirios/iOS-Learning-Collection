@@ -9,9 +9,7 @@
 #import "PdiMarkView.h"
 #import "UIView+Draggable.h"
 
-@interface PdiMarkView(){
-    PdiMarkModel *_markModel;
-}
+@interface PdiMarkView()
 
 @property (nonatomic,strong) UILabel *countLabel;
 @property (nonatomic,strong) UIButton *removeButton;
@@ -48,6 +46,7 @@
         self.layer.borderColor = UIColor.clearColor.CGColor;
         self.removeButton.hidden = YES;
     }
+    _markModel.edit = edit;
 }
 
 - (void)setCountNum:(int)count{

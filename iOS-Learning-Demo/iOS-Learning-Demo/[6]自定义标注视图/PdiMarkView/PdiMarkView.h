@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^PdiMarkViewRemoveBlock)(PdiMarkModel *model);
 
-@interface PdiMarkView : UIView
+@interface PdiMarkView : YSBaseView
 
 @property (nonatomic,copy) PdiMarkViewRemoveBlock removeBlock;
+
+@property (nonatomic,strong) PdiMarkModel *markModel;
 
 - (instancetype)initWithPointModel:(PdiMarkModel *)model;
 

@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PdiMarkModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PdiDefectMarkView : UIView
+typedef void(^PdiDefectMarkViewRefreshBlock)(NSArray <PdiMarkModel *>* modelArr);
+
+@interface PdiDefectMarkView : YSBaseView
+
+@property (nonatomic,copy) PdiDefectMarkViewRefreshBlock refreshBlock;
+
+- (void)refreshMarkPoint:(PdiMarkModel *)model;
 
 - (UIImage *)screenShot;
 
