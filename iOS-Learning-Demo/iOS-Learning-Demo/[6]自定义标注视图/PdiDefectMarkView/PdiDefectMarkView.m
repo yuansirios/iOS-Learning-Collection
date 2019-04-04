@@ -41,6 +41,93 @@
     return self;
 }
 
+- (PdiMarkModel *)addMarkModel:(CGPoint)point{
+    PdiMarkModel *model = PdiMarkModel.new;
+    model.point = point;
+    model.title = [NSString stringWithFormat:@"%lu",self.markViewDic.count + 1];
+    model.edit = YES;
+    return model;
+}
+
+//设置当前活动标识，其他非活动
+- (void)setActiveMark:(NSString *)key{
+    PdiMarkView *current = [self.markViewDic valueForKey:key];
+    for (PdiMarkView *item in [self.markViewDic allValues]) {
+        if ([item isEqual:current]) {
+            [item setEditStatus:YES];
+        }else{
+            [item setEditStatus:NO];
+        }
+    }
+}
+
+//TODO:添加mark
+- (void)addMark:(PdiMarkModel *)model{
+    @weakify(self)
+    PdiMarkView *markView = [[PdiMarkView alloc]initWithPointModel:model];
+    [markView setRemoveBlock:^(PdiMarkModel * _Nonnull model) {
+        @strongify(self)
+        [self removeMark:model];
+    }];
+    [self addSubview:markView];
+    [self.markViewDic setObject:markView forKey:model.title];
+    //设置其他非活跃
+    [self setActiveMark:model.title];
+    
+    [self refreshListBlock];
+}
+
+//刷新列表数据
+- (void)refreshListBlock{
+    
+    NSMutableArray *arr = @[].mutableCopy;
+    
+    NSArray *keyArr = [self.markViewDic allKeys];
+    keyArr = [keyArr sortedArrayUsingSelector:@selector(compare:)];
+    
+    for (NSString *key in keyArr) {
+        PdiMarkView *item = [self.markViewDic valueForKey:key];
+        [arr addObject:item.markModel];
+    }
+    
+    if (_refreshBlock) {
+        _refreshBlock(arr.copy);
+    }
+}
+
+//TODO:移除mark
+- (void)removeMark:(PdiMarkModel *)model{
+    //1、删除当前标记
+    PdiMarkView *current = [self.markViewDic valueForKey:model.title];
+    [current removeFromSuperview];
+    [self.markViewDic removeObjectForKey:model.title];
+    
+    int currentCount = [model.title intValue];
+    
+    //需要重新排序
+    NSArray *keyArr = [self.markViewDic allKeys];
+    NSArray *resultArray = [keyArr sortedArrayUsingSelector:@selector(compare:)];
+    
+    //2、重新排序
+    for (NSString *key in resultArray){
+        int itemCount = [key intValue];
+        if (itemCount > currentCount) {
+            PdiMarkView *view = [self.markViewDic objectForKey:key];
+            [view setCountNum:itemCount-1];
+            
+            //删除老数据
+            [self.markViewDic removeObjectForKey:key];
+            
+            //设置新数据
+            NSString *newKey = [NSString stringWithFormat:@"%d",itemCount-1];
+            [self.markViewDic setObject:view forKey:newKey];
+        }
+    }
+    
+    [self refreshListBlock];
+}
+
+#pragma mark - *********** UITouch ***********
 /*
  判断一个点是否在这个rect区域中
  bool CGRectContainsPoint(CGRect rect,CGPoint point)
@@ -51,7 +138,9 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     CGPoint point = [[touches anyObject] locationInView:self];
-//    NSLog(@"点击了：%@",NSStringFromCGPoint(point));
+    //    NSLog(@"点击了：%@",NSStringFromCGPoint(point));
+    
+    point = [self borderHandle:point];
     
     //判断点击坐标是否在mark视图中
     BOOL isAdd = NO;
@@ -104,90 +193,29 @@
     }
 }
 
-- (PdiMarkModel *)addMarkModel:(CGPoint)point{
-    PdiMarkModel *model = PdiMarkModel.new;
-    model.point = point;
-    model.title = [NSString stringWithFormat:@"%lu",self.markViewDic.count + 1];
-    model.edit = YES;
-    return model;
-}
-
-//设置当前活动标识，其他非活动
-- (void)setActiveMark:(NSString *)key{
-    PdiMarkView *current = [self.markViewDic valueForKey:key];
-    for (PdiMarkView *item in [self.markViewDic allValues]) {
-        if ([item isEqual:current]) {
-            [item setEditStatus:YES];
-        }else{
-            [item setEditStatus:NO];
-        }
-    }
-}
-
-//TODO:添加mark
-- (void)addMark:(PdiMarkModel *)model{
-    @weakify(self)
-    PdiMarkView *markView = [[PdiMarkView alloc]initWithPointModel:model];
-    [markView setRemoveBlock:^(PdiMarkModel * _Nonnull model) {
-        @strongify(self)
-        [self removeMark:model];
-    }];
-    [self addSubview:markView];
-    [self.markViewDic setObject:markView forKey:model.title];
-    //设置其他非活跃
-    [self setActiveMark:model.title];
-    
-    [self refreshListBlock];
-}
-
-//TODO:移除mark
-- (void)removeMark:(PdiMarkModel *)model{
-    //1、删除当前标记
-    PdiMarkView *current = [self.markViewDic valueForKey:model.title];
-    [current removeFromSuperview];
-    [self.markViewDic removeObjectForKey:model.title];
-    
-    int currentCount = [model.title intValue];
-    
-    //需要重新排序
-    NSArray *keyArr = [self.markViewDic allKeys];
-    NSArray *resultArray = [keyArr sortedArrayUsingSelector:@selector(compare:)];
-    
-    //2、重新排序
-    for (NSString *key in resultArray){
-        int itemCount = [key intValue];
-        if (itemCount > currentCount) {
-            PdiMarkView *view = [self.markViewDic objectForKey:key];
-            [view setCountNum:itemCount-1];
-            
-            //删除老数据
-            [self.markViewDic removeObjectForKey:key];
-            
-            //设置新数据
-            NSString *newKey = [NSString stringWithFormat:@"%d",itemCount-1];
-            [self.markViewDic setObject:view forKey:newKey];
-        }
+//边界处理
+- (CGPoint)borderHandle:(CGPoint)point{
+    if (point.x < 20){
+        //超出左边界
+        point.x = 20;
     }
     
-    [self refreshListBlock];
-}
-
-//刷新列表数据
-- (void)refreshListBlock{
-    
-    NSMutableArray *arr = @[].mutableCopy;
-    
-    NSArray *keyArr = [self.markViewDic allKeys];
-    keyArr = [keyArr sortedArrayUsingSelector:@selector(compare:)];
-    
-    for (NSString *key in keyArr) {
-        PdiMarkView *item = [self.markViewDic valueForKey:key];
-        [arr addObject:item.markModel];
+    if (point.x > self.width - 20){
+        //超出右边界
+        point.x = self.width - 20;
     }
     
-    if (_refreshBlock) {
-        _refreshBlock(arr.copy);
+    if (point.y < 20){
+        //超出上边界
+        point.y = 20;
     }
+    
+    if (point.y > self.height - 20){
+        //超出下边界
+        point.y = self.height - 20;
+    }
+    
+    return point;
 }
 
 #pragma mark - *********** public ***********
