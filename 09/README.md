@@ -4,9 +4,9 @@
 
 > 项目示例
 
-<img src="./img/示例.gif" width = "250" height = "380" align=left/>
+<img src="./img/示例.gif" width = "320" height = "380" align=left/>
 
-> 详细实现，请参考源代码`PdiDefectMarkView`
+> 详细实现，请参考源代码`PdiDefectViewController`
 
 ### 总结
 
