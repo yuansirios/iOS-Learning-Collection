@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PdiMarkModel : NSObject
+@interface PdiMarkModel : YSBaseModel
 
 @property (nonatomic,  copy) NSString *title;         //标题
 @property (nonatomic,  copy) NSString *content;       //内容

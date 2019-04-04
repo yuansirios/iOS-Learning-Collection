@@ -7,8 +7,11 @@
 //
 
 #import "PdiDefectMarkView.h"
+#import "PdiDefectListView.h"
+
 #import "PdiMarkView.h"
-#import "PdiMarkModel.h"
+
+#import "UIAlertView+Block.h"
 
 @interface PdiDefectMarkView()
 
@@ -48,7 +51,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     CGPoint point = [[touches anyObject] locationInView:self];
-    NSLog(@"点击了：%@",NSStringFromCGPoint(point));
+//    NSLog(@"点击了：%@",NSStringFromCGPoint(point));
     
     //判断点击坐标是否在mark视图中
     BOOL isAdd = NO;
@@ -82,7 +85,21 @@
         if ([[self.markViewDic allKeys] containsObject:key]) {
             [self setActiveMark:key];
         }else{
-            [self addMark:model];
+            @weakify(self)
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"请输入缺陷原因" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+            [alertView showWithBlock:^(UIAlertView * _Nonnull alertView, NSInteger buttonIndex) {
+                if (buttonIndex == 1){
+                    @strongify(self)
+                    UITextField *textField = [alertView textFieldAtIndex:0];
+                    if (textField.text.length == 0) {
+                        showAlertWithTitle(@"请输入原因");
+                    }else{
+                        model.content = textField.text;
+                        [self addMark:model];
+                    }
+                }
+            }];
         }
     }
 }
@@ -119,6 +136,8 @@
     [self.markViewDic setObject:markView forKey:model.title];
     //设置其他非活跃
     [self setActiveMark:model.title];
+    
+    [self refreshListBlock];
 }
 
 //TODO:移除mark
@@ -149,15 +168,35 @@
             [self.markViewDic setObject:view forKey:newKey];
         }
     }
+    
+    [self refreshListBlock];
 }
 
-//字典排序
-- (NSComparisonResult)compare:(NSDictionary *)otherDictionary{
-    NSDictionary *tempDictionary = (NSDictionary *)self;
-    NSNumber *number1 = [[tempDictionary allKeys] objectAtIndex:0];
-    NSNumber *number2 = [[otherDictionary allKeys] objectAtIndex:0];
-    NSComparisonResult result = [number1 compare:number2];
-    return result == NSOrderedDescending;
+//刷新列表数据
+- (void)refreshListBlock{
+    
+    NSMutableArray *arr = @[].mutableCopy;
+    
+    NSArray *keyArr = [self.markViewDic allKeys];
+    keyArr = [keyArr sortedArrayUsingSelector:@selector(compare:)];
+    
+    for (NSString *key in keyArr) {
+        PdiMarkView *item = [self.markViewDic valueForKey:key];
+        [arr addObject:item.markModel];
+    }
+    
+    if (_refreshBlock) {
+        _refreshBlock(arr.copy);
+    }
+}
+
+#pragma mark - *********** public ***********
+
+- (void)refreshMarkPoint:(PdiMarkModel *)model{
+    PdiMarkView *point = [self.markViewDic valueForKey:model.title];
+    point.markModel = model;
+    [self.markViewDic setObject:point forKey:model.title];
+    [self refreshListBlock];
 }
 
 - (UIImage *)screenShot{
@@ -171,6 +210,15 @@
     UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return snapshotImage;
+}
+
+//字典排序
+- (NSComparisonResult)compare:(NSDictionary *)otherDictionary{
+    NSDictionary *tempDictionary = (NSDictionary *)self;
+    NSNumber *number1 = [[tempDictionary allKeys] objectAtIndex:0];
+    NSNumber *number2 = [[otherDictionary allKeys] objectAtIndex:0];
+    NSComparisonResult result = [number1 compare:number2];
+    return result == NSOrderedDescending;
 }
 
 #pragma mark - *********** Lazy ***********
