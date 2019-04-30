@@ -15,6 +15,7 @@
 #import "YSPopViewController.h"
 #import "CoreGraphicsViewController.h"
 #import "PdiDefectViewController.h"
+#import "YSImagePickViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -43,6 +44,7 @@
                   @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"},
                   @{YSTitleKey:@"[5]自定义PopView",YSEventKey:@"testPopView"},
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
+                  @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
@@ -130,6 +132,10 @@
 
 - (void)testMarkView{
     [self.navigationController pushViewController:PdiDefectViewController.new animated:YES];
+}
+
+- (void)testImagePick{
+    [self.navigationController pushViewController:YSImagePickViewController.new animated:YES];
 }
 
 - (void)testCoreGraphics{

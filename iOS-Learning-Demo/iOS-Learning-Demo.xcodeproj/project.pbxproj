@@ -13,6 +13,11 @@
 		1C12A00222389AC900982910 /* YSBasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A00122389AC900982910 /* YSBasePopView.m */; };
 		1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0052238A00F00982910 /* YSPopViewController.m */; };
 		1C12A00A2238A06200982910 /* YSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0092238A06200982910 /* YSPopView.m */; };
+		1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9222769194004188ED /* YSImagePickViewController.m */; };
+		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
+		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
+		1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA72276C86E004188ED /* YSImagePicker.m */; };
+		1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -60,6 +65,16 @@
 		1C12A0052238A00F00982910 /* YSPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopViewController.m; sourceTree = "<group>"; };
 		1C12A0082238A06200982910 /* YSPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPopView.h; sourceTree = "<group>"; };
 		1C12A0092238A06200982910 /* YSPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopView.m; sourceTree = "<group>"; };
+		1C843C9122769194004188ED /* YSImagePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickViewController.h; sourceTree = "<group>"; };
+		1C843C9222769194004188ED /* YSImagePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickViewController.m; sourceTree = "<group>"; };
+		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
+		1C843C9B22769AE5004188ED /* YSImagePickModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickModel.m; sourceTree = "<group>"; };
+		1C843CA22276C5C7004188ED /* YSImagePickLargeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickLargeCell.h; sourceTree = "<group>"; };
+		1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickLargeCell.m; sourceTree = "<group>"; };
+		1C843CA62276C86E004188ED /* YSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImagePicker.h; sourceTree = "<group>"; };
+		1C843CA72276C86E004188ED /* YSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImagePicker.m; sourceTree = "<group>"; };
+		1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickSmallCell.h; sourceTree = "<group>"; };
+		1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickSmallCell.m; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -203,6 +218,63 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1C843C9022769128004188ED /* [7]图片选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA52276C86E004188ED /* YSImagePicker */,
+				1C843C9922769AC2004188ED /* Model */,
+				1C843C94227694D7004188ED /* View */,
+				1C843C9122769194004188ED /* YSImagePickViewController.h */,
+				1C843C9222769194004188ED /* YSImagePickViewController.m */,
+			);
+			path = "[7]图片选择器";
+			sourceTree = "<group>";
+		};
+		1C843C94227694D7004188ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA92276D1B6004188ED /* YSImagePickSmallCell */,
+				1C843CA12276C587004188ED /* YSImagePickLargeCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C843C9922769AC2004188ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C843C9A22769AE5004188ED /* YSImagePickModel.h */,
+				1C843C9B22769AE5004188ED /* YSImagePickModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C843CA12276C587004188ED /* YSImagePickLargeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA22276C5C7004188ED /* YSImagePickLargeCell.h */,
+				1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */,
+			);
+			path = YSImagePickLargeCell;
+			sourceTree = "<group>";
+		};
+		1C843CA52276C86E004188ED /* YSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA62276C86E004188ED /* YSImagePicker.h */,
+				1C843CA72276C86E004188ED /* YSImagePicker.m */,
+			);
+			path = YSImagePicker;
+			sourceTree = "<group>";
+		};
+		1C843CA92276D1B6004188ED /* YSImagePickSmallCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */,
+				1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */,
+			);
+			path = YSImagePickSmallCell;
+			sourceTree = "<group>";
+		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +390,7 @@
 				1CF8CE2C222635E100B223D4 /* [4]MVVM */,
 				1C129FFF22389A9500982910 /* [5]自定义PopView */,
 				1CD78B862254A8080075662E /* [6]自定义标注视图 */,
+				1C843C9022769128004188ED /* [7]图片选择器 */,
 				1C129FF022375DFB00982910 /* CoreGraphics */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -657,10 +730,13 @@
 			files = (
 				1CF8CE252226284300B223D4 /* YSBaseModel.m in Sources */,
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
+				1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
+				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
+				1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
@@ -674,7 +750,9 @@
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
 				1C12A00A2238A06200982910 /* YSPopView.m in Sources */,
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
+				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
+				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
