@@ -17,6 +17,12 @@
 #import "PdiDefectViewController.h"
 #import "YSImagePickViewController.h"
 #import "StrategyPatternViewController.h"
+//装饰器
+#import "DecoratorGamePlay.h"
+#import "GamePlay+More.h"
+//简单工厂
+#import "DeviceCreator.h"
+#import "BaseDevice.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -47,6 +53,8 @@
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"[8]设计模式-策略",YSEventKey:@"testStrategy"},
+                  @{YSTitleKey:@"[9]设计模式-装饰器",YSEventKey:@"testDecorator"},
+                  @{YSTitleKey:@"[10]设计模式-简单工厂",YSEventKey:@"testFactory"},
                   @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
@@ -140,12 +148,35 @@
     [self.navigationController pushViewController:YSImagePickViewController.new animated:YES];
 }
 
+- (void)testCoreGraphics{
+    [self.navigationController pushViewController:CoreGraphicsViewController.new animated:YES];
+}
+
 - (void)testStrategy{
     [self.navigationController pushViewController:StrategyPatternViewController.new animated:YES];
 }
 
-- (void)testCoreGraphics{
-    [self.navigationController pushViewController:CoreGraphicsViewController.new animated:YES];
+- (void)testDecorator{
+    DecoratorGamePlay *play = DecoratorGamePlay.new;
+    [play cheat];
+    NSLog(@"play.lives:%lu",play.lives);
+    
+    GamePlay *game = GamePlay.new;
+    [game cheat];
+    NSLog(@"game:%lu",game.lives);
+}
+
+- (void)testFactory{
+    BaseDevice *iphone = [DeviceCreator deviceCreatorWithDeviceType:kiPhone];
+    BaseDevice *android = [DeviceCreator deviceCreatorWithDeviceType:kAndroid];
+    BaseDevice *windows = [DeviceCreator deviceCreatorWithDeviceType:kWindows];
+    
+    [iphone phoneCall];
+    NSLog(@"iphone:%@",[iphone systemInfomation]);
+    [android phoneCall];
+    NSLog(@"android:%@",[android systemInfomation]);
+    [windows phoneCall];
+    NSLog(@"windows:%@",[windows systemInfomation]);
 }
 
 @end

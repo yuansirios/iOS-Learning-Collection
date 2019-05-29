@@ -24,6 +24,18 @@
 		1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA74229E34CA00560D11 /* EmailValidator.m */; };
 		1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA77229E524300560D11 /* PhoneNumValidator.m */; };
 		1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA79229E569700560D11 /* 策略模式.png */; };
+		1CA5BA81229E654500560D11 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA80229E654500560D11 /* GamePlay.m */; };
+		1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA83229E656D00560D11 /* DecoratorGamePlay.m */; };
+		1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA87229E696500560D11 /* GamePlay+More.m */; };
+		1CA5BA8B229E6D5600560D11 /* 装饰器.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA89229E6D5600560D11 /* 装饰器.png */; };
+		1CA5BA8C229E6D5600560D11 /* 装饰器2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA8A229E6D5600560D11 /* 装饰器2.png */; };
+		1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA8F229E6E1A00560D11 /* DeviceCreator.m */; };
+		1CA5BA93229E6E5700560D11 /* BaseDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA92229E6E5700560D11 /* BaseDevice.m */; };
+		1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA95229E6EA200560D11 /* iPhoneDevice.m */; };
+		1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA99229E6F3100560D11 /* AndroidDevice.m */; };
+		1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */; };
+		1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */; };
+		1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -92,6 +104,27 @@
 		1CA5BA76229E524300560D11 /* PhoneNumValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumValidator.h; sourceTree = "<group>"; };
 		1CA5BA77229E524300560D11 /* PhoneNumValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumValidator.m; sourceTree = "<group>"; };
 		1CA5BA79229E569700560D11 /* 策略模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "策略模式.png"; sourceTree = "<group>"; };
+		1CA5BA7F229E654500560D11 /* GamePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePlay.h; sourceTree = "<group>"; };
+		1CA5BA80229E654500560D11 /* GamePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlay.m; sourceTree = "<group>"; };
+		1CA5BA82229E656D00560D11 /* DecoratorGamePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorGamePlay.h; sourceTree = "<group>"; };
+		1CA5BA83229E656D00560D11 /* DecoratorGamePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorGamePlay.m; sourceTree = "<group>"; };
+		1CA5BA86229E696500560D11 /* GamePlay+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePlay+More.h"; sourceTree = "<group>"; };
+		1CA5BA87229E696500560D11 /* GamePlay+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GamePlay+More.m"; sourceTree = "<group>"; };
+		1CA5BA89229E6D5600560D11 /* 装饰器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装饰器.png"; sourceTree = "<group>"; };
+		1CA5BA8A229E6D5600560D11 /* 装饰器2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装饰器2.png"; sourceTree = "<group>"; };
+		1CA5BA8E229E6E1A00560D11 /* DeviceCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCreator.h; sourceTree = "<group>"; };
+		1CA5BA8F229E6E1A00560D11 /* DeviceCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCreator.m; sourceTree = "<group>"; };
+		1CA5BA91229E6E5700560D11 /* BaseDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDevice.h; sourceTree = "<group>"; };
+		1CA5BA92229E6E5700560D11 /* BaseDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDevice.m; sourceTree = "<group>"; };
+		1CA5BA94229E6EA200560D11 /* iPhoneDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPhoneDevice.h; sourceTree = "<group>"; };
+		1CA5BA95229E6EA200560D11 /* iPhoneDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhoneDevice.m; sourceTree = "<group>"; };
+		1CA5BA97229E6ED600560D11 /* DeviceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceProtocol.h; sourceTree = "<group>"; };
+		1CA5BA98229E6F3100560D11 /* AndroidDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidDevice.h; sourceTree = "<group>"; };
+		1CA5BA99229E6F3100560D11 /* AndroidDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndroidDevice.m; sourceTree = "<group>"; };
+		1CA5BA9B229E6F4900560D11 /* WindowsDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowsDevice.h; sourceTree = "<group>"; };
+		1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowsDevice.m; sourceTree = "<group>"; };
+		1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "简单工厂关系伦理图.png"; sourceTree = "<group>"; };
+		1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "简单工厂制造者与具体的子类.png"; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -295,12 +328,14 @@
 		1CA5BA67229E2FFE00560D11 /* [8]设计模式 */ = {
 			isa = PBXGroup;
 			children = (
-				1CA5BA68229E301C00560D11 /* [1]策略模式 */,
+				1CA5BA68229E301C00560D11 /* [1]策略 */,
+				1CA5BA7B229E64C600560D11 /* [2]装饰器 */,
+				1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */,
 			);
 			path = "[8]设计模式";
 			sourceTree = "<group>";
 		};
-		1CA5BA68229E301C00560D11 /* [1]策略模式 */ = {
+		1CA5BA68229E301C00560D11 /* [1]策略 */ = {
 			isa = PBXGroup;
 			children = (
 				1CA5BA79229E569700560D11 /* 策略模式.png */,
@@ -310,7 +345,7 @@
 				1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */,
 				1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */,
 			);
-			path = "[1]策略模式";
+			path = "[1]策略";
 			sourceTree = "<group>";
 		};
 		1CA5BA6C229E308B00560D11 /* InputValidator */ = {
@@ -324,6 +359,57 @@
 				1CA5BA77229E524300560D11 /* PhoneNumValidator.m */,
 			);
 			path = InputValidator;
+			sourceTree = "<group>";
+		};
+		1CA5BA7B229E64C600560D11 /* [2]装饰器 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA89229E6D5600560D11 /* 装饰器.png */,
+				1CA5BA8A229E6D5600560D11 /* 装饰器2.png */,
+				1CA5BA85229E65E800560D11 /* class */,
+			);
+			path = "[2]装饰器";
+			sourceTree = "<group>";
+		};
+		1CA5BA85229E65E800560D11 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA7F229E654500560D11 /* GamePlay.h */,
+				1CA5BA80229E654500560D11 /* GamePlay.m */,
+				1CA5BA82229E656D00560D11 /* DecoratorGamePlay.h */,
+				1CA5BA83229E656D00560D11 /* DecoratorGamePlay.m */,
+				1CA5BA86229E696500560D11 /* GamePlay+More.h */,
+				1CA5BA87229E696500560D11 /* GamePlay+More.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */,
+				1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */,
+				1CA5BA8E229E6E1A00560D11 /* DeviceCreator.h */,
+				1CA5BA8F229E6E1A00560D11 /* DeviceCreator.m */,
+				1CA5BA97229E6ED600560D11 /* DeviceProtocol.h */,
+				1CA5BA91229E6E5700560D11 /* BaseDevice.h */,
+				1CA5BA92229E6E5700560D11 /* BaseDevice.m */,
+				1CA5BA9E229E6F9B00560D11 /* Devices */,
+			);
+			path = "[3]简单工厂";
+			sourceTree = "<group>";
+		};
+		1CA5BA9E229E6F9B00560D11 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA94229E6EA200560D11 /* iPhoneDevice.h */,
+				1CA5BA95229E6EA200560D11 /* iPhoneDevice.m */,
+				1CA5BA98229E6F3100560D11 /* AndroidDevice.h */,
+				1CA5BA99229E6F3100560D11 /* AndroidDevice.m */,
+				1CA5BA9B229E6F4900560D11 /* WindowsDevice.h */,
+				1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */,
+			);
+			path = Devices;
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -709,7 +795,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA5BA8B229E6D5600560D11 /* 装饰器.png in Resources */,
 				1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */,
+				1CA5BA8C229E6D5600560D11 /* 装饰器2.png in Resources */,
+				1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */,
+				1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,12 +875,14 @@
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
 				1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
+				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
 				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
+				1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
 				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
@@ -802,8 +894,10 @@
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
+				1CA5BA81229E654500560D11 /* GamePlay.m in Sources */,
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
+				1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */,
 				1C12A00A2238A06200982910 /* YSPopView.m in Sources */,
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
 				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
@@ -818,13 +912,17 @@
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
+				1CA5BA93229E6E5700560D11 /* BaseDevice.m in Sources */,
 				1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */,
+				1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
+				1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
 				1CD78C0D2255E2CE0075662E /* PdiDefectMarkView.m in Sources */,
 				1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,
+				1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */,
 				1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */,
 				1C129FFE2237921F00982910 /* YSRunloopObserver.m in Sources */,
 			);

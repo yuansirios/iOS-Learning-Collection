@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CustomField : UITextField
 
 /**
+ 抽象策略
+ */
+@property (nonatomic,strong,readonly) InputValidator *inputValidator;
+
+/**
  初始化textField
 
  @param inputValidator 验证策略 是对象的一部分，修改的是对象的内容
