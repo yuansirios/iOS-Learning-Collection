@@ -16,6 +16,7 @@
 #import "CoreGraphicsViewController.h"
 #import "PdiDefectViewController.h"
 #import "YSImagePickViewController.h"
+#import "StrategyPatternViewController.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
@@ -45,6 +46,7 @@
                   @{YSTitleKey:@"[5]自定义PopView",YSEventKey:@"testPopView"},
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
+                  @{YSTitleKey:@"[8]设计模式-策略",YSEventKey:@"testStrategy"},
                   @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
@@ -136,6 +138,10 @@
 
 - (void)testImagePick{
     [self.navigationController pushViewController:YSImagePickViewController.new animated:YES];
+}
+
+- (void)testStrategy{
+    [self.navigationController pushViewController:StrategyPatternViewController.new animated:YES];
 }
 
 - (void)testCoreGraphics{

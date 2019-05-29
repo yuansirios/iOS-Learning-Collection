@@ -18,6 +18,12 @@
 		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
 		1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA72276C86E004188ED /* YSImagePicker.m */; };
 		1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */; };
+		1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */; };
+		1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6E229E30DA00560D11 /* InputValidator.m */; };
+		1CA5BA72229E31B300560D11 /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA71229E31B300560D11 /* CustomField.m */; };
+		1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA74229E34CA00560D11 /* EmailValidator.m */; };
+		1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA77229E524300560D11 /* PhoneNumValidator.m */; };
+		1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA79229E569700560D11 /* 策略模式.png */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -75,6 +81,17 @@
 		1C843CA72276C86E004188ED /* YSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImagePicker.m; sourceTree = "<group>"; };
 		1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickSmallCell.h; sourceTree = "<group>"; };
 		1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickSmallCell.m; sourceTree = "<group>"; };
+		1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyPatternViewController.h; sourceTree = "<group>"; };
+		1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyPatternViewController.m; sourceTree = "<group>"; };
+		1CA5BA6D229E30DA00560D11 /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		1CA5BA6E229E30DA00560D11 /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		1CA5BA70229E31B300560D11 /* CustomField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
+		1CA5BA71229E31B300560D11 /* CustomField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
+		1CA5BA73229E34CA00560D11 /* EmailValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
+		1CA5BA74229E34CA00560D11 /* EmailValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailValidator.m; sourceTree = "<group>"; };
+		1CA5BA76229E524300560D11 /* PhoneNumValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumValidator.h; sourceTree = "<group>"; };
+		1CA5BA77229E524300560D11 /* PhoneNumValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumValidator.m; sourceTree = "<group>"; };
+		1CA5BA79229E569700560D11 /* 策略模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "策略模式.png"; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -275,6 +292,40 @@
 			path = YSImagePickSmallCell;
 			sourceTree = "<group>";
 		};
+		1CA5BA67229E2FFE00560D11 /* [8]设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA68229E301C00560D11 /* [1]策略模式 */,
+			);
+			path = "[8]设计模式";
+			sourceTree = "<group>";
+		};
+		1CA5BA68229E301C00560D11 /* [1]策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA79229E569700560D11 /* 策略模式.png */,
+				1CA5BA6C229E308B00560D11 /* InputValidator */,
+				1CA5BA70229E31B300560D11 /* CustomField.h */,
+				1CA5BA71229E31B300560D11 /* CustomField.m */,
+				1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */,
+				1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */,
+			);
+			path = "[1]策略模式";
+			sourceTree = "<group>";
+		};
+		1CA5BA6C229E308B00560D11 /* InputValidator */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA6D229E30DA00560D11 /* InputValidator.h */,
+				1CA5BA6E229E30DA00560D11 /* InputValidator.m */,
+				1CA5BA73229E34CA00560D11 /* EmailValidator.h */,
+				1CA5BA74229E34CA00560D11 /* EmailValidator.m */,
+				1CA5BA76229E524300560D11 /* PhoneNumValidator.h */,
+				1CA5BA77229E524300560D11 /* PhoneNumValidator.m */,
+			);
+			path = InputValidator;
+			sourceTree = "<group>";
+		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +435,7 @@
 			children = (
 				1CF8CDE9221EA25A00B223D4 /* Base */,
 				1CD78C0F2255E3090075662E /* Categories */,
+				1C129FF022375DFB00982910 /* CoreGraphics */,
 				1CF8CDE1221D4C7100B223D4 /* [1]数组（字典）中添加弱引用 */,
 				1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */,
 				1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */,
@@ -391,7 +443,7 @@
 				1C129FFF22389A9500982910 /* [5]自定义PopView */,
 				1CD78B862254A8080075662E /* [6]自定义标注视图 */,
 				1C843C9022769128004188ED /* [7]图片选择器 */,
-				1C129FF022375DFB00982910 /* CoreGraphics */,
+				1CA5BA67229E2FFE00560D11 /* [8]设计模式 */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
@@ -657,6 +709,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,9 +795,12 @@
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
 				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
+				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
+				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
+				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
@@ -754,8 +810,10 @@
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
 				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
+				1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
+				1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */,
 				1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */,
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
