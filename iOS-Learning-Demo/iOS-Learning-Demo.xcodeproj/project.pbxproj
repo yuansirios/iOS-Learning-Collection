@@ -13,6 +13,35 @@
 		1C12A00222389AC900982910 /* YSBasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A00122389AC900982910 /* YSBasePopView.m */; };
 		1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0052238A00F00982910 /* YSPopViewController.m */; };
 		1C12A00A2238A06200982910 /* YSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0092238A06200982910 /* YSPopView.m */; };
+		1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9222769194004188ED /* YSImagePickViewController.m */; };
+		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
+		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
+		1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA72276C86E004188ED /* YSImagePicker.m */; };
+		1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */; };
+		1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */; };
+		1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6E229E30DA00560D11 /* InputValidator.m */; };
+		1CA5BA72229E31B300560D11 /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA71229E31B300560D11 /* CustomField.m */; };
+		1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA74229E34CA00560D11 /* EmailValidator.m */; };
+		1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA77229E524300560D11 /* PhoneNumValidator.m */; };
+		1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA79229E569700560D11 /* 策略模式.png */; };
+		1CA5BA81229E654500560D11 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA80229E654500560D11 /* GamePlay.m */; };
+		1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA83229E656D00560D11 /* DecoratorGamePlay.m */; };
+		1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA87229E696500560D11 /* GamePlay+More.m */; };
+		1CA5BA8B229E6D5600560D11 /* 装饰器.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA89229E6D5600560D11 /* 装饰器.png */; };
+		1CA5BA8C229E6D5600560D11 /* 装饰器2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA8A229E6D5600560D11 /* 装饰器2.png */; };
+		1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA8F229E6E1A00560D11 /* DeviceCreator.m */; };
+		1CA5BA93229E6E5700560D11 /* BaseDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA92229E6E5700560D11 /* BaseDevice.m */; };
+		1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA95229E6EA200560D11 /* iPhoneDevice.m */; };
+		1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA99229E6F3100560D11 /* AndroidDevice.m */; };
+		1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */; };
+		1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */; };
+		1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */; };
+		1CA5BAA6229E733100560D11 /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA5229E733100560D11 /* BrandingFactory.m */; };
+		1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA8229E736D00560D11 /* AcmeBrandingFactory.m */; };
+		1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAAB229E738700560D11 /* SierraBrandingFactory.m */; };
+		1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */; };
+		1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */; };
+		1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -60,6 +89,59 @@
 		1C12A0052238A00F00982910 /* YSPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopViewController.m; sourceTree = "<group>"; };
 		1C12A0082238A06200982910 /* YSPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPopView.h; sourceTree = "<group>"; };
 		1C12A0092238A06200982910 /* YSPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopView.m; sourceTree = "<group>"; };
+		1C843C9122769194004188ED /* YSImagePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickViewController.h; sourceTree = "<group>"; };
+		1C843C9222769194004188ED /* YSImagePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickViewController.m; sourceTree = "<group>"; };
+		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
+		1C843C9B22769AE5004188ED /* YSImagePickModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickModel.m; sourceTree = "<group>"; };
+		1C843CA22276C5C7004188ED /* YSImagePickLargeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickLargeCell.h; sourceTree = "<group>"; };
+		1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickLargeCell.m; sourceTree = "<group>"; };
+		1C843CA62276C86E004188ED /* YSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImagePicker.h; sourceTree = "<group>"; };
+		1C843CA72276C86E004188ED /* YSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImagePicker.m; sourceTree = "<group>"; };
+		1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickSmallCell.h; sourceTree = "<group>"; };
+		1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickSmallCell.m; sourceTree = "<group>"; };
+		1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyPatternViewController.h; sourceTree = "<group>"; };
+		1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyPatternViewController.m; sourceTree = "<group>"; };
+		1CA5BA6D229E30DA00560D11 /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		1CA5BA6E229E30DA00560D11 /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		1CA5BA70229E31B300560D11 /* CustomField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
+		1CA5BA71229E31B300560D11 /* CustomField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
+		1CA5BA73229E34CA00560D11 /* EmailValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
+		1CA5BA74229E34CA00560D11 /* EmailValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailValidator.m; sourceTree = "<group>"; };
+		1CA5BA76229E524300560D11 /* PhoneNumValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumValidator.h; sourceTree = "<group>"; };
+		1CA5BA77229E524300560D11 /* PhoneNumValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumValidator.m; sourceTree = "<group>"; };
+		1CA5BA79229E569700560D11 /* 策略模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "策略模式.png"; sourceTree = "<group>"; };
+		1CA5BA7F229E654500560D11 /* GamePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePlay.h; sourceTree = "<group>"; };
+		1CA5BA80229E654500560D11 /* GamePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlay.m; sourceTree = "<group>"; };
+		1CA5BA82229E656D00560D11 /* DecoratorGamePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorGamePlay.h; sourceTree = "<group>"; };
+		1CA5BA83229E656D00560D11 /* DecoratorGamePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorGamePlay.m; sourceTree = "<group>"; };
+		1CA5BA86229E696500560D11 /* GamePlay+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePlay+More.h"; sourceTree = "<group>"; };
+		1CA5BA87229E696500560D11 /* GamePlay+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GamePlay+More.m"; sourceTree = "<group>"; };
+		1CA5BA89229E6D5600560D11 /* 装饰器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装饰器.png"; sourceTree = "<group>"; };
+		1CA5BA8A229E6D5600560D11 /* 装饰器2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装饰器2.png"; sourceTree = "<group>"; };
+		1CA5BA8E229E6E1A00560D11 /* DeviceCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCreator.h; sourceTree = "<group>"; };
+		1CA5BA8F229E6E1A00560D11 /* DeviceCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCreator.m; sourceTree = "<group>"; };
+		1CA5BA91229E6E5700560D11 /* BaseDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDevice.h; sourceTree = "<group>"; };
+		1CA5BA92229E6E5700560D11 /* BaseDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDevice.m; sourceTree = "<group>"; };
+		1CA5BA94229E6EA200560D11 /* iPhoneDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPhoneDevice.h; sourceTree = "<group>"; };
+		1CA5BA95229E6EA200560D11 /* iPhoneDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhoneDevice.m; sourceTree = "<group>"; };
+		1CA5BA97229E6ED600560D11 /* DeviceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceProtocol.h; sourceTree = "<group>"; };
+		1CA5BA98229E6F3100560D11 /* AndroidDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidDevice.h; sourceTree = "<group>"; };
+		1CA5BA99229E6F3100560D11 /* AndroidDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndroidDevice.m; sourceTree = "<group>"; };
+		1CA5BA9B229E6F4900560D11 /* WindowsDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowsDevice.h; sourceTree = "<group>"; };
+		1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowsDevice.m; sourceTree = "<group>"; };
+		1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "简单工厂关系伦理图.png"; sourceTree = "<group>"; };
+		1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "简单工厂制造者与具体的子类.png"; sourceTree = "<group>"; };
+		1CA5BAA4229E733100560D11 /* BrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
+		1CA5BAA5229E733100560D11 /* BrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		1CA5BAA7229E736D00560D11 /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		1CA5BAA8229E736D00560D11 /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
+		1CA5BAAA229E738700560D11 /* SierraBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		1CA5BAAB229E738700560D11 /* SierraBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抽象工厂原理图.png"; sourceTree = "<group>"; };
+		1CA5BAB0229E790A00560D11 /* SubscriptionServiceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenter.h; sourceTree = "<group>"; };
+		1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscriptionServiceCenter.m; sourceTree = "<group>"; };
+		1CA5BAB3229E794100560D11 /* SubscriptionServiceCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenterProtocol.h; sourceTree = "<group>"; };
+		1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "观察者原理图.png"; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -203,6 +285,177 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1C843C9022769128004188ED /* [7]图片选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA52276C86E004188ED /* YSImagePicker */,
+				1C843C9922769AC2004188ED /* Model */,
+				1C843C94227694D7004188ED /* View */,
+				1C843C9122769194004188ED /* YSImagePickViewController.h */,
+				1C843C9222769194004188ED /* YSImagePickViewController.m */,
+			);
+			path = "[7]图片选择器";
+			sourceTree = "<group>";
+		};
+		1C843C94227694D7004188ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA92276D1B6004188ED /* YSImagePickSmallCell */,
+				1C843CA12276C587004188ED /* YSImagePickLargeCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C843C9922769AC2004188ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C843C9A22769AE5004188ED /* YSImagePickModel.h */,
+				1C843C9B22769AE5004188ED /* YSImagePickModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C843CA12276C587004188ED /* YSImagePickLargeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA22276C5C7004188ED /* YSImagePickLargeCell.h */,
+				1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */,
+			);
+			path = YSImagePickLargeCell;
+			sourceTree = "<group>";
+		};
+		1C843CA52276C86E004188ED /* YSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CA62276C86E004188ED /* YSImagePicker.h */,
+				1C843CA72276C86E004188ED /* YSImagePicker.m */,
+			);
+			path = YSImagePicker;
+			sourceTree = "<group>";
+		};
+		1C843CA92276D1B6004188ED /* YSImagePickSmallCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */,
+				1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */,
+			);
+			path = YSImagePickSmallCell;
+			sourceTree = "<group>";
+		};
+		1CA5BA67229E2FFE00560D11 /* [8]设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA68229E301C00560D11 /* [1]策略 */,
+				1CA5BA7B229E64C600560D11 /* [2]装饰器 */,
+				1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */,
+				1CA5BAA3229E730A00560D11 /* [4]抽象工厂 */,
+				1CA5BAAF229E78B400560D11 /* [5]观察者 */,
+			);
+			path = "[8]设计模式";
+			sourceTree = "<group>";
+		};
+		1CA5BA68229E301C00560D11 /* [1]策略 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA79229E569700560D11 /* 策略模式.png */,
+				1CA5BA6C229E308B00560D11 /* InputValidator */,
+				1CA5BA70229E31B300560D11 /* CustomField.h */,
+				1CA5BA71229E31B300560D11 /* CustomField.m */,
+				1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */,
+				1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */,
+			);
+			path = "[1]策略";
+			sourceTree = "<group>";
+		};
+		1CA5BA6C229E308B00560D11 /* InputValidator */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA6D229E30DA00560D11 /* InputValidator.h */,
+				1CA5BA6E229E30DA00560D11 /* InputValidator.m */,
+				1CA5BA73229E34CA00560D11 /* EmailValidator.h */,
+				1CA5BA74229E34CA00560D11 /* EmailValidator.m */,
+				1CA5BA76229E524300560D11 /* PhoneNumValidator.h */,
+				1CA5BA77229E524300560D11 /* PhoneNumValidator.m */,
+			);
+			path = InputValidator;
+			sourceTree = "<group>";
+		};
+		1CA5BA7B229E64C600560D11 /* [2]装饰器 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA89229E6D5600560D11 /* 装饰器.png */,
+				1CA5BA8A229E6D5600560D11 /* 装饰器2.png */,
+				1CA5BA85229E65E800560D11 /* class */,
+			);
+			path = "[2]装饰器";
+			sourceTree = "<group>";
+		};
+		1CA5BA85229E65E800560D11 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA7F229E654500560D11 /* GamePlay.h */,
+				1CA5BA80229E654500560D11 /* GamePlay.m */,
+				1CA5BA82229E656D00560D11 /* DecoratorGamePlay.h */,
+				1CA5BA83229E656D00560D11 /* DecoratorGamePlay.m */,
+				1CA5BA86229E696500560D11 /* GamePlay+More.h */,
+				1CA5BA87229E696500560D11 /* GamePlay+More.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */,
+				1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */,
+				1CA5BA8E229E6E1A00560D11 /* DeviceCreator.h */,
+				1CA5BA8F229E6E1A00560D11 /* DeviceCreator.m */,
+				1CA5BA97229E6ED600560D11 /* DeviceProtocol.h */,
+				1CA5BA91229E6E5700560D11 /* BaseDevice.h */,
+				1CA5BA92229E6E5700560D11 /* BaseDevice.m */,
+				1CA5BA9E229E6F9B00560D11 /* Devices */,
+			);
+			path = "[3]简单工厂";
+			sourceTree = "<group>";
+		};
+		1CA5BA9E229E6F9B00560D11 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BA94229E6EA200560D11 /* iPhoneDevice.h */,
+				1CA5BA95229E6EA200560D11 /* iPhoneDevice.m */,
+				1CA5BA98229E6F3100560D11 /* AndroidDevice.h */,
+				1CA5BA99229E6F3100560D11 /* AndroidDevice.m */,
+				1CA5BA9B229E6F4900560D11 /* WindowsDevice.h */,
+				1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		1CA5BAA3229E730A00560D11 /* [4]抽象工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */,
+				1CA5BAA4229E733100560D11 /* BrandingFactory.h */,
+				1CA5BAA5229E733100560D11 /* BrandingFactory.m */,
+				1CA5BAA7229E736D00560D11 /* AcmeBrandingFactory.h */,
+				1CA5BAA8229E736D00560D11 /* AcmeBrandingFactory.m */,
+				1CA5BAAA229E738700560D11 /* SierraBrandingFactory.h */,
+				1CA5BAAB229E738700560D11 /* SierraBrandingFactory.m */,
+			);
+			path = "[4]抽象工厂";
+			sourceTree = "<group>";
+		};
+		1CA5BAAF229E78B400560D11 /* [5]观察者 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */,
+				1CA5BAB3229E794100560D11 /* SubscriptionServiceCenterProtocol.h */,
+				1CA5BAB0229E790A00560D11 /* SubscriptionServiceCenter.h */,
+				1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */,
+			);
+			path = "[5]观察者";
+			sourceTree = "<group>";
+		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,13 +565,15 @@
 			children = (
 				1CF8CDE9221EA25A00B223D4 /* Base */,
 				1CD78C0F2255E3090075662E /* Categories */,
+				1C129FF022375DFB00982910 /* CoreGraphics */,
 				1CF8CDE1221D4C7100B223D4 /* [1]数组（字典）中添加弱引用 */,
 				1CF8CDE8221EA24300B223D4 /* [2]屏幕旋转 */,
 				1CF8CE0422250E9A00B223D4 /* [3]SDAutoLayout */,
 				1CF8CE2C222635E100B223D4 /* [4]MVVM */,
 				1C129FFF22389A9500982910 /* [5]自定义PopView */,
 				1CD78B862254A8080075662E /* [6]自定义标注视图 */,
-				1C129FF022375DFB00982910 /* CoreGraphics */,
+				1C843C9022769128004188ED /* [7]图片选择器 */,
+				1CA5BA67229E2FFE00560D11 /* [8]设计模式 */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
@@ -584,7 +839,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA5BA8B229E6D5600560D11 /* 装饰器.png in Resources */,
+				1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */,
+				1CA5BA8C229E6D5600560D11 /* 装饰器2.png in Resources */,
+				1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */,
+				1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
+				1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */,
+				1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,38 +919,60 @@
 			files = (
 				1CF8CE252226284300B223D4 /* YSBaseModel.m in Sources */,
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
+				1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
+				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
+				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
+				1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
+				1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
+				1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
 				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
+				1CA5BAA6229E733100560D11 /* BrandingFactory.m in Sources */,
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
+				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
+				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
+				1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */,
+				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
+				1CA5BA81229E654500560D11 /* GamePlay.m in Sources */,
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
+				1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */,
 				1C12A00A2238A06200982910 /* YSPopView.m in Sources */,
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
+				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
+				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
+				1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
+				1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */,
 				1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */,
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
+				1CA5BA93229E6E5700560D11 /* BaseDevice.m in Sources */,
 				1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */,
+				1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
+				1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
 				1CD78C0D2255E2CE0075662E /* PdiDefectMarkView.m in Sources */,
 				1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
+				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,
+				1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */,
 				1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */,
 				1C129FFE2237921F00982910 /* YSRunloopObserver.m in Sources */,
 			);
