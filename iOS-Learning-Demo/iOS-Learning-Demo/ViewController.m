@@ -23,11 +23,17 @@
 //简单工厂
 #import "DeviceCreator.h"
 #import "BaseDevice.h"
+//抽象工厂
+#import "BrandingFactory.h"
+#import "AcmeBrandingFactory.h"
+#import "SierraBrandingFactory.h"
+//观察者
+#import "SubscriptionServiceCenter.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,SubscriptionServiceCenterProtocol>{
     NSArray *_itemList;
 }
 
@@ -53,9 +59,11 @@
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"[8]设计模式-策略",YSEventKey:@"testStrategy"},
-                  @{YSTitleKey:@"[9]设计模式-装饰器",YSEventKey:@"testDecorator"},
-                  @{YSTitleKey:@"[10]设计模式-简单工厂",YSEventKey:@"testFactory"},
-                  @{YSTitleKey:@"CoreGraphics",YSEventKey:@"testCoreGraphics"}];
+                  @{YSTitleKey:@"--设计模式-装饰器",YSEventKey:@"testDecorator"},
+                  @{YSTitleKey:@"--设计模式-简单工厂",YSEventKey:@"testFactory"},
+                  @{YSTitleKey:@"--设计模式-抽象工厂",YSEventKey:@"testAbstractFactory"},
+                  @{YSTitleKey:@"--设计模式-观察者",YSEventKey:@"testObserve"},
+                  @{YSTitleKey:@"[9]CoreGraphics",YSEventKey:@"testCoreGraphics"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -177,6 +185,33 @@
     NSLog(@"android:%@",[android systemInfomation]);
     [windows phoneCall];
     NSLog(@"windows:%@",[windows systemInfomation]);
+}
+
+- (void)testAbstractFactory{
+    BrandingFactory *acme = [AcmeBrandingFactory factory];
+    BrandingFactory *sierra = [SierraBrandingFactory factory];
+    
+    [acme brandedView];
+    [acme brandedMainButton];
+    
+    [sierra brandedView];
+    [sierra brandedMainButton];
+}
+
+- (void)testObserve{
+    NSString *number = @"111";
+    //创建订阅号
+    [SubscriptionServiceCenter createSubscriptionNumber:number];
+    
+    //添加订阅号
+    [SubscriptionServiceCenter addCustomer:self withSubscriptionNumber:number];
+    
+    //发送消息
+    [SubscriptionServiceCenter sendMessage:@"我是消息" toSubscriptionNumber:number];
+}
+
+- (void)subscriptionMessage:(id)message subscriptionNumber:(NSString *)subscriptionNumber{
+    NSLog(@"收到消息了:%@ number:%@",message,subscriptionNumber);
 }
 
 @end

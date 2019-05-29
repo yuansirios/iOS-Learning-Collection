@@ -5,6 +5,10 @@
 //  Created by yuan on 2019/5/29.
 //  Copyright © 2019 yuan. All rights reserved.
 //
+/*
+ 1. 工厂类以及其实例化出来的子类都不是抽象类,所以称之为简单工厂(制造者与产品都是具体的实现类)
+ 2. 简单工厂灵活性较差,但其简单直白的特性,适用于层级结构简单的场景
+ */
 
 #import "YSBaseModel.h"
 #import "BaseDevice.h"

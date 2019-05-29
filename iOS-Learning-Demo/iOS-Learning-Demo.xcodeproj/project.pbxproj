@@ -36,6 +36,12 @@
 		1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */; };
 		1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */; };
 		1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */; };
+		1CA5BAA6229E733100560D11 /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA5229E733100560D11 /* BrandingFactory.m */; };
+		1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAA8229E736D00560D11 /* AcmeBrandingFactory.m */; };
+		1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAAB229E738700560D11 /* SierraBrandingFactory.m */; };
+		1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */; };
+		1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */; };
+		1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -125,6 +131,17 @@
 		1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowsDevice.m; sourceTree = "<group>"; };
 		1CA5BA9F229E6FE800560D11 /* 简单工厂关系伦理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "简单工厂关系伦理图.png"; sourceTree = "<group>"; };
 		1CA5BAA0229E6FE800560D11 /* 简单工厂制造者与具体的子类.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "简单工厂制造者与具体的子类.png"; sourceTree = "<group>"; };
+		1CA5BAA4229E733100560D11 /* BrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
+		1CA5BAA5229E733100560D11 /* BrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		1CA5BAA7229E736D00560D11 /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		1CA5BAA8229E736D00560D11 /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
+		1CA5BAAA229E738700560D11 /* SierraBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		1CA5BAAB229E738700560D11 /* SierraBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抽象工厂原理图.png"; sourceTree = "<group>"; };
+		1CA5BAB0229E790A00560D11 /* SubscriptionServiceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenter.h; sourceTree = "<group>"; };
+		1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscriptionServiceCenter.m; sourceTree = "<group>"; };
+		1CA5BAB3229E794100560D11 /* SubscriptionServiceCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenterProtocol.h; sourceTree = "<group>"; };
+		1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "观察者原理图.png"; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -331,6 +348,8 @@
 				1CA5BA68229E301C00560D11 /* [1]策略 */,
 				1CA5BA7B229E64C600560D11 /* [2]装饰器 */,
 				1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */,
+				1CA5BAA3229E730A00560D11 /* [4]抽象工厂 */,
+				1CA5BAAF229E78B400560D11 /* [5]观察者 */,
 			);
 			path = "[8]设计模式";
 			sourceTree = "<group>";
@@ -410,6 +429,31 @@
 				1CA5BA9C229E6F4900560D11 /* WindowsDevice.m */,
 			);
 			path = Devices;
+			sourceTree = "<group>";
+		};
+		1CA5BAA3229E730A00560D11 /* [4]抽象工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */,
+				1CA5BAA4229E733100560D11 /* BrandingFactory.h */,
+				1CA5BAA5229E733100560D11 /* BrandingFactory.m */,
+				1CA5BAA7229E736D00560D11 /* AcmeBrandingFactory.h */,
+				1CA5BAA8229E736D00560D11 /* AcmeBrandingFactory.m */,
+				1CA5BAAA229E738700560D11 /* SierraBrandingFactory.h */,
+				1CA5BAAB229E738700560D11 /* SierraBrandingFactory.m */,
+			);
+			path = "[4]抽象工厂";
+			sourceTree = "<group>";
+		};
+		1CA5BAAF229E78B400560D11 /* [5]观察者 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */,
+				1CA5BAB3229E794100560D11 /* SubscriptionServiceCenterProtocol.h */,
+				1CA5BAB0229E790A00560D11 /* SubscriptionServiceCenter.h */,
+				1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */,
+			);
+			path = "[5]观察者";
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -801,6 +845,8 @@
 				1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */,
 				1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
+				1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */,
+				1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,14 +930,17 @@
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
 				1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
+				1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
 				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
+				1CA5BAA6229E733100560D11 /* BrandingFactory.m in Sources */,
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
 				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
+				1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */,
 				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CA5BA81229E654500560D11 /* GamePlay.m in Sources */,
@@ -921,6 +970,7 @@
 				1CD78C0D2255E2CE0075662E /* PdiDefectMarkView.m in Sources */,
 				1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
+				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,
 				1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */,
 				1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */,
