@@ -42,6 +42,14 @@
 		1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAAD229E73BF00560D11 /* 抽象工厂原理图.png */; };
 		1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */; };
 		1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */; };
+		1CA5BAB9229F6FB500560D11 /* AbstractProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAB8229F6FB500560D11 /* AbstractProxy.m */; };
+		1CA5BABC229F6FE700560D11 /* AbstractExcute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BABB229F6FE700560D11 /* AbstractExcute.m */; };
+		1CA5BABF229F737D00560D11 /* ConcreteProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BABE229F737D00560D11 /* ConcreteProxy.m */; };
+		1CA5BAC4229F7F5900560D11 /* NSProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAC3229F7F5900560D11 /* NSProxyViewController.m */; };
+		1CA5BAC8229F825600560D11 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAC7229F825600560D11 /* WeakProxy.m */; };
+		1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BACB229FA5C000560D11 /* NCProxy.m */; };
+		1CA5BACF229FA61900560D11 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BACE229FA61900560D11 /* Person.m */; };
+		1CA5BAD2229FA64800560D11 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAD1229FA64800560D11 /* Student.m */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -142,6 +150,23 @@
 		1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscriptionServiceCenter.m; sourceTree = "<group>"; };
 		1CA5BAB3229E794100560D11 /* SubscriptionServiceCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenterProtocol.h; sourceTree = "<group>"; };
 		1CA5BAB4229E7C5F00560D11 /* 观察者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "观察者原理图.png"; sourceTree = "<group>"; };
+		1CA5BAB7229F6FB500560D11 /* AbstractProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractProxy.h; sourceTree = "<group>"; };
+		1CA5BAB8229F6FB500560D11 /* AbstractProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractProxy.m; sourceTree = "<group>"; };
+		1CA5BABA229F6FE700560D11 /* AbstractExcute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractExcute.h; sourceTree = "<group>"; };
+		1CA5BABB229F6FE700560D11 /* AbstractExcute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractExcute.m; sourceTree = "<group>"; };
+		1CA5BABD229F737D00560D11 /* ConcreteProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteProxy.h; sourceTree = "<group>"; };
+		1CA5BABE229F737D00560D11 /* ConcreteProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteProxy.m; sourceTree = "<group>"; };
+		1CA5BAC0229F739500560D11 /* MessageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageProtocol.h; sourceTree = "<group>"; };
+		1CA5BAC2229F7F5900560D11 /* NSProxyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSProxyViewController.h; sourceTree = "<group>"; };
+		1CA5BAC3229F7F5900560D11 /* NSProxyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSProxyViewController.m; sourceTree = "<group>"; };
+		1CA5BAC6229F825600560D11 /* WeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakProxy.h; sourceTree = "<group>"; };
+		1CA5BAC7229F825600560D11 /* WeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
+		1CA5BACA229FA5C000560D11 /* NCProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCProxy.h; sourceTree = "<group>"; };
+		1CA5BACB229FA5C000560D11 /* NCProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCProxy.m; sourceTree = "<group>"; };
+		1CA5BACD229FA61900560D11 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1CA5BACE229FA61900560D11 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1CA5BAD0229FA64800560D11 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		1CA5BAD1229FA64800560D11 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -350,6 +375,7 @@
 				1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */,
 				1CA5BAA3229E730A00560D11 /* [4]抽象工厂 */,
 				1CA5BAAF229E78B400560D11 /* [5]观察者 */,
+				1CA5BAB6229F6F8900560D11 /* [6]代理 */,
 			);
 			path = "[8]设计模式";
 			sourceTree = "<group>";
@@ -454,6 +480,53 @@
 				1CA5BAB1229E790A00560D11 /* SubscriptionServiceCenter.m */,
 			);
 			path = "[5]观察者";
+			sourceTree = "<group>";
+		};
+		1CA5BAB6229F6F8900560D11 /* [6]代理 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAB7229F6FB500560D11 /* AbstractProxy.h */,
+				1CA5BAB8229F6FB500560D11 /* AbstractProxy.m */,
+				1CA5BABA229F6FE700560D11 /* AbstractExcute.h */,
+				1CA5BABB229F6FE700560D11 /* AbstractExcute.m */,
+				1CA5BABD229F737D00560D11 /* ConcreteProxy.h */,
+				1CA5BABE229F737D00560D11 /* ConcreteProxy.m */,
+				1CA5BAC0229F739500560D11 /* MessageProtocol.h */,
+			);
+			path = "[6]代理";
+			sourceTree = "<group>";
+		};
+		1CA5BAC1229F7F3C00560D11 /* [9]NSProxy */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAC9229FA5B100560D11 /* 多继承 */,
+				1CA5BAC5229F823200560D11 /* WeakProxy */,
+				1CA5BAC2229F7F5900560D11 /* NSProxyViewController.h */,
+				1CA5BAC3229F7F5900560D11 /* NSProxyViewController.m */,
+			);
+			path = "[9]NSProxy";
+			sourceTree = "<group>";
+		};
+		1CA5BAC5229F823200560D11 /* WeakProxy */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAC6229F825600560D11 /* WeakProxy.h */,
+				1CA5BAC7229F825600560D11 /* WeakProxy.m */,
+			);
+			path = WeakProxy;
+			sourceTree = "<group>";
+		};
+		1CA5BAC9229FA5B100560D11 /* 多继承 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BACA229FA5C000560D11 /* NCProxy.h */,
+				1CA5BACB229FA5C000560D11 /* NCProxy.m */,
+				1CA5BACD229FA61900560D11 /* Person.h */,
+				1CA5BACE229FA61900560D11 /* Person.m */,
+				1CA5BAD0229FA64800560D11 /* Student.h */,
+				1CA5BAD1229FA64800560D11 /* Student.m */,
+			);
+			path = "多继承";
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -574,6 +647,7 @@
 				1CD78B862254A8080075662E /* [6]自定义标注视图 */,
 				1C843C9022769128004188ED /* [7]图片选择器 */,
 				1CA5BA67229E2FFE00560D11 /* [8]设计模式 */,
+				1CA5BAC1229F7F3C00560D11 /* [9]NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
@@ -921,11 +995,14 @@
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
 				1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
+				1CA5BAB9229F6FB500560D11 /* AbstractProxy.m in Sources */,
 				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
+				1CA5BAC8229F825600560D11 /* WeakProxy.m in Sources */,
 				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
+				1CA5BAD2229FA64800560D11 /* Student.m in Sources */,
 				1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
 				1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */,
@@ -937,11 +1014,14 @@
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
 				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
+				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
+				1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */,
 				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
+				1CA5BABF229F737D00560D11 /* ConcreteProxy.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CA5BA81229E654500560D11 /* GamePlay.m in Sources */,
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
@@ -961,11 +1041,13 @@
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
+				1CA5BABC229F6FE700560D11 /* AbstractExcute.m in Sources */,
 				1CA5BA93229E6E5700560D11 /* BaseDevice.m in Sources */,
 				1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */,
 				1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
 				1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */,
+				1CA5BAC4229F7F5900560D11 /* NSProxyViewController.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
 				1CD78C0D2255E2CE0075662E /* PdiDefectMarkView.m in Sources */,
 				1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */,
