@@ -16,6 +16,9 @@
 #import "CoreGraphicsViewController.h"
 #import "PdiDefectViewController.h"
 #import "YSImagePickViewController.h"
+#import "NSProxyViewController.h"
+
+//策略
 #import "StrategyPatternViewController.h"
 //装饰器
 #import "DecoratorGamePlay.h"
@@ -29,16 +32,18 @@
 #import "SierraBrandingFactory.h"
 //观察者
 #import "SubscriptionServiceCenter.h"
+//代理
+#import "ConcreteProxy.h"
+#import "MessageProtocol.h"
 
 #define YSTitleKey   @"title"
 #define YSEventKey   @"event"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,SubscriptionServiceCenterProtocol>{
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,SubscriptionServiceCenterProtocol,MessageProtocol>{
     NSArray *_itemList;
 }
 
 @property (nonatomic,strong) UITableView *listTableView;
-
 
 @property (nonatomic,strong) UIView *topView;
 
@@ -63,7 +68,9 @@
                   @{YSTitleKey:@"--设计模式-简单工厂",YSEventKey:@"testFactory"},
                   @{YSTitleKey:@"--设计模式-抽象工厂",YSEventKey:@"testAbstractFactory"},
                   @{YSTitleKey:@"--设计模式-观察者",YSEventKey:@"testObserve"},
-                  @{YSTitleKey:@"[9]CoreGraphics",YSEventKey:@"testCoreGraphics"}];
+                  @{YSTitleKey:@"--设计模式-代理",YSEventKey:@"testAbstract"},
+                  @{YSTitleKey:@"[9]CoreGraphics",YSEventKey:@"testCoreGraphics"},
+                  @{YSTitleKey:@"[10]NSProxy",YSEventKey:@"testNSProxy"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -160,6 +167,10 @@
     [self.navigationController pushViewController:CoreGraphicsViewController.new animated:YES];
 }
 
+- (void)testNSProxy{
+    [self.navigationController pushViewController:NSProxyViewController.new animated:YES];
+}
+
 - (void)testStrategy{
     [self.navigationController pushViewController:StrategyPatternViewController.new animated:YES];
 }
@@ -212,6 +223,16 @@
 
 - (void)subscriptionMessage:(id)message subscriptionNumber:(NSString *)subscriptionNumber{
     NSLog(@"收到消息了:%@ number:%@",message,subscriptionNumber);
+}
+
+- (void)testAbstract{
+    ConcreteProxy *proxy = [[ConcreteProxy alloc] initWithCustomer:self];
+    [proxy helloWorld];
+    [proxy goodBye];
+}
+
+- (void)helloWorld {
+    NSLog(@"helloWorld");
 }
 
 @end
