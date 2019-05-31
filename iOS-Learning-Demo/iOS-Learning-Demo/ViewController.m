@@ -17,29 +17,9 @@
 #import "PdiDefectViewController.h"
 #import "YSImagePickViewController.h"
 #import "NSProxyViewController.h"
+#import "DesignPattarnViewController.h"
 
-//策略
-#import "StrategyPatternViewController.h"
-//装饰器
-#import "DecoratorGamePlay.h"
-#import "GamePlay+More.h"
-//简单工厂
-#import "DeviceCreator.h"
-#import "BaseDevice.h"
-//抽象工厂
-#import "BrandingFactory.h"
-#import "AcmeBrandingFactory.h"
-#import "SierraBrandingFactory.h"
-//观察者
-#import "SubscriptionServiceCenter.h"
-//代理
-#import "ConcreteProxy.h"
-#import "MessageProtocol.h"
-
-#define YSTitleKey   @"title"
-#define YSEventKey   @"event"
-
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,SubscriptionServiceCenterProtocol,MessageProtocol>{
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
 }
 
@@ -63,12 +43,7 @@
                   @{YSTitleKey:@"[5]自定义PopView",YSEventKey:@"testPopView"},
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
-                  @{YSTitleKey:@"[8]设计模式-策略",YSEventKey:@"testStrategy"},
-                  @{YSTitleKey:@"--设计模式-装饰器",YSEventKey:@"testDecorator"},
-                  @{YSTitleKey:@"--设计模式-简单工厂",YSEventKey:@"testFactory"},
-                  @{YSTitleKey:@"--设计模式-抽象工厂",YSEventKey:@"testAbstractFactory"},
-                  @{YSTitleKey:@"--设计模式-观察者",YSEventKey:@"testObserve"},
-                  @{YSTitleKey:@"--设计模式-代理",YSEventKey:@"testAbstract"},
+                  @{YSTitleKey:@"[8]设计模式",YSEventKey:@"testDesignPattern"},
                   @{YSTitleKey:@"[9]CoreGraphics",YSEventKey:@"testCoreGraphics"},
                   @{YSTitleKey:@"[10]NSProxy",YSEventKey:@"testNSProxy"}];
     
@@ -171,68 +146,8 @@
     [self.navigationController pushViewController:NSProxyViewController.new animated:YES];
 }
 
-- (void)testStrategy{
-    [self.navigationController pushViewController:StrategyPatternViewController.new animated:YES];
-}
-
-- (void)testDecorator{
-    DecoratorGamePlay *play = DecoratorGamePlay.new;
-    [play cheat];
-    NSLog(@"play.lives:%lu",play.lives);
-    
-    GamePlay *game = GamePlay.new;
-    [game cheat];
-    NSLog(@"game:%lu",game.lives);
-}
-
-- (void)testFactory{
-    BaseDevice *iphone = [DeviceCreator deviceCreatorWithDeviceType:kiPhone];
-    BaseDevice *android = [DeviceCreator deviceCreatorWithDeviceType:kAndroid];
-    BaseDevice *windows = [DeviceCreator deviceCreatorWithDeviceType:kWindows];
-    
-    [iphone phoneCall];
-    NSLog(@"iphone:%@",[iphone systemInfomation]);
-    [android phoneCall];
-    NSLog(@"android:%@",[android systemInfomation]);
-    [windows phoneCall];
-    NSLog(@"windows:%@",[windows systemInfomation]);
-}
-
-- (void)testAbstractFactory{
-    BrandingFactory *acme = [AcmeBrandingFactory factory];
-    BrandingFactory *sierra = [SierraBrandingFactory factory];
-    
-    [acme brandedView];
-    [acme brandedMainButton];
-    
-    [sierra brandedView];
-    [sierra brandedMainButton];
-}
-
-- (void)testObserve{
-    NSString *number = @"111";
-    //创建订阅号
-    [SubscriptionServiceCenter createSubscriptionNumber:number];
-    
-    //添加订阅号
-    [SubscriptionServiceCenter addCustomer:self withSubscriptionNumber:number];
-    
-    //发送消息
-    [SubscriptionServiceCenter sendMessage:@"我是消息" toSubscriptionNumber:number];
-}
-
-- (void)subscriptionMessage:(id)message subscriptionNumber:(NSString *)subscriptionNumber{
-    NSLog(@"收到消息了:%@ number:%@",message,subscriptionNumber);
-}
-
-- (void)testAbstract{
-    ConcreteProxy *proxy = [[ConcreteProxy alloc] initWithCustomer:self];
-    [proxy helloWorld];
-    [proxy goodBye];
-}
-
-- (void)helloWorld {
-    NSLog(@"helloWorld");
+- (void)testDesignPattern{
+    [self.navigationController pushViewController:DesignPattarnViewController.new animated:YES];
 }
 
 @end

@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ControllerProtocol.h"
 
+#define YSTitleKey   @"title"
+#define YSEventKey   @"event"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YSBaseViewController : UIViewController<ControllerProtocol>
