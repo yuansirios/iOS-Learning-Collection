@@ -94,7 +94,7 @@
     NSDictionary *dic = _itemList[indexPath.row];
     SEL selector = NSSelectorFromString(dic[YSEventKey]);
     if ([self respondsToSelector:selector]) {
-        [self performSelector:selector];
+        SafePerformSelector([self performSelector:selector]);
     }
 }
 
