@@ -50,6 +50,34 @@
 		1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BACB229FA5C000560D11 /* NCProxy.m */; };
 		1CA5BACF229FA61900560D11 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BACE229FA61900560D11 /* Person.m */; };
 		1CA5BAD2229FA64800560D11 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAD1229FA64800560D11 /* Student.m */; };
+		1CA5BAD4229FD92A00560D11 /* 代理原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAD3229FD92A00560D11 /* 代理原理图.png */; };
+		1CA5BAD8229FDA4E00560D11 /* CoffeeFlavor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAD7229FDA4E00560D11 /* CoffeeFlavor.m */; };
+		1CA5BADB229FDAB800560D11 /* CoffeeShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BADA229FDAB800560D11 /* CoffeeShop.m */; };
+		1CA5BADE229FDAFD00560D11 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BADD229FDAFD00560D11 /* Menu.m */; };
+		1CA5BAE022A0C4EB00560D11 /* 享元原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BADF22A0C4EB00560D11 /* 享元原理图.png */; };
+		1CA5BAE522A0CD7900560D11 /* EmailChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAE422A0CD7900560D11 /* EmailChain.m */; };
+		1CA5BAE822A0CDC600560D11 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAE722A0CDC600560D11 /* RegExCategories.m */; };
+		1CA5BAEB22A0CE4400560D11 /* EndChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAEA22A0CE4400560D11 /* EndChain.m */; };
+		1CA5BAEE22A0CE7200560D11 /* HeadChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAED22A0CE7200560D11 /* HeadChain.m */; };
+		1CA5BAF122A0CE9C00560D11 /* PhoneNumChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAF022A0CE9C00560D11 /* PhoneNumChain.m */; };
+		1CA5BAF422A0CEC400560D11 /* UserNameChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAF322A0CEC400560D11 /* UserNameChain.m */; };
+		1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAF622A0D0B000560D11 /* DesignPattarnViewController.m */; };
+		1CA5BAF922A0D4DB00560D11 /* 责任链.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BAF822A0D4DB00560D11 /* 责任链.gif */; };
+		1CA5BAFE22A0F67000560D11 /* Chess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BAFD22A0F67000560D11 /* Chess.m */; };
+		1CA5BB0122A0F6A700560D11 /* Monopoly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB0022A0F6A700560D11 /* Monopoly.m */; };
+		1CA5BB0322A0F8B900560D11 /* 模板原理图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB0222A0F8B900560D11 /* 模板原理图.jpg */; };
+		1CA5BB0922A0FCAE00560D11 /* ElementA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB0822A0FCAE00560D11 /* ElementA.m */; };
+		1CA5BB0C22A0FCEC00560D11 /* ElementB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB0B22A0FCEC00560D11 /* ElementB.m */; };
+		1CA5BB0F22A0FD2000560D11 /* ElementCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB0E22A0FD2000560D11 /* ElementCollection.m */; };
+		1CA5BB1222A0FD5400560D11 /* Visitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1122A0FD5400560D11 /* Visitor.m */; };
+		1CA5BB1422A0FF8F00560D11 /* 访问者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1322A0FF8E00560D11 /* 访问者原理图.png */; };
+		1CA5BB1922A1007500560D11 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1822A1007500560D11 /* Node.m */; };
+		1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1B22A100B600560D11 /* LinkedList.m */; };
+		1CA5BB1F22A100F700560D11 /* LinkedListIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1E22A100F700560D11 /* LinkedListIterator.m */; };
+		1CA5BB2122A1021D00560D11 /* 迭代器原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2022A1021D00560D11 /* 迭代器原理图.png */; };
+		1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */; };
+		1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2722A102F400560D11 /* MediatorViewController.m */; };
+		1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2922A103E100560D11 /* 中介者原理图.png */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -167,6 +195,60 @@
 		1CA5BACE229FA61900560D11 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1CA5BAD0229FA64800560D11 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		1CA5BAD1229FA64800560D11 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		1CA5BAD3229FD92A00560D11 /* 代理原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "代理原理图.png"; sourceTree = "<group>"; };
+		1CA5BAD6229FDA4E00560D11 /* CoffeeFlavor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeFlavor.h; sourceTree = "<group>"; };
+		1CA5BAD7229FDA4E00560D11 /* CoffeeFlavor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeFlavor.m; sourceTree = "<group>"; };
+		1CA5BAD9229FDAB800560D11 /* CoffeeShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeShop.h; sourceTree = "<group>"; };
+		1CA5BADA229FDAB800560D11 /* CoffeeShop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeShop.m; sourceTree = "<group>"; };
+		1CA5BADC229FDAFD00560D11 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		1CA5BADD229FDAFD00560D11 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		1CA5BADF22A0C4EB00560D11 /* 享元原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "享元原理图.png"; sourceTree = "<group>"; };
+		1CA5BAE222A0CD5D00560D11 /* ChainOfResponsibilityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainOfResponsibilityProtocol.h; sourceTree = "<group>"; };
+		1CA5BAE322A0CD7900560D11 /* EmailChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailChain.h; sourceTree = "<group>"; };
+		1CA5BAE422A0CD7900560D11 /* EmailChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailChain.m; sourceTree = "<group>"; };
+		1CA5BAE622A0CDC600560D11 /* RegExCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		1CA5BAE722A0CDC600560D11 /* RegExCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		1CA5BAE922A0CE4400560D11 /* EndChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndChain.h; sourceTree = "<group>"; };
+		1CA5BAEA22A0CE4400560D11 /* EndChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndChain.m; sourceTree = "<group>"; };
+		1CA5BAEC22A0CE7200560D11 /* HeadChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadChain.h; sourceTree = "<group>"; };
+		1CA5BAED22A0CE7200560D11 /* HeadChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadChain.m; sourceTree = "<group>"; };
+		1CA5BAEF22A0CE9C00560D11 /* PhoneNumChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumChain.h; sourceTree = "<group>"; };
+		1CA5BAF022A0CE9C00560D11 /* PhoneNumChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumChain.m; sourceTree = "<group>"; };
+		1CA5BAF222A0CEC400560D11 /* UserNameChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserNameChain.h; sourceTree = "<group>"; };
+		1CA5BAF322A0CEC400560D11 /* UserNameChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserNameChain.m; sourceTree = "<group>"; };
+		1CA5BAF522A0D0B000560D11 /* DesignPattarnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignPattarnViewController.h; sourceTree = "<group>"; };
+		1CA5BAF622A0D0B000560D11 /* DesignPattarnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPattarnViewController.m; sourceTree = "<group>"; };
+		1CA5BAF822A0D4DB00560D11 /* 责任链.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "责任链.gif"; sourceTree = "<group>"; };
+		1CA5BAFB22A0F65600560D11 /* GameProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameProtocol.h; sourceTree = "<group>"; };
+		1CA5BAFC22A0F67000560D11 /* Chess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chess.h; sourceTree = "<group>"; };
+		1CA5BAFD22A0F67000560D11 /* Chess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chess.m; sourceTree = "<group>"; };
+		1CA5BAFF22A0F6A700560D11 /* Monopoly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monopoly.h; sourceTree = "<group>"; };
+		1CA5BB0022A0F6A700560D11 /* Monopoly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Monopoly.m; sourceTree = "<group>"; };
+		1CA5BB0222A0F8B900560D11 /* 模板原理图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "模板原理图.jpg"; sourceTree = "<group>"; };
+		1CA5BB0522A0FC6C00560D11 /* ElementProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementProtocol.h; sourceTree = "<group>"; };
+		1CA5BB0622A0FC8000560D11 /* VisitorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisitorProtocol.h; sourceTree = "<group>"; };
+		1CA5BB0722A0FCAE00560D11 /* ElementA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementA.h; sourceTree = "<group>"; };
+		1CA5BB0822A0FCAE00560D11 /* ElementA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementA.m; sourceTree = "<group>"; };
+		1CA5BB0A22A0FCEC00560D11 /* ElementB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementB.h; sourceTree = "<group>"; };
+		1CA5BB0B22A0FCEC00560D11 /* ElementB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementB.m; sourceTree = "<group>"; };
+		1CA5BB0D22A0FD2000560D11 /* ElementCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementCollection.h; sourceTree = "<group>"; };
+		1CA5BB0E22A0FD2000560D11 /* ElementCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementCollection.m; sourceTree = "<group>"; };
+		1CA5BB1022A0FD5400560D11 /* Visitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visitor.h; sourceTree = "<group>"; };
+		1CA5BB1122A0FD5400560D11 /* Visitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visitor.m; sourceTree = "<group>"; };
+		1CA5BB1322A0FF8E00560D11 /* 访问者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "访问者原理图.png"; sourceTree = "<group>"; };
+		1CA5BB1622A1005700560D11 /* IteratorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IteratorProtocol.h; sourceTree = "<group>"; };
+		1CA5BB1722A1007500560D11 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1CA5BB1822A1007500560D11 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		1CA5BB1A22A100B600560D11 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		1CA5BB1B22A100B600560D11 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		1CA5BB1D22A100F700560D11 /* LinkedListIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListIterator.h; sourceTree = "<group>"; };
+		1CA5BB1E22A100F700560D11 /* LinkedListIterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListIterator.m; sourceTree = "<group>"; };
+		1CA5BB2022A1021D00560D11 /* 迭代器原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "迭代器原理图.png"; sourceTree = "<group>"; };
+		1CA5BB2322A1029E00560D11 /* TextFieldMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldMediator.h; sourceTree = "<group>"; };
+		1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldMediator.m; sourceTree = "<group>"; };
+		1CA5BB2622A102F400560D11 /* MediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorViewController.h; sourceTree = "<group>"; };
+		1CA5BB2722A102F400560D11 /* MediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorViewController.m; sourceTree = "<group>"; };
+		1CA5BB2922A103E100560D11 /* 中介者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者原理图.png"; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -370,12 +452,20 @@
 		1CA5BA67229E2FFE00560D11 /* [8]设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1CA5BAF522A0D0B000560D11 /* DesignPattarnViewController.h */,
+				1CA5BAF622A0D0B000560D11 /* DesignPattarnViewController.m */,
 				1CA5BA68229E301C00560D11 /* [1]策略 */,
 				1CA5BA7B229E64C600560D11 /* [2]装饰器 */,
 				1CA5BA8D229E6DDD00560D11 /* [3]简单工厂 */,
 				1CA5BAA3229E730A00560D11 /* [4]抽象工厂 */,
 				1CA5BAAF229E78B400560D11 /* [5]观察者 */,
 				1CA5BAB6229F6F8900560D11 /* [6]代理 */,
+				1CA5BAD5229FDA3200560D11 /* [7]享元 */,
+				1CA5BAE122A0CD2D00560D11 /* [8]责任链 */,
+				1CA5BAFA22A0F60800560D11 /* [9]模板 */,
+				1CA5BB0422A0FC2800560D11 /* [10]访问者 */,
+				1CA5BB1522A0FFF100560D11 /* [11]迭代器 */,
+				1CA5BB2222A1026400560D11 /* [12]中介者 */,
 			);
 			path = "[8]设计模式";
 			sourceTree = "<group>";
@@ -485,6 +575,7 @@
 		1CA5BAB6229F6F8900560D11 /* [6]代理 */ = {
 			isa = PBXGroup;
 			children = (
+				1CA5BAD3229FD92A00560D11 /* 代理原理图.png */,
 				1CA5BAB7229F6FB500560D11 /* AbstractProxy.h */,
 				1CA5BAB8229F6FB500560D11 /* AbstractProxy.m */,
 				1CA5BABA229F6FE700560D11 /* AbstractExcute.h */,
@@ -527,6 +618,99 @@
 				1CA5BAD1229FA64800560D11 /* Student.m */,
 			);
 			path = "多继承";
+			sourceTree = "<group>";
+		};
+		1CA5BAD5229FDA3200560D11 /* [7]享元 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BADF22A0C4EB00560D11 /* 享元原理图.png */,
+				1CA5BAD9229FDAB800560D11 /* CoffeeShop.h */,
+				1CA5BADA229FDAB800560D11 /* CoffeeShop.m */,
+				1CA5BAD6229FDA4E00560D11 /* CoffeeFlavor.h */,
+				1CA5BAD7229FDA4E00560D11 /* CoffeeFlavor.m */,
+				1CA5BADC229FDAFD00560D11 /* Menu.h */,
+				1CA5BADD229FDAFD00560D11 /* Menu.m */,
+			);
+			path = "[7]享元";
+			sourceTree = "<group>";
+		};
+		1CA5BAE122A0CD2D00560D11 /* [8]责任链 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BAF822A0D4DB00560D11 /* 责任链.gif */,
+				1CA5BAE222A0CD5D00560D11 /* ChainOfResponsibilityProtocol.h */,
+				1CA5BAE322A0CD7900560D11 /* EmailChain.h */,
+				1CA5BAE422A0CD7900560D11 /* EmailChain.m */,
+				1CA5BAE922A0CE4400560D11 /* EndChain.h */,
+				1CA5BAEA22A0CE4400560D11 /* EndChain.m */,
+				1CA5BAEC22A0CE7200560D11 /* HeadChain.h */,
+				1CA5BAED22A0CE7200560D11 /* HeadChain.m */,
+				1CA5BAEF22A0CE9C00560D11 /* PhoneNumChain.h */,
+				1CA5BAF022A0CE9C00560D11 /* PhoneNumChain.m */,
+				1CA5BAF222A0CEC400560D11 /* UserNameChain.h */,
+				1CA5BAF322A0CEC400560D11 /* UserNameChain.m */,
+				1CA5BAE622A0CDC600560D11 /* RegExCategories.h */,
+				1CA5BAE722A0CDC600560D11 /* RegExCategories.m */,
+			);
+			path = "[8]责任链";
+			sourceTree = "<group>";
+		};
+		1CA5BAFA22A0F60800560D11 /* [9]模板 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BB0222A0F8B900560D11 /* 模板原理图.jpg */,
+				1CA5BAFB22A0F65600560D11 /* GameProtocol.h */,
+				1CA5BAFC22A0F67000560D11 /* Chess.h */,
+				1CA5BAFD22A0F67000560D11 /* Chess.m */,
+				1CA5BAFF22A0F6A700560D11 /* Monopoly.h */,
+				1CA5BB0022A0F6A700560D11 /* Monopoly.m */,
+			);
+			path = "[9]模板";
+			sourceTree = "<group>";
+		};
+		1CA5BB0422A0FC2800560D11 /* [10]访问者 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BB1322A0FF8E00560D11 /* 访问者原理图.png */,
+				1CA5BB0522A0FC6C00560D11 /* ElementProtocol.h */,
+				1CA5BB0622A0FC8000560D11 /* VisitorProtocol.h */,
+				1CA5BB0722A0FCAE00560D11 /* ElementA.h */,
+				1CA5BB0822A0FCAE00560D11 /* ElementA.m */,
+				1CA5BB0A22A0FCEC00560D11 /* ElementB.h */,
+				1CA5BB0B22A0FCEC00560D11 /* ElementB.m */,
+				1CA5BB0D22A0FD2000560D11 /* ElementCollection.h */,
+				1CA5BB0E22A0FD2000560D11 /* ElementCollection.m */,
+				1CA5BB1022A0FD5400560D11 /* Visitor.h */,
+				1CA5BB1122A0FD5400560D11 /* Visitor.m */,
+			);
+			path = "[10]访问者";
+			sourceTree = "<group>";
+		};
+		1CA5BB1522A0FFF100560D11 /* [11]迭代器 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BB2022A1021D00560D11 /* 迭代器原理图.png */,
+				1CA5BB1622A1005700560D11 /* IteratorProtocol.h */,
+				1CA5BB1722A1007500560D11 /* Node.h */,
+				1CA5BB1822A1007500560D11 /* Node.m */,
+				1CA5BB1A22A100B600560D11 /* LinkedList.h */,
+				1CA5BB1B22A100B600560D11 /* LinkedList.m */,
+				1CA5BB1D22A100F700560D11 /* LinkedListIterator.h */,
+				1CA5BB1E22A100F700560D11 /* LinkedListIterator.m */,
+			);
+			path = "[11]迭代器";
+			sourceTree = "<group>";
+		};
+		1CA5BB2222A1026400560D11 /* [12]中介者 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5BB2922A103E100560D11 /* 中介者原理图.png */,
+				1CA5BB2322A1029E00560D11 /* TextFieldMediator.h */,
+				1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */,
+				1CA5BB2622A102F400560D11 /* MediatorViewController.h */,
+				1CA5BB2722A102F400560D11 /* MediatorViewController.m */,
+			);
+			path = "[12]中介者";
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -913,12 +1097,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */,
 				1CA5BA8B229E6D5600560D11 /* 装饰器.png in Resources */,
+				1CA5BAE022A0C4EB00560D11 /* 享元原理图.png in Resources */,
 				1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */,
 				1CA5BA8C229E6D5600560D11 /* 装饰器2.png in Resources */,
 				1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */,
+				1CA5BAF922A0D4DB00560D11 /* 责任链.gif in Resources */,
 				1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */,
+				1CA5BB0322A0F8B900560D11 /* 模板原理图.jpg in Resources */,
+				1CA5BB2122A1021D00560D11 /* 迭代器原理图.png in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
+				1CA5BAD4229FD92A00560D11 /* 代理原理图.png in Resources */,
+				1CA5BB1422A0FF8F00560D11 /* 访问者原理图.png in Resources */,
 				1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */,
 				1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */,
 			);
@@ -992,49 +1183,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CF8CE252226284300B223D4 /* YSBaseModel.m in Sources */,
+				1CA5BAFE22A0F67000560D11 /* Chess.m in Sources */,
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
 				1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */,
+				1CA5BB0122A0F6A700560D11 /* Monopoly.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
 				1CA5BAB9229F6FB500560D11 /* AbstractProxy.m in Sources */,
 				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
 				1CA5BAC8229F825600560D11 /* WeakProxy.m in Sources */,
 				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
+				1CA5BAF422A0CEC400560D11 /* UserNameChain.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
+				1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1CA5BAD2229FA64800560D11 /* Student.m in Sources */,
 				1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
+				1CA5BB0C22A0FCEC00560D11 /* ElementB.m in Sources */,
 				1CA5BA90229E6E1A00560D11 /* DeviceCreator.m in Sources */,
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
+				1CA5BAEE22A0CE7200560D11 /* HeadChain.m in Sources */,
 				1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
 				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
 				1CA5BAA6229E733100560D11 /* BrandingFactory.m in Sources */,
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
 				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
+				1CA5BAE522A0CD7900560D11 /* EmailChain.m in Sources */,
+				1CA5BB1F22A100F700560D11 /* LinkedListIterator.m in Sources */,
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
+				1CA5BADE229FDAFD00560D11 /* Menu.m in Sources */,
 				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
 				1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */,
+				1CA5BADB229FDAB800560D11 /* CoffeeShop.m in Sources */,
 				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
 				1CA5BABF229F737D00560D11 /* ConcreteProxy.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CA5BA81229E654500560D11 /* GamePlay.m in Sources */,
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
+				1CA5BAF122A0CE9C00560D11 /* PhoneNumChain.m in Sources */,
+				1CA5BB0922A0FCAE00560D11 /* ElementA.m in Sources */,
 				1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */,
 				1C12A00A2238A06200982910 /* YSPopView.m in Sources */,
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
+				1CA5BAE822A0CDC600560D11 /* RegExCategories.m in Sources */,
 				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
+				1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */,
 				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
 				1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
+				1CA5BB0F22A0FD2000560D11 /* ElementCollection.m in Sources */,
 				1CF8CE03221FD4E600B223D4 /* YSRotateViewController.m in Sources */,
 				1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */,
 				1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */,
@@ -1042,21 +1248,27 @@
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
 				1CA5BABC229F6FE700560D11 /* AbstractExcute.m in Sources */,
+				1CA5BB1222A0FD5400560D11 /* Visitor.m in Sources */,
 				1CA5BA93229E6E5700560D11 /* BaseDevice.m in Sources */,
 				1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */,
+				1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */,
 				1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
 				1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */,
 				1CA5BAC4229F7F5900560D11 /* NSProxyViewController.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
 				1CD78C0D2255E2CE0075662E /* PdiDefectMarkView.m in Sources */,
+				1CA5BB1922A1007500560D11 /* Node.m in Sources */,
 				1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */,
+				1CA5BAD8229FDA4E00560D11 /* CoffeeFlavor.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
 				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
+				1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,
 				1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */,
 				1CF8CDE7221D52A400B223D4 /* WeakMutableArray.m in Sources */,
 				1C129FFE2237921F00982910 /* YSRunloopObserver.m in Sources */,
+				1CA5BAEB22A0CE4400560D11 /* EndChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
