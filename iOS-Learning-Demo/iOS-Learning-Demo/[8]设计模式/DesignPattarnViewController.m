@@ -79,6 +79,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"设计模式";
     _itemList = @[@{YSTitleKey:@"[1]策略",YSEventKey:@"testStrategy"},
                   @{YSTitleKey:@"[2]装饰器",YSEventKey:@"testDecorator"},
                   @{YSTitleKey:@"[3]简单工厂",YSEventKey:@"testFactory"},

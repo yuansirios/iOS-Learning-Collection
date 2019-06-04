@@ -78,6 +78,9 @@
 		1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */; };
 		1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2722A102F400560D11 /* MediatorViewController.m */; };
 		1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2922A103E100560D11 /* 中介者原理图.png */; };
+		1CCBFD4222A64D9400E99A62 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4122A64D9400E99A62 /* ListNode.m */; };
+		1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4422A651B100E99A62 /* SingleLinkedList.m */; };
+		1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4722A6533D00E99A62 /* LinkedMap.m */; };
 		1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */; };
 		1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78BFE2255E2CD0075662E /* PdiMarkView.m */; };
 		1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C022255E2CD0075662E /* PdiMarkModel.m */; };
@@ -130,6 +133,10 @@
 		1CF394B522A4FFAD00C430E1 /* SpecialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394B422A4FFAD00C430E1 /* SpecialModel.m */; };
 		1CF394B822A4FFC900C430E1 /* SpecialModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394B722A4FFC900C430E1 /* SpecialModelAdapter.m */; };
 		1CF394BB22A4FFF600C430E1 /* AdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394BA22A4FFF600C430E1 /* AdapterViewController.m */; };
+		1CF394BF22A507E200C430E1 /* StructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394BE22A507E200C430E1 /* StructureViewController.m */; };
+		1CF394C322A50ABB00C430E1 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394C222A50ABB00C430E1 /* BinaryTreeNode.m */; };
+		1CF394C622A50BDC00C430E1 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394C522A50BDC00C430E1 /* BinaryTree.m */; };
+		1CF394C922A50E5700C430E1 /* TreeNodeProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF394C822A50E5700C430E1 /* TreeNodeProperty.m */; };
 		1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */; };
 		1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8CDCF221D4B5900B223D4 /* ViewController.m */; };
 		1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8CDD4221D4B5C00B223D4 /* Assets.xcassets */; };
@@ -293,6 +300,12 @@
 		1CA5BB2622A102F400560D11 /* MediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorViewController.h; sourceTree = "<group>"; };
 		1CA5BB2722A102F400560D11 /* MediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorViewController.m; sourceTree = "<group>"; };
 		1CA5BB2922A103E100560D11 /* 中介者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者原理图.png"; sourceTree = "<group>"; };
+		1CCBFD4022A64D9400E99A62 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		1CCBFD4122A64D9400E99A62 /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
+		1CCBFD4322A651B100E99A62 /* SingleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleLinkedList.h; sourceTree = "<group>"; };
+		1CCBFD4422A651B100E99A62 /* SingleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleLinkedList.m; sourceTree = "<group>"; };
+		1CCBFD4622A6533D00E99A62 /* LinkedMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedMap.h; sourceTree = "<group>"; };
+		1CCBFD4722A6533D00E99A62 /* LinkedMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedMap.m; sourceTree = "<group>"; };
 		1CD78BFC2255E2CD0075662E /* PdiDefectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiDefectViewController.m; sourceTree = "<group>"; };
 		1CD78BFE2255E2CD0075662E /* PdiMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdiMarkView.m; sourceTree = "<group>"; };
 		1CD78BFF2255E2CD0075662E /* PdiMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdiMarkView.h; sourceTree = "<group>"; };
@@ -393,6 +406,14 @@
 		1CF394B722A4FFC900C430E1 /* SpecialModelAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialModelAdapter.m; sourceTree = "<group>"; };
 		1CF394B922A4FFF600C430E1 /* AdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterViewController.h; sourceTree = "<group>"; };
 		1CF394BA22A4FFF600C430E1 /* AdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterViewController.m; sourceTree = "<group>"; };
+		1CF394BD22A507E200C430E1 /* StructureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructureViewController.h; sourceTree = "<group>"; };
+		1CF394BE22A507E200C430E1 /* StructureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StructureViewController.m; sourceTree = "<group>"; };
+		1CF394C122A50ABB00C430E1 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		1CF394C222A50ABB00C430E1 /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
+		1CF394C422A50BDC00C430E1 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		1CF394C522A50BDC00C430E1 /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		1CF394C722A50E5700C430E1 /* TreeNodeProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNodeProperty.h; sourceTree = "<group>"; };
+		1CF394C822A50E5700C430E1 /* TreeNodeProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeNodeProperty.m; sourceTree = "<group>"; };
 		1CF8CDC8221D4B5900B223D4 /* iOS-Learning-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Learning-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -722,7 +743,7 @@
 			path = "[6]代理";
 			sourceTree = "<group>";
 		};
-		1CA5BAC1229F7F3C00560D11 /* [9]NSProxy */ = {
+		1CA5BAC1229F7F3C00560D11 /* NSProxy */ = {
 			isa = PBXGroup;
 			children = (
 				1CA5BAC9229FA5B100560D11 /* 多继承 */,
@@ -730,7 +751,7 @@
 				1CA5BAC2229F7F5900560D11 /* NSProxyViewController.h */,
 				1CA5BAC3229F7F5900560D11 /* NSProxyViewController.m */,
 			);
-			path = "[9]NSProxy";
+			path = NSProxy;
 			sourceTree = "<group>";
 		};
 		1CA5BAC5229F823200560D11 /* WeakProxy */ = {
@@ -846,6 +867,19 @@
 				1CA5BB2722A102F400560D11 /* MediatorViewController.m */,
 			);
 			path = "[12]中介者";
+			sourceTree = "<group>";
+		};
+		1CCBFD3F22A64D3400E99A62 /* [2]链表 */ = {
+			isa = PBXGroup;
+			children = (
+				1CCBFD4022A64D9400E99A62 /* ListNode.h */,
+				1CCBFD4122A64D9400E99A62 /* ListNode.m */,
+				1CCBFD4322A651B100E99A62 /* SingleLinkedList.h */,
+				1CCBFD4422A651B100E99A62 /* SingleLinkedList.m */,
+				1CCBFD4622A6533D00E99A62 /* LinkedMap.h */,
+				1CCBFD4722A6533D00E99A62 /* LinkedMap.m */,
+			);
+			path = "[2]链表";
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -1083,6 +1117,30 @@
 			path = "[19]适配器";
 			sourceTree = "<group>";
 		};
+		1CF394BC22A5077A00C430E1 /* [9]数据结构 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF394BD22A507E200C430E1 /* StructureViewController.h */,
+				1CF394BE22A507E200C430E1 /* StructureViewController.m */,
+				1CF394C022A50AA300C430E1 /* [1]二叉树 */,
+				1CCBFD3F22A64D3400E99A62 /* [2]链表 */,
+			);
+			path = "[9]数据结构";
+			sourceTree = "<group>";
+		};
+		1CF394C022A50AA300C430E1 /* [1]二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF394C422A50BDC00C430E1 /* BinaryTree.h */,
+				1CF394C522A50BDC00C430E1 /* BinaryTree.m */,
+				1CF394C122A50ABB00C430E1 /* BinaryTreeNode.h */,
+				1CF394C222A50ABB00C430E1 /* BinaryTreeNode.m */,
+				1CF394C722A50E5700C430E1 /* TreeNodeProperty.h */,
+				1CF394C822A50E5700C430E1 /* TreeNodeProperty.m */,
+			);
+			path = "[1]二叉树";
+			sourceTree = "<group>";
+		};
 		1CF8CDBF221D4B5900B223D4 = {
 			isa = PBXGroup;
 			children = (
@@ -1115,7 +1173,8 @@
 				1CD78B862254A8080075662E /* [6]自定义标注视图 */,
 				1C843C9022769128004188ED /* [7]图片选择器 */,
 				1CA5BA67229E2FFE00560D11 /* [8]设计模式 */,
-				1CA5BAC1229F7F3C00560D11 /* [9]NSProxy */,
+				1CF394BC22A5077A00C430E1 /* [9]数据结构 */,
+				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
@@ -1486,6 +1545,7 @@
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
 				1CA5BAB9229F6FB500560D11 /* AbstractProxy.m in Sources */,
 				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
+				1CF394C922A50E5700C430E1 /* TreeNodeProperty.m in Sources */,
 				1CA5BAC8229F825600560D11 /* WeakProxy.m in Sources */,
 				1CF3943622A4E98000C430E1 /* File.m in Sources */,
 				1CF3948322A4F9D500C430E1 /* Circle.m in Sources */,
@@ -1517,6 +1577,7 @@
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
 				1CF394A122A4FCEC00C430E1 /* GameGearEmulator.m in Sources */,
 				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
+				1CF394C322A50ABB00C430E1 /* BinaryTreeNode.m in Sources */,
 				1CF394B222A4FF8D00C430E1 /* NormalModelAdapter.m in Sources */,
 				1CF394B522A4FFAD00C430E1 /* SpecialModel.m in Sources */,
 				1CA5BAE522A0CD7900560D11 /* EmailChain.m in Sources */,
@@ -1543,7 +1604,9 @@
 				1CA5BA81229E654500560D11 /* GamePlay.m in Sources */,
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
+				1CCBFD4222A64D9400E99A62 /* ListNode.m in Sources */,
 				1CA5BAF122A0CE9C00560D11 /* PhoneNumChain.m in Sources */,
+				1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */,
 				1CF3949B22A4FC0B00C430E1 /* GameGearConsoleController.m in Sources */,
 				1CA5BB0922A0FCAE00560D11 /* ElementA.m in Sources */,
 				1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */,
@@ -1555,6 +1618,7 @@
 				1CA5BAE822A0CDC600560D11 /* RegExCategories.m in Sources */,
 				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
+				1CF394C622A50BDC00C430E1 /* BinaryTree.m in Sources */,
 				1CF3946322A4F49F00C430E1 /* VehicleBuilder.m in Sources */,
 				1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */,
 				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
@@ -1566,6 +1630,7 @@
 				1CA5BA75229E34CA00560D11 /* EmailValidator.m in Sources */,
 				1CF8CE0B2225291700B223D4 /* SDTabelViewController.m in Sources */,
 				1CF8CE1D2226230700B223D4 /* YSBaseViewController+Navgation.m in Sources */,
+				1CF394BF22A507E200C430E1 /* StructureViewController.m in Sources */,
 				1CF8CDEC221EA29700B223D4 /* YSVedioViewController.m in Sources */,
 				1CF8CE2B222629AA00B223D4 /* YSBaseCollectionViewCell.m in Sources */,
 				1CA5BABC229F6FE700560D11 /* AbstractExcute.m in Sources */,
@@ -1587,6 +1652,7 @@
 				1CF394BB22A4FFF600C430E1 /* AdapterViewController.m in Sources */,
 				1CF3945622A4F11300C430E1 /* MakeDarkerCommand.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
+				1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */,
 				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
 				1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,

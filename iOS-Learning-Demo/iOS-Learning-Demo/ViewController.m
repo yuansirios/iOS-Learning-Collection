@@ -18,6 +18,7 @@
 #import "YSImagePickViewController.h"
 #import "NSProxyViewController.h"
 #import "DesignPattarnViewController.h"
+#import "StructureViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -44,8 +45,7 @@
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"[8]设计模式",YSEventKey:@"testDesignPattern"},
-                  @{YSTitleKey:@"[9]CoreGraphics",YSEventKey:@"testCoreGraphics"},
-                  @{YSTitleKey:@"[10]NSProxy",YSEventKey:@"testNSProxy"}];
+                  @{YSTitleKey:@"[9]数据结构",YSEventKey:@"testDataStructure"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -148,6 +148,10 @@
 
 - (void)testDesignPattern{
     [self.navigationController pushViewController:DesignPattarnViewController.new animated:YES];
+}
+
+- (void)testDataStructure{
+    [self.navigationController pushViewController:StructureViewController.new animated:YES];
 }
 
 @end
