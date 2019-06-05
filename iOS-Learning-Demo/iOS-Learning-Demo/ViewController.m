@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "WeakArray.h"
+#import "ColdKnowledgeViewController.h"
 #import "YSVedioViewController.h"
 #import "YSRotateViewController.h"
 #import "SDListViewController.h"
@@ -18,6 +18,7 @@
 #import "YSImagePickViewController.h"
 #import "NSProxyViewController.h"
 #import "DesignPattarnViewController.h"
+#import "StructureViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -34,8 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"示例";
-    
-    _itemList = @[@{YSTitleKey:@"[1]数组（字典）中添加弱引用",YSEventKey:@"testWeakArray"},
+    _itemList = @[@{YSTitleKey:@"[1]冷知识",YSEventKey:@"testColdKnowledge"},
                   @{YSTitleKey:@"[2]屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
                   @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
                   @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
@@ -44,8 +44,7 @@
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"[8]设计模式",YSEventKey:@"testDesignPattern"},
-                  @{YSTitleKey:@"[9]CoreGraphics",YSEventKey:@"testCoreGraphics"},
-                  @{YSTitleKey:@"[10]NSProxy",YSEventKey:@"testNSProxy"}];
+                  @{YSTitleKey:@"[9]数据结构",YSEventKey:@"testDataStructure"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -100,9 +99,8 @@
 
 #pragma mark - *********** Event ***********
 
-- (void)testWeakArray{
-    WeakArray *arr = WeakArray.new;
-    [arr run];
+- (void)testColdKnowledge{
+    [self.navigationController pushViewController:ColdKnowledgeViewController.new animated:YES];
 }
 
 - (void)testScreenRotation{
@@ -148,6 +146,10 @@
 
 - (void)testDesignPattern{
     [self.navigationController pushViewController:DesignPattarnViewController.new animated:YES];
+}
+
+- (void)testDataStructure{
+    [self.navigationController pushViewController:StructureViewController.new animated:YES];
 }
 
 @end

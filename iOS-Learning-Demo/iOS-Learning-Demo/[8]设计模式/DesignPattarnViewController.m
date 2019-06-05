@@ -46,6 +46,26 @@
 #import "LinkedListIterator.h"
 //中介者
 #import "MediatorViewController.h"
+//组合
+#import "CompositeViewController.h"
+//命令
+#import "CommandViewController.h"
+//生成器
+#import "VehicleAssemblyPlant.h"
+#import "SportsCar.h"
+#import "SuperBike.h"
+//备忘录
+#import "Model.h"
+#import "MementoCenter.h"
+//外观
+#import "ShapeMaker.h"
+//桥接
+#import "GameBoyEmulator.h"
+#import "GameBoyConsoleController.h"
+#import "GameGearEmulator.h"
+#import "GameGearConsoleController.h"
+//适配器
+#import "AdapterViewController.h"
 
 @interface DesignPattarnViewController ()<UITableViewDelegate,UITableViewDataSource,SubscriptionServiceCenterProtocol>{
     NSArray *_itemList;
@@ -59,6 +79,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"设计模式";
     _itemList = @[@{YSTitleKey:@"[1]策略",YSEventKey:@"testStrategy"},
                   @{YSTitleKey:@"[2]装饰器",YSEventKey:@"testDecorator"},
                   @{YSTitleKey:@"[3]简单工厂",YSEventKey:@"testFactory"},
@@ -70,7 +91,14 @@
                   @{YSTitleKey:@"[9]模板",YSEventKey:@"testTemplate"},
                   @{YSTitleKey:@"[10]访问者",YSEventKey:@"testVisitor"},
                   @{YSTitleKey:@"[11]迭代器",YSEventKey:@"testIterator"},
-                  @{YSTitleKey:@"[12]中介者",YSEventKey:@"testMediator"}];
+                  @{YSTitleKey:@"[12]中介者",YSEventKey:@"testMediator"},
+                  @{YSTitleKey:@"[13]组合",YSEventKey:@"testComposite"},
+                  @{YSTitleKey:@"[14]命令",YSEventKey:@"testCommand"},
+                  @{YSTitleKey:@"[15]生成器",YSEventKey:@"testBuilder"},
+                  @{YSTitleKey:@"[16]备忘录",YSEventKey:@"testMemento"},
+                  @{YSTitleKey:@"[17]外观",YSEventKey:@"testFacade"},
+                  @{YSTitleKey:@"[18]桥接",YSEventKey:@"testBridge"},
+                  @{YSTitleKey:@"[19]适配器",YSEventKey:@"testAdapter"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -312,6 +340,108 @@
  */
 - (void)testMediator{
     [self.navigationController pushViewController:MediatorViewController.new animated:YES];
+}
+
+//TODO:组合
+/*
+ 将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。
+ 掌握组合模式的重点是要理解清楚 “部分/整体” 还有 ”单个对象“ 与 "组合对象" 的含义。
+ */
+- (void)testComposite{
+    [self.navigationController pushViewController:CompositeViewController.new animated:YES];
+}
+
+//TODO:命令
+/*
+ 命令对象封装了如何对目标执行指令的信息，因此客户端或调用者不必了解目标的任何细节，
+ 却仍可以对他执行任何已有的操作。
+ 通过把请求封装成对象，客户端可以把它参数化并置入队列或日志中，也能够支持可撤销操作。
+ 命令对象将一个或多个动作绑定到特定的接收器。
+ 命令模式消除了作为对象的动作和执行它的接收器之间的绑定。
+ */
+- (void)testCommand{
+    [self.navigationController pushViewController:CommandViewController.new animated:YES];
+}
+
+//TODO:生成器
+/*
+ 1. 将构建复杂对象的过程拆分成一个一个的模块,通过统一的指导者来指导对象的构建过程称之为生成器模式
+ 2. 生成器模式适合用于构建组合的对象
+ */
+- (void)testBuilder{
+    // 生成器 + 构造图
+    VehicleBuilder *sportCar  = [VehicleAssemblyPlant vehicleAssembly:[SportsCar new]];
+    VehicleBuilder *superBike = [VehicleAssemblyPlant vehicleAssembly:[SuperBike new]];
+    
+    NSLog(@"%@", sportCar.vehicleInfo);
+    NSLog(@"%@", superBike.vehicleInfo);
+}
+
+//TODO:备忘录
+/*
+ 1. 在不破坏封装的情况下，捕获一个对象的内部状态，并在该对象之外保存这个状态，这样以后就可以将该对象恢复到原先保存的状态
+ 2. 本人已经将创建状态与恢复状态的逻辑抽象成了协议，并配合备忘录中心一起使用
+ */
+- (void)testMemento{
+    // 初始化model
+    Model *model = [[Model alloc] init];
+    
+    // 获取状态
+    id state = [MementoCenter mementoObjectWithKey:@"Model"];
+    
+    // 恢复状态
+    [model recoverFromState:state];
+    
+    // 打印
+    NSLog(@"name:%@  age:%@", model.name, model.age);
+    
+    // 赋值
+    model.name   = @"YouXianMing";
+    model.age    = @27;
+    
+    // 存储状态
+    [MementoCenter saveMementoObject:model withKey:@"Model"];
+}
+
+//TODO:外观
+/*
+ 1. 当客服端需要使用一个复杂的子系统(子系统之间关系错综复杂),但又不想和他们扯上关系时,
+ 我们需要单独的写出一个类来与子系统交互,隔离客户端与子系统之间的联系,客户端只与这个单独写出来的类交互
+ 2. 外观模式实质为为系统中的一组接口提供一个统一的接口,外观定义了一个高层接口,让子系统易于使用
+ */
+- (void)testFacade{
+    [ShapeMaker drawCircleAndRectangle];
+    [ShapeMaker drawCircleAndSquare];
+    [ShapeMaker drawAll];
+}
+
+//TODO:桥接
+/*
+ 1. 桥接模式为把抽象层次结构从实现中分离出来,使其可以独立变更,
+ 抽象层定义了供客户端使用的上层抽象接口,
+ 实现层次结构定义了供抽象层次使用的底层接口,
+ 实现类的引用被封装于抽象层的实例中,桥接就形成了.
+ 
+ 2. 桥接模式可以解决具有功能类似但又不完全相同的某种功能架构,为了能让实现更加灵活.
+ */
+- (void)testBridge{
+    GameBoyConsoleController *gameBoyConsoleController = [GameBoyConsoleController new];
+    gameBoyConsoleController.emulator                  = [GameBoyEmulator new];
+    [gameBoyConsoleController up];
+    
+    GameGearConsoleController *gameGearConsoleController = [GameGearConsoleController new];
+    gameGearConsoleController.emulator                   = [GameGearEmulator new];
+    [gameGearConsoleController up];
+}
+
+//TODO:适配器
+/*
+ 1. 为了让客户端尽可能的通用,我们使用适配器模式来隔离客户端与外部参数的联系,只让客户端与适配器通信.
+ 2. 本教程实现了适配器模式的类适配器与对象适配器两种模式,各有优缺点.
+ 3. 如果对面向对象基本原理以及设计模式基本原理不熟悉,本教程会变得难以理解.
+ */
+- (void)testAdapter{
+     [self.navigationController pushViewController:AdapterViewController.new animated:YES];
 }
 
 #pragma mark - *********** layout ***********
