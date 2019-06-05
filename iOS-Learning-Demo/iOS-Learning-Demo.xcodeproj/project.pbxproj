@@ -18,6 +18,7 @@
 		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
 		1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA72276C86E004188ED /* YSImagePicker.m */; };
 		1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */; };
+		1CA20C5E22A7949D00345064 /* YSCheckLockStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */; };
 		1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */; };
 		1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6E229E30DA00560D11 /* InputValidator.m */; };
 		1CA5BA72229E31B300560D11 /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA71229E31B300560D11 /* CustomField.m */; };
@@ -189,6 +190,8 @@
 		1C843CA72276C86E004188ED /* YSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImagePicker.m; sourceTree = "<group>"; };
 		1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickSmallCell.h; sourceTree = "<group>"; };
 		1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickSmallCell.m; sourceTree = "<group>"; };
+		1CA20C5C22A7949D00345064 /* YSCheckLockStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSCheckLockStatus.h; sourceTree = "<group>"; };
+		1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSCheckLockStatus.m; sourceTree = "<group>"; };
 		1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyPatternViewController.h; sourceTree = "<group>"; };
 		1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyPatternViewController.m; sourceTree = "<group>"; };
 		1CA5BA6D229E30DA00560D11 /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
@@ -898,6 +901,7 @@
 				1CCBFD4B22A769AC00E99A62 /* ColdKnowledgeViewController.m */,
 				1CF8CDE1221D4C7100B223D4 /* [1]数组（字典）中添加弱引用 */,
 				1CCBFD4D22A76AF400E99A62 /* [2] NSURLProtocol骚操作 */,
+				1CCBFD5422A793E600E99A62 /* [3]检测锁屏和解锁 */,
 			);
 			path = "[1]冷知识";
 			sourceTree = "<group>";
@@ -911,6 +915,15 @@
 				1CCBFD5222A76B6400E99A62 /* YSNSURLProtocol.m */,
 			);
 			path = "[2] NSURLProtocol骚操作";
+			sourceTree = "<group>";
+		};
+		1CCBFD5422A793E600E99A62 /* [3]检测锁屏和解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA20C5C22A7949D00345064 /* YSCheckLockStatus.h */,
+				1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */,
+			);
+			path = "[3]检测锁屏和解锁";
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -1619,6 +1632,7 @@
 				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
 				1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */,
+				1CA20C5E22A7949D00345064 /* YSCheckLockStatus.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CF3946C22A4F52400C430E1 /* VehicleAssemblyPlant.m in Sources */,
