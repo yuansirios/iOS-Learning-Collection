@@ -93,6 +93,10 @@
 		1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C122255E3090075662E /* UIView+Draggable.m */; };
 		1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C142255E3090075662E /* UIGestureRecognizer+addtion.m */; };
 		1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD78C172255E3090075662E /* UIAlertView+Block.m */; };
+		1CE55D1F22A8F028000D54A3 /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D1E22A8F028000D54A3 /* BaiduMapViewController.m */; };
+		1CE55D2522A900B0000D54A3 /* YSLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D2422A900B0000D54A3 /* YSLocationService.m */; };
+		1CE55D2822A918DB000D54A3 /* YSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D2722A918DB000D54A3 /* YSMapView.m */; };
+		1CE55D2D22AE0517000D54A3 /* YSMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D2C22AE0517000D54A3 /* YSMapAnnotationView.m */; };
 		1CF3943622A4E98000C430E1 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3943522A4E98000C430E1 /* File.m */; };
 		1CF3943922A4E9CB00C430E1 /* FileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3943822A4E9CB00C430E1 /* FileCell.m */; };
 		1CF3943D22A4EA4300C430E1 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3943C22A4EA4300C430E1 /* UIView+SetRect.m */; };
@@ -334,6 +338,14 @@
 		1CD78C152255E3090075662E /* UIGestureRecognizer+addtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+addtion.h"; sourceTree = "<group>"; };
 		1CD78C172255E3090075662E /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		1CD78C182255E3090075662E /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		1CE55D1D22A8F028000D54A3 /* BaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
+		1CE55D1E22A8F028000D54A3 /* BaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
+		1CE55D2322A900B0000D54A3 /* YSLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSLocationService.h; sourceTree = "<group>"; };
+		1CE55D2422A900B0000D54A3 /* YSLocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSLocationService.m; sourceTree = "<group>"; };
+		1CE55D2622A918DB000D54A3 /* YSMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMapView.h; sourceTree = "<group>"; };
+		1CE55D2722A918DB000D54A3 /* YSMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMapView.m; sourceTree = "<group>"; };
+		1CE55D2B22AE0517000D54A3 /* YSMapAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMapAnnotationView.h; sourceTree = "<group>"; };
+		1CE55D2C22AE0517000D54A3 /* YSMapAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMapAnnotationView.m; sourceTree = "<group>"; };
 		1CF3943422A4E98000C430E1 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
 		1CF3943522A4E98000C430E1 /* File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		1CF3943722A4E9CB00C430E1 /* FileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileCell.h; sourceTree = "<group>"; };
@@ -1013,6 +1025,21 @@
 			path = "UIAlertView+Block";
 			sourceTree = "<group>";
 		};
+		1CE55D1C22A8EFDD000D54A3 /* [10]百度地图 */ = {
+			isa = PBXGroup;
+			children = (
+				1CE55D1D22A8F028000D54A3 /* BaiduMapViewController.h */,
+				1CE55D1E22A8F028000D54A3 /* BaiduMapViewController.m */,
+				1CE55D2622A918DB000D54A3 /* YSMapView.h */,
+				1CE55D2722A918DB000D54A3 /* YSMapView.m */,
+				1CE55D2322A900B0000D54A3 /* YSLocationService.h */,
+				1CE55D2422A900B0000D54A3 /* YSLocationService.m */,
+				1CE55D2B22AE0517000D54A3 /* YSMapAnnotationView.h */,
+				1CE55D2C22AE0517000D54A3 /* YSMapAnnotationView.m */,
+			);
+			path = "[10]百度地图";
+			sourceTree = "<group>";
+		};
 		1CF3943322A4CC6D00C430E1 /* [13]组合 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1218,6 +1245,7 @@
 				1C843C9022769128004188ED /* [7]图片选择器 */,
 				1CA5BA67229E2FFE00560D11 /* [8]设计模式 */,
 				1CF394BC22A5077A00C430E1 /* [9]数据结构 */,
+				1CE55D1C22A8EFDD000D54A3 /* [10]百度地图 */,
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -1458,6 +1486,11 @@
 				TargetAttributes = {
 					1CF8CDC7221D4B5900B223D4 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1597,6 +1630,7 @@
 				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CA5BAF422A0CEC400560D11 /* UserNameChain.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
+				1CE55D2522A900B0000D54A3 /* YSLocationService.m in Sources */,
 				1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
@@ -1630,13 +1664,16 @@
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
 				1CA5BADE229FDAFD00560D11 /* Menu.m in Sources */,
 				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
+				1CE55D1F22A8F028000D54A3 /* BaiduMapViewController.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
+				1CE55D2D22AE0517000D54A3 /* YSMapAnnotationView.m in Sources */,
 				1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */,
 				1CA20C5E22A7949D00345064 /* YSCheckLockStatus.m in Sources */,
 				1CF8CDF2221F891B00B223D4 /* YSBaseNavigationController.m in Sources */,
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CF3946C22A4F52400C430E1 /* VehicleAssemblyPlant.m in Sources */,
 				1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */,
+				1CE55D2822A918DB000D54A3 /* YSMapView.m in Sources */,
 				1CF3945C22A4F19E00C430E1 /* CommandViewController.m in Sources */,
 				1CA5BADB229FDAB800560D11 /* CoffeeShop.m in Sources */,
 				1CF3945022A4F08600C430E1 /* Invoker.m in Sources */,
@@ -1835,8 +1872,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N38YRW4D2Q;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = YJY25FSP7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS-Learning-Demo/[10]百度地图",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
@@ -1845,8 +1886,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yuansirios.iOS-Learning-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsjry.HSCarShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = HSCarShop_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1857,8 +1899,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N38YRW4D2Q;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = YJY25FSP7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS-Learning-Demo/[10]百度地图",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
@@ -1867,8 +1913,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yuansirios.iOS-Learning-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsjry.HSCarShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = HSCarShop_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

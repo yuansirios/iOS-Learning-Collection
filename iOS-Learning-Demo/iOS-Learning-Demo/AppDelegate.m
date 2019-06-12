@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "YSBaseNavigationController.h"
+#import "YSMapView.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,8 @@
     YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:ViewController.new];
     _window.rootViewController = nv;
     [_window makeKeyAndVisible];
+    
+    [YSMapView startMapService];
     
     return YES;
 }

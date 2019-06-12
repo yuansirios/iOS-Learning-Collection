@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,6 +22,20 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>会在上传图片等服务中使用您的相机权限</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>永久定位</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>永久定位</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>前台定位</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>会在上传图片等服务中使用您的相册权限</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -37,9 +53,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>会在上传图片等服务中使用您的相册权限</string>
-	<key>NSCameraUsageDescription</key>
-	<string>会在上传图片等服务中使用您的相机权限</string>
 </dict>
 </plist>

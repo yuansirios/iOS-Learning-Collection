@@ -19,6 +19,7 @@
 #import "NSProxyViewController.h"
 #import "DesignPattarnViewController.h"
 #import "StructureViewController.h"
+#import "BaiduMapViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -44,7 +45,8 @@
                   @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"[8]设计模式",YSEventKey:@"testDesignPattern"},
-                  @{YSTitleKey:@"[9]数据结构",YSEventKey:@"testDataStructure"}];
+                  @{YSTitleKey:@"[9]数据结构",YSEventKey:@"testDataStructure"},
+                  @{YSTitleKey:@"[10]百度地图",YSEventKey:@"testBaiduMap"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -150,6 +152,10 @@
 
 - (void)testDataStructure{
     [self.navigationController pushViewController:StructureViewController.new animated:YES];
+}
+
+- (void)testBaiduMap{
+    [self.navigationController pushViewController:BaiduMapViewController.new animated:YES];
 }
 
 @end
