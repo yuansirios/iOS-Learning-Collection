@@ -8,4 +8,7 @@ target ‘iOS-Learning-Demo’ do
     pod 'YYModel'
     pod 'YBImageBrowser'
     pod 'TZImagePickerController'
+    
+    pod 'BaiduMapKit', '~> 4.2.1'
+    pod 'BMKLocationKit', '~> 1.4.0'
 end
