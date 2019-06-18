@@ -13,6 +13,11 @@
 		1C12A00222389AC900982910 /* YSBasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A00122389AC900982910 /* YSBasePopView.m */; };
 		1C12A0062238A00F00982910 /* YSPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0052238A00F00982910 /* YSPopViewController.m */; };
 		1C12A00A2238A06200982910 /* YSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12A0092238A06200982910 /* YSPopView.m */; };
+		1C16FCA022B33C2D0095CFD9 /* YSMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FC9F22B33C2D0095CFD9 /* YSMarkView.m */; };
+		1C16FCA322B33D1E0095CFD9 /* NSString+addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCA122B33D1E0095CFD9 /* NSString+addtion.m */; };
+		1C16FCA922B33E930095CFD9 /* MarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCA822B33E920095CFD9 /* MarkViewController.m */; };
+		1C16FCC422B890020095CFD9 /* YSActivityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCC322B890020095CFD9 /* YSActivityButton.m */; };
+		1C16FCC722B892900095CFD9 /* ActivityButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCC622B892900095CFD9 /* ActivityButtonViewController.m */; };
 		1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9222769194004188ED /* YSImagePickViewController.m */; };
 		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
 		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
@@ -184,6 +189,16 @@
 		1C12A0052238A00F00982910 /* YSPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopViewController.m; sourceTree = "<group>"; };
 		1C12A0082238A06200982910 /* YSPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPopView.h; sourceTree = "<group>"; };
 		1C12A0092238A06200982910 /* YSPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPopView.m; sourceTree = "<group>"; };
+		1C16FC9E22B33C2D0095CFD9 /* YSMarkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMarkView.h; sourceTree = "<group>"; };
+		1C16FC9F22B33C2D0095CFD9 /* YSMarkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMarkView.m; sourceTree = "<group>"; };
+		1C16FCA122B33D1E0095CFD9 /* NSString+addtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+addtion.m"; sourceTree = "<group>"; };
+		1C16FCA222B33D1E0095CFD9 /* NSString+addtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+addtion.h"; sourceTree = "<group>"; };
+		1C16FCA522B33E5D0095CFD9 /* MarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkViewController.h; sourceTree = "<group>"; };
+		1C16FCA822B33E920095CFD9 /* MarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkViewController.m; sourceTree = "<group>"; };
+		1C16FCC222B890020095CFD9 /* YSActivityButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSActivityButton.h; sourceTree = "<group>"; };
+		1C16FCC322B890020095CFD9 /* YSActivityButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSActivityButton.m; sourceTree = "<group>"; };
+		1C16FCC522B892900095CFD9 /* ActivityButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityButtonViewController.h; sourceTree = "<group>"; };
+		1C16FCC622B892900095CFD9 /* ActivityButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityButtonViewController.m; sourceTree = "<group>"; };
 		1C843C9122769194004188ED /* YSImagePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickViewController.h; sourceTree = "<group>"; };
 		1C843C9222769194004188ED /* YSImagePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickViewController.m; sourceTree = "<group>"; };
 		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
@@ -563,6 +578,37 @@
 				1C12A0092238A06200982910 /* YSPopView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1C16FC9D22B33C090095CFD9 /* [11]标签视图 */ = {
+			isa = PBXGroup;
+			children = (
+				1C16FC9E22B33C2D0095CFD9 /* YSMarkView.h */,
+				1C16FC9F22B33C2D0095CFD9 /* YSMarkView.m */,
+				1C16FCA522B33E5D0095CFD9 /* MarkViewController.h */,
+				1C16FCA822B33E920095CFD9 /* MarkViewController.m */,
+			);
+			path = "[11]标签视图";
+			sourceTree = "<group>";
+		};
+		1C16FCA422B33D240095CFD9 /* NSString+addtion */ = {
+			isa = PBXGroup;
+			children = (
+				1C16FCA222B33D1E0095CFD9 /* NSString+addtion.h */,
+				1C16FCA122B33D1E0095CFD9 /* NSString+addtion.m */,
+			);
+			path = "NSString+addtion";
+			sourceTree = "<group>";
+		};
+		1C16FCC122B88F5C0095CFD9 /* [12]带指示器按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				1C16FCC222B890020095CFD9 /* YSActivityButton.h */,
+				1C16FCC322B890020095CFD9 /* YSActivityButton.m */,
+				1C16FCC522B892900095CFD9 /* ActivityButtonViewController.h */,
+				1C16FCC622B892900095CFD9 /* ActivityButtonViewController.m */,
+			);
+			path = "[12]带指示器按钮";
 			sourceTree = "<group>";
 		};
 		1C843C9022769128004188ED /* [7]图片选择器 */ = {
@@ -990,6 +1036,7 @@
 		1CD78C0F2255E3090075662E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				1C16FCA422B33D240095CFD9 /* NSString+addtion */,
 				1CF3943A22A4EA2C00C430E1 /* UIView+SetRect */,
 				1CD78C102255E3090075662E /* UIView+Draggable */,
 				1CD78C132255E3090075662E /* UIGestureRecognizer+addtion */,
@@ -1246,6 +1293,8 @@
 				1CA5BA67229E2FFE00560D11 /* [8]设计模式 */,
 				1CF394BC22A5077A00C430E1 /* [9]数据结构 */,
 				1CE55D1C22A8EFDD000D54A3 /* [10]百度地图 */,
+				1C16FC9D22B33C090095CFD9 /* [11]标签视图 */,
+				1C16FCC122B88F5C0095CFD9 /* [12]带指示器按钮 */,
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -1613,6 +1662,7 @@
 				1CF3949222A4FB6300C430E1 /* ConsoleEmulator.m in Sources */,
 				1CF3948922A4FA1100C430E1 /* Square.m in Sources */,
 				1CF8CE252226284300B223D4 /* YSBaseModel.m in Sources */,
+				1C16FCA922B33E930095CFD9 /* MarkViewController.m in Sources */,
 				1CA5BAFE22A0F67000560D11 /* Chess.m in Sources */,
 				1CF3947322A4F6AA00C430E1 /* MementoCenter.m in Sources */,
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
@@ -1624,6 +1674,7 @@
 				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
 				1CF394C922A50E5700C430E1 /* TreeNodeProperty.m in Sources */,
 				1CA5BAC8229F825600560D11 /* WeakProxy.m in Sources */,
+				1C16FCA022B33C2D0095CFD9 /* YSMarkView.m in Sources */,
 				1CF3943622A4E98000C430E1 /* File.m in Sources */,
 				1CF3948322A4F9D500C430E1 /* Circle.m in Sources */,
 				1CF3947A22A4F79600C430E1 /* Model.m in Sources */,
@@ -1652,6 +1703,7 @@
 				1CF3943922A4E9CB00C430E1 /* FileCell.m in Sources */,
 				1C12A00222389AC900982910 /* YSBasePopView.m in Sources */,
 				1CA5BAA6229E733100560D11 /* BrandingFactory.m in Sources */,
+				1C16FCC422B890020095CFD9 /* YSActivityButton.m in Sources */,
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
 				1CF394A122A4FCEC00C430E1 /* GameGearEmulator.m in Sources */,
 				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
@@ -1704,6 +1756,7 @@
 				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
 				1CF394C622A50BDC00C430E1 /* BinaryTree.m in Sources */,
+				1C16FCA322B33D1E0095CFD9 /* NSString+addtion.m in Sources */,
 				1CF3946322A4F49F00C430E1 /* VehicleBuilder.m in Sources */,
 				1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */,
 				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
@@ -1739,6 +1792,7 @@
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
 				1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */,
 				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
+				1C16FCC722B892900095CFD9 /* ActivityButtonViewController.m in Sources */,
 				1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,
 				1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */,

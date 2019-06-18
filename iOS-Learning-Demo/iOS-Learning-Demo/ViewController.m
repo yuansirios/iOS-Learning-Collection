@@ -20,6 +20,8 @@
 #import "DesignPattarnViewController.h"
 #import "StructureViewController.h"
 #import "BaiduMapViewController.h"
+#import "MarkViewController.h"
+#import "ActivityButtonViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -46,7 +48,9 @@
                   @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
                   @{YSTitleKey:@"[8]设计模式",YSEventKey:@"testDesignPattern"},
                   @{YSTitleKey:@"[9]数据结构",YSEventKey:@"testDataStructure"},
-                  @{YSTitleKey:@"[10]百度地图",YSEventKey:@"testBaiduMap"}];
+                  @{YSTitleKey:@"[10]百度地图",YSEventKey:@"testBaiduMap"},
+                  @{YSTitleKey:@"[11]标签视图",YSEventKey:@"testMarkListView"},
+                  @{YSTitleKey:@"[12]带指示器按钮",YSEventKey:@"testActivityButton"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -156,6 +160,14 @@
 
 - (void)testBaiduMap{
     [self.navigationController pushViewController:BaiduMapViewController.new animated:YES];
+}
+
+- (void)testMarkListView{
+    [self.navigationController pushViewController:MarkViewController.new animated:YES];
+}
+
+- (void)testActivityButton{
+    [self.navigationController pushViewController:ActivityButtonViewController.new animated:YES];
 }
 
 @end
