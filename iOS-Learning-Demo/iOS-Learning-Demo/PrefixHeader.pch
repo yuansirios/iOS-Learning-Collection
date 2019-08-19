@@ -74,6 +74,7 @@ static inline void showAlertWithTitle(NSString *title){
 #define UIColorViewBG UIColorFromRGB(0xF6F7F9)
 #define UIColor_F8    UIColorFromRGB(0xF8F8F8)
 #define UIColor_9B    UIColorFromRGB(0x9B9B9B)
+#define UIColor_AA    UIColorFromRGB(0x00AFAA)
 
 #define UIColorFromRGB(rgbValue)    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0F blue:((float)(rgbValue & 0xFF))/255.0F alpha:1.0]
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C01F44422F17D3600845E11 /* YSImageSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C01F44322F17D3600845E11 /* YSImageSelectViewController.m */; };
+		1C01F45B2306A3BF00845E11 /* IconButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C01F45A2306A3BF00845E11 /* IconButtonViewController.m */; };
+		1C01F45E2306A41D00845E11 /* YSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C01F45D2306A41D00845E11 /* YSButton.m */; };
 		1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF522375F5500982910 /* CoreGraphicsViewController.m */; };
 		1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF922377CC600982910 /* CoreGraphicsView.m */; };
 		1C129FFE2237921F00982910 /* YSRunloopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FFD2237921E00982910 /* YSRunloopObserver.m */; };
@@ -177,6 +180,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C01F44222F17D3600845E11 /* YSImageSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImageSelectViewController.h; sourceTree = "<group>"; };
+		1C01F44322F17D3600845E11 /* YSImageSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImageSelectViewController.m; sourceTree = "<group>"; };
+		1C01F4592306A3BF00845E11 /* IconButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconButtonViewController.h; sourceTree = "<group>"; };
+		1C01F45A2306A3BF00845E11 /* IconButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconButtonViewController.m; sourceTree = "<group>"; };
+		1C01F45C2306A41D00845E11 /* YSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSButton.h; sourceTree = "<group>"; };
+		1C01F45D2306A41D00845E11 /* YSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSButton.m; sourceTree = "<group>"; };
 		1C129FF422375F5500982910 /* CoreGraphicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsViewController.h; sourceTree = "<group>"; };
 		1C129FF522375F5500982910 /* CoreGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsViewController.m; sourceTree = "<group>"; };
 		1C129FF822377CC600982910 /* CoreGraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsView.h; sourceTree = "<group>"; };
@@ -523,6 +532,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C01F44122F17CC900845E11 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1C843C9122769194004188ED /* YSImagePickViewController.h */,
+				1C843C9222769194004188ED /* YSImagePickViewController.m */,
+				1C01F44222F17D3600845E11 /* YSImageSelectViewController.h */,
+				1C01F44322F17D3600845E11 /* YSImageSelectViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		1C01F4582306A39000845E11 /* [13]带图标的按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				1C01F45C2306A41D00845E11 /* YSButton.h */,
+				1C01F45D2306A41D00845E11 /* YSButton.m */,
+				1C01F4592306A3BF00845E11 /* IconButtonViewController.h */,
+				1C01F45A2306A3BF00845E11 /* IconButtonViewController.m */,
+			);
+			path = "[13]带图标的按钮";
+			sourceTree = "<group>";
+		};
 		1C129FF022375DFB00982910 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
@@ -614,11 +645,10 @@
 		1C843C9022769128004188ED /* [7]图片选择器 */ = {
 			isa = PBXGroup;
 			children = (
+				1C01F44122F17CC900845E11 /* Demo */,
 				1C843CA52276C86E004188ED /* YSImagePicker */,
 				1C843C9922769AC2004188ED /* Model */,
 				1C843C94227694D7004188ED /* View */,
-				1C843C9122769194004188ED /* YSImagePickViewController.h */,
-				1C843C9222769194004188ED /* YSImagePickViewController.m */,
 			);
 			path = "[7]图片选择器";
 			sourceTree = "<group>";
@@ -1295,6 +1325,7 @@
 				1CE55D1C22A8EFDD000D54A3 /* [10]百度地图 */,
 				1C16FC9D22B33C090095CFD9 /* [11]标签视图 */,
 				1C16FCC122B88F5C0095CFD9 /* [12]带指示器按钮 */,
+				1C01F4582306A39000845E11 /* [13]带图标的按钮 */,
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -1696,7 +1727,9 @@
 				1CF8CE132226189400B223D4 /* YSBaseView.m in Sources */,
 				1CA5BAEE22A0CE7200560D11 /* HeadChain.m in Sources */,
 				1CA5BAB2229E790A00560D11 /* SubscriptionServiceCenter.m in Sources */,
+				1C01F45E2306A41D00845E11 /* YSButton.m in Sources */,
 				1CF3948022A4F9B400C430E1 /* Shape.m in Sources */,
+				1C01F45B2306A3BF00845E11 /* IconButtonViewController.m in Sources */,
 				1CF8CDE4221D4CA500B223D4 /* WeakArray.m in Sources */,
 				1CF3948622A4F9F200C430E1 /* Rectangle.m in Sources */,
 				1CF3948C22A4FA3800C430E1 /* ShapeMaker.m in Sources */,
@@ -1761,6 +1794,7 @@
 				1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */,
 				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
+				1C01F44422F17D3600845E11 /* YSImageSelectViewController.m in Sources */,
 				1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CA5BB0F22A0FD2000560D11 /* ElementCollection.m in Sources */,

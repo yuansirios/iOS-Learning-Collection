@@ -637,7 +637,6 @@
     return _dataArray;
 }
 
-
 - (NSMutableArray *)signFailImgArr{
     if (!_signFailImgArr) {
         _signFailImgArr = @[].mutableCopy;

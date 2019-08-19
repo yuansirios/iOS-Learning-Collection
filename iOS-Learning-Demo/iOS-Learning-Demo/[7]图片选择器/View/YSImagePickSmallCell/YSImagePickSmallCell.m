@@ -22,10 +22,10 @@
     [super setupViews];
     self.contentView.layer.masksToBounds = YES;
     self.contentView.layer.cornerRadius = 6;
-    self.contentView.backgroundColor = UIColor_9B;
+    self.contentView.backgroundColor = UIColor.greenColor;//UIColor_9B;
     [self.contentView addSubview:self.takePhotoView];
     self.takePhotoView.sd_layout
-    .spaceToSuperView(UIEdgeInsetsMake(0, 0, 0, 0));
+    .spaceToSuperView(UIEdgeInsetsMake(5, 5, 5, 5));
 }
 
 #pragma mark - *********** Private ***********

@@ -17,13 +17,14 @@
     [self.contentView addSubview:self.removeButton];
     
     self.imageView.sd_layout
-    .spaceToSuperView(UIEdgeInsetsMake(0, 0, 0, 0));
+    .spaceToSuperView(UIEdgeInsetsMake(5, 5, 5, 5));
     
     self.failView.sd_layout
-    .spaceToSuperView(UIEdgeInsetsMake(0, 0, 0, 0));
+    .spaceToSuperView(UIEdgeInsetsMake(5, 5, 5, 5));
     
     self.removeButton.sd_layout
-    .rightEqualToView(self.imageView)
+    .topSpaceToView(self.contentView, -1)
+    .rightSpaceToView(self.contentView,-1)
     .widthIs(24)
     .heightIs(24);
 }
@@ -35,6 +36,7 @@
     if (infoModel.selectImage) {
         self.removeButton.hidden = NO;
         self.imageView.image = infoModel.selectImage;
+        
     }else{
         self.removeButton.hidden = YES;
         self.imageView.image = infoModel.normalImage;
