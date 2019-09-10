@@ -21,6 +21,9 @@
 		1C16FCA922B33E930095CFD9 /* MarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCA822B33E920095CFD9 /* MarkViewController.m */; };
 		1C16FCC422B890020095CFD9 /* YSActivityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCC322B890020095CFD9 /* YSActivityButton.m */; };
 		1C16FCC722B892900095CFD9 /* ActivityButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16FCC622B892900095CFD9 /* ActivityButtonViewController.m */; };
+		1C1965E323272B23009FCF3F /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965E223272B23009FCF3F /* A.m */; };
+		1C1965E623272B35009FCF3F /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965E523272B35009FCF3F /* B.m */; };
+		1C1965E923272B46009FCF3F /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965E823272B46009FCF3F /* C.m */; };
 		1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9222769194004188ED /* YSImagePickViewController.m */; };
 		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
 		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
@@ -208,6 +211,12 @@
 		1C16FCC322B890020095CFD9 /* YSActivityButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSActivityButton.m; sourceTree = "<group>"; };
 		1C16FCC522B892900095CFD9 /* ActivityButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityButtonViewController.h; sourceTree = "<group>"; };
 		1C16FCC622B892900095CFD9 /* ActivityButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityButtonViewController.m; sourceTree = "<group>"; };
+		1C1965E123272B23009FCF3F /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		1C1965E223272B23009FCF3F /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		1C1965E423272B35009FCF3F /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		1C1965E523272B35009FCF3F /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		1C1965E723272B46009FCF3F /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		1C1965E823272B46009FCF3F /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
 		1C843C9122769194004188ED /* YSImagePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickViewController.h; sourceTree = "<group>"; };
 		1C843C9222769194004188ED /* YSImagePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickViewController.m; sourceTree = "<group>"; };
 		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
@@ -642,6 +651,19 @@
 			path = "[12]带指示器按钮";
 			sourceTree = "<group>";
 		};
+		1C1965E023272AF7009FCF3F /* [4]super.class */ = {
+			isa = PBXGroup;
+			children = (
+				1C1965E123272B23009FCF3F /* A.h */,
+				1C1965E223272B23009FCF3F /* A.m */,
+				1C1965E423272B35009FCF3F /* B.h */,
+				1C1965E523272B35009FCF3F /* B.m */,
+				1C1965E723272B46009FCF3F /* C.h */,
+				1C1965E823272B46009FCF3F /* C.m */,
+			);
+			path = "[4]super.class";
+			sourceTree = "<group>";
+		};
 		1C843C9022769128004188ED /* [7]图片选择器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,6 +1012,7 @@
 				1CF8CDE1221D4C7100B223D4 /* [1]数组（字典）中添加弱引用 */,
 				1CCBFD4D22A76AF400E99A62 /* [2] NSURLProtocol骚操作 */,
 				1CCBFD5422A793E600E99A62 /* [3]检测锁屏和解锁 */,
+				1C1965E023272AF7009FCF3F /* [4]super.class */,
 			);
 			path = "[1]冷知识";
 			sourceTree = "<group>";
@@ -1746,6 +1769,7 @@
 				1CA5BAE522A0CD7900560D11 /* EmailChain.m in Sources */,
 				1CA5BB1F22A100F700560D11 /* LinkedListIterator.m in Sources */,
 				1CF3949822A4FBE100C430E1 /* GameBoyEmulator.m in Sources */,
+				1C1965E623272B35009FCF3F /* B.m in Sources */,
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
 				1CA5BADE229FDAFD00560D11 /* Menu.m in Sources */,
 				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
@@ -1778,6 +1802,7 @@
 				1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */,
 				1CF3949B22A4FC0B00C430E1 /* GameGearConsoleController.m in Sources */,
 				1CA5BB0922A0FCAE00560D11 /* ElementA.m in Sources */,
+				1C1965E923272B46009FCF3F /* C.m in Sources */,
 				1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */,
 				1CCBFD4C22A769AC00E99A62 /* ColdKnowledgeViewController.m in Sources */,
 				1CF394AC22A4FF4500C430E1 /* CommonUsedAdapter.m in Sources */,
@@ -1825,6 +1850,7 @@
 				1CF3945622A4F11300C430E1 /* MakeDarkerCommand.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
 				1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */,
+				1C1965E323272B23009FCF3F /* A.m in Sources */,
 				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
 				1C16FCC722B892900095CFD9 /* ActivityButtonViewController.m in Sources */,
 				1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */,

@@ -10,6 +10,7 @@
 #import "WeakArray.h"
 #import "NSURLProtocolViewController.h"
 #import "YSCheckLockStatus.h"
+#import "A.h"
 
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -27,7 +28,9 @@
     self.title = @"冷知识";
     _itemList = @[@{YSTitleKey:@"[1]数组（字典）中添加弱引用",YSEventKey:@"testWeakArray"},
                   @{YSTitleKey:@"[2]NSURLProtocol",YSEventKey:@"testNSURLProtocol"},
-                  @{YSTitleKey:@"[3]检测锁屏和解锁",YSEventKey:@"testScreenLock"}];
+                  @{YSTitleKey:@"[3]检测锁屏和解锁",YSEventKey:@"testScreenLock"},
+                  @{YSTitleKey:@"[4]super.class",YSEventKey:@"testSuperClass"},
+                  @{YSTitleKey:@"[5]NSString.copy",YSEventKey:@"testStringCopy"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -74,6 +77,14 @@
 - (void)testScreenLock{
     _checkLock = YSCheckLockStatus.new;
     [_checkLock registerforDeviceLockNotif];
+}
+
+- (void)testSuperClass{
+    [[A alloc]show];
+}
+
+- (void)testStringCopy{
+    [[A alloc]testCopy];
 }
 
 #pragma mark - *********** layout ***********
