@@ -19,6 +19,8 @@ typedef void(^YSImagePickLargeCellRemoveBlock)(void);
 
 @property (nonatomic,strong) YSImagePickInfo *infoModel;
 
+@property (nonatomic,strong) UIButton *backGroundButton;
+
 @property (nonatomic,strong) UIImageView *imageView;
 
 @property (nonatomic,strong) UIButton *removeButton;

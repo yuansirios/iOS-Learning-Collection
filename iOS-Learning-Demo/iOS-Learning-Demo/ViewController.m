@@ -24,6 +24,7 @@
 #import "MarkViewController.h"
 #import "ActivityButtonViewController.h"
 #import "IconButtonViewController.h"
+#import "MixedViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -53,7 +54,8 @@
                   @{YSTitleKey:@"[10]百度地图",YSEventKey:@"testBaiduMap"},
                   @{YSTitleKey:@"[11]标签视图",YSEventKey:@"testMarkListView"},
                   @{YSTitleKey:@"[12]带指示器按钮",YSEventKey:@"testActivityButton"},
-                  @{YSTitleKey:@"[13]带图标的按钮",YSEventKey:@"testIconButton"}];
+                  @{YSTitleKey:@"[13]带图标的按钮",YSEventKey:@"testIconButton"},
+                  @{YSTitleKey:@"[14]OC和C++混编",YSEventKey:@"testMixed"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -175,6 +177,10 @@
 
 - (void)testIconButton{
     [self.navigationController pushViewController:IconButtonViewController.new animated:YES];
+}
+
+- (void)testMixed{
+    [self.navigationController pushViewController:MixedViewController.new animated:YES];
 }
 
 @end

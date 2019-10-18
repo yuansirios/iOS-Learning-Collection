@@ -116,7 +116,7 @@
         YSImagePickSmallCell *cell = (YSImagePickSmallCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"YSImagePickSmallCell" forIndexPath:indexPath];
         [cell setSmallRemoveBlock:^(YSImagePickInfo * _Nonnull info) {
             if (indexPath.section == 1) {
-                [model.dataArray removeObject:info];
+                
             }else{
                 info.selectImage = nil;
                 info.isUploadFailer = nil;
@@ -212,14 +212,6 @@
         if (info.isFirst) {
             [self takePhoto:^(UIImage *img) {
                 
-                YSImagePickInfo *newInfo = YSImagePickInfo.new;
-                newInfo.selectImage = img;
-                newInfo.isFirst = NO;
-                [model.dataArray addObject:newInfo];
-                
-                [model.dataArray exchangeObjectAtIndex:model.dataArray.count - 1 withObjectAtIndex:model.dataArray.count - 2];
-                
-                [self reload];
             }];
         }else{
             NSLog(@"点击查看大图");
@@ -237,14 +229,6 @@
         if (info.isFirst) {
             [self albumPhoto:^(UIImage *img) {
                 
-                YSImagePickInfo *newInfo = YSImagePickInfo.new;
-                newInfo.selectImage = img;
-                newInfo.isFirst = NO;
-                [model.dataArray addObject:newInfo];
-                
-                [model.dataArray exchangeObjectAtIndex:model.dataArray.count - 1 withObjectAtIndex:model.dataArray.count - 2];
-                
-                [self reload];
             }];
         }else{
             NSLog(@"点击查看大图");

@@ -10,7 +10,7 @@
 #import "ViewController.h"
 #import "YSBaseNavigationController.h"
 #import "YSMapView.h"
-
+#import "YSImageSelectViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +21,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
-    YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:ViewController.new];
+    YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:YSImageSelectViewController.new];
     _window.rootViewController = nv;
     [_window makeKeyAndVisible];
     

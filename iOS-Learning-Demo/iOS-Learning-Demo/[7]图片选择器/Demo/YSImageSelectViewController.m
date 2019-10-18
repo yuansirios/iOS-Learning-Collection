@@ -10,11 +10,17 @@
 #import "YSImagePickSmallCell.h"
 #import "YSImagePickModel.h"
 
-@interface YSImageSelectViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>{
+#import "YSImageLargeCell.h"
+#import "YSImageSmallCell.h"
+
+
+@interface YSImageSelectViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSDictionary *_imgeDic;
 }
 
-@property (nonatomic,strong) UICollectionView *collectionView;
+
+@property (nonatomic,strong) UITableView *baseTableView;
+
 @property (nonatomic,strong) UIButton *confirmBtn;
 @property (nonatomic,strong) NSMutableArray *dataArray;
 
@@ -25,18 +31,18 @@
 - (void)addSubviews {
     self.title = @"图片选择器";
     self.view.backgroundColor = UIColor_F8;
-    [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.baseTableView];
     [self.view addSubview:self.confirmBtn];
     
     float pade = 16;
     
-    self.collectionView
+    self.baseTableView
     .sd_layout
     .spaceToSuperView(UIEdgeInsetsMake(0, 0, 50+pade*2+SafeAreaBottomHeight, 0));
     
     self.confirmBtn
     .sd_layout
-    .topSpaceToView(self.collectionView, self.collectionView.height + pade)
+    .topSpaceToView(self.baseTableView, self.baseTableView.height + pade)
     .leftSpaceToView(self.view, pade)
     .widthIs(self.view.width - pade*2)
     .heightIs(50);
@@ -57,83 +63,177 @@
     return _confirmBtn;
 }
 
-#pragma mark - *********** UICollectionViewDataSource ***********
+#pragma mark - *********** UITableViewDelegate ***********
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    YSImagePickModel *model = self.dataArray[section];
+    
+    UILabel *label = UILabel.new;
+    label.text = model.title;
+    label.font = [UIFont systemFontOfSize:14];
+    label.frame = CGRectMake(12, 12, 0, 0);
+    [label sizeToFit];
+    
+    UIView *view = UIView.new;
+    [view setFrame:CGRectMake(0, 0, label.width, label.height + 20)];
+//    view.backgroundColor = UIColorRandom;
+    [view addSubview:label];
+    
+    return view;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.dataArray.count;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    YSImagePickModel *model = self.dataArray[section];
-    return model.dataArray.count;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"UICollectionViewHead" forIndexPath:indexPath];
-        //添加头视图的内容
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
-        view.backgroundColor = [UIColor whiteColor];
-        
-        YSImagePickModel *model = self.dataArray[indexPath.section];
-        
-        UILabel*titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 300, 40)];
-        titleLabel.text = model.title;
-        [view addSubview:titleLabel];
-        
-        [header addSubview:view];
-        return header;
-    }
-    return nil;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     YSImagePickModel *model = self.dataArray[indexPath.section];
-    if (model.type == YSImagePickType_large) {
-        return CGSizeMake((SCREEN_WIDTH - 12*3)/2,100);
-    }
-    return CGSizeMake((SCREEN_WIDTH - 12*5)/4,80);
+    return model.rowHeight;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    YSImagePickModel *model = self.dataArray[indexPath.section];
-    YSImagePickInfo *info = model.dataArray[indexPath.row];
-    YSImagePickSmallCell *cell = (YSImagePickSmallCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"YSImagePickSmallCell" forIndexPath:indexPath];
-    [cell setSmallRemoveBlock:^(YSImagePickInfo * _Nonnull info) {
-        info.selectImage = nil;
-        info.isUploadFailer = nil;
-        info.isFirst = YES;
-        [self reload];
-    }];
-    cell.infoModel = info;
-    return cell;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    YSImagePickModel *model = self.dataArray[indexPath.section];
-    YSImagePickInfo *info = model.dataArray[indexPath.row];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    //只允许拍照
-    if (model.onlyTakePhoto) {
-        if (info.selectImage) {
-            NSLog(@"查看大图:%@",info.selectImage);
-        }else{
-            [self takePhoto:info];
+    NSInteger section = indexPath.section;
+    
+    YSImagePickModel *pickModel = self.dataArray[section];
+    
+    if (section == 0) {
+        static NSString *ID = @"largeCell";
+        YSImageLargeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!cell) {
+            cell = [[YSImageLargeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
         }
-    } else {
-        //拍照和选择
-        if (info.selectImage) {
-            NSLog(@"查看大图:%@",info.selectImage);
-        }else{
-            [self takePhoto:info];
+        cell.pickModel = pickModel;
+        [cell setAddItemBlock:^(YSImagePickModel * _Nonnull pickModel,
+                                NSInteger index) {
+            [self driveTakePhoto:pickModel withIndex:index];
+        }];
+        [cell setRemoveItemBlock:^(YSImagePickInfo * _Nonnull pickInfo,
+                                   NSInteger index) {
+            [self driveItemRemove:pickModel withIndex:index];
+        }];
+        
+        return cell;
+    }else if(section == 1){
+        static NSString *ID = @"CertificateCell";
+        YSImageSmallCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!cell) {
+            cell = [[YSImageSmallCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
         }
+        cell.pickModel = pickModel;
+        [cell setAddItemBlock:^(YSImagePickModel * _Nonnull pickModel,
+                                NSInteger index) {
+            [self certificateTakePhoto:pickModel];
+        }];
+        [cell setRemoveItemBlock:^(YSImagePickInfo * _Nonnull pickInfo,
+                                   NSInteger index) {
+            [self certificateRemove:pickModel withItem:pickInfo];
+        }];
+        return cell;
+    }else if(section == 2){
+        static NSString *ID = @"otherCell";
+        YSImageSmallCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!cell) {
+            cell = [[YSImageSmallCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        }
+        cell.pickModel = self.dataArray[indexPath.section];
+        [cell setAddItemBlock:^(YSImagePickModel * _Nonnull pickModel,
+                                NSInteger index) {
+            [self otherTakePhoto:pickModel withIndex:index];
+        }];
+        [cell setRemoveItemBlock:^(YSImagePickInfo * _Nonnull pickInfo,
+                                   NSInteger index) {
+            [self otherItemRemove:pickModel withIndex:index];
+        }];
+        return cell;
+    }else{
+        return nil;
     }
 }
 
-- (void)takePhoto:(YSImagePickInfo *)info{
-    info.isFirst = NO;
-    info.selectImage = createImageWithColor(UIColorRandom, 50, 50);
-    [self reload];
+#pragma mark - *********** 网约车驾驶员证 ***********
+//网约车驾驶员证添加
+- (void)driveTakePhoto:(YSImagePickModel *)pickModel withIndex:(NSInteger)index{
+    NSMutableArray *itemList = pickModel.dataArray.mutableCopy;
+    YSImagePickInfo *selectItem = itemList[index];
+    selectItem.selectImage = createImageWithColor(UIColorRandom, 50, 50);
+    self.dataArray[0] = pickModel;
+    [self.baseTableView reloadData];
+    [self checkConfirmStatus];
+}
+//网约车驾驶员证删除
+- (void)driveItemRemove:(YSImagePickModel *)pickModel withIndex:(NSInteger)index{
+    NSMutableArray *itemList = pickModel.dataArray.mutableCopy;
+    YSImagePickInfo *selectItem = itemList[index];
+    selectItem.selectImage = nil;
+    self.dataArray[0] = pickModel;
+    [self.baseTableView reloadData];
+    [self checkConfirmStatus];
+}
+
+#pragma mark - *********** 合同资料操作 ***********
+//合同资料添加
+- (void)certificateTakePhoto:(YSImagePickModel *)pickModel{
+    YSImagePickInfo *newInfo = YSImagePickInfo.new;
+    newInfo.selectImage = createImageWithColor(UIColorRandom, 50, 50);
+    
+    YSImagePickInfo *addInfo = pickModel.dataArray.lastObject;
+    
+    NSMutableArray *oldArr = pickModel.dataArray.mutableCopy;
+    [oldArr removeLastObject];
+    
+    NSMutableArray *dataArr = oldArr.mutableCopy;
+    [dataArr addObject:newInfo];
+    [dataArr addObject:addInfo];
+    
+    pickModel.dataArray = dataArr.copy;
+    
+    self.dataArray[1] = pickModel;
+    
+    [self.baseTableView reloadData];
+    
+    [self checkConfirmStatus];
+}
+//合同资料删除
+- (void)certificateRemove:(YSImagePickModel *)pickModel
+                 withItem:(YSImagePickInfo *)pickInfo {
+    NSMutableArray *oldArr = pickModel.dataArray.mutableCopy;
+    [oldArr removeObject:pickInfo];
+    pickModel.dataArray = oldArr.copy;
+    self.dataArray[1] = pickModel;
+    [self.baseTableView reloadData];
+    [self checkConfirmStatus];
+}
+
+#pragma mark - *********** 其他资料操作 ***********
+//其他资料添加
+- (void)otherTakePhoto:(YSImagePickModel *)pickModel withIndex:(NSInteger)index{
+    NSMutableArray *itemList = pickModel.dataArray.mutableCopy;
+    YSImagePickInfo *selectItem = itemList[index];
+    if (selectItem.isFirst) {
+        selectItem.selectImage = createImageWithColor(UIColorRandom, 50, 50);
+        selectItem.isFirst = NO;
+    }
+    self.dataArray[2] = pickModel;
+    [self.baseTableView reloadData];
+    [self checkConfirmStatus];
+}
+//其他资料删除
+- (void)otherItemRemove:(YSImagePickModel *)pickModel withIndex:(NSInteger)index{
+    NSMutableArray *itemList = pickModel.dataArray.mutableCopy;
+    YSImagePickInfo *selectItem = itemList[index];
+    selectItem.selectImage = nil;
+    selectItem.backGroundImage = [UIImage imageNamed:@"相机"];
+    selectItem.desc = index == 0?@"与客户合影":@"客户签单照片";
+    selectItem.isFirst = YES;
+    self.dataArray[2] = pickModel;
+    [self.baseTableView reloadData];
+    [self checkConfirmStatus];
 }
 
 #pragma mark - *********** Private ***********
@@ -144,62 +244,65 @@
 
 #pragma mark - *********** Tool ***********
 
-- (void)reload{
-    [self.collectionView reloadData];
-    [self checkConfirmStatus];
-}
+- (void)checkConfirmStatus{
 
-- (NSDictionary *)checkConfirmStatus{
-
+    //网约车驾驶员证
     YSImagePickModel *model = self.dataArray[0];
-    YSImagePickInfo *info = model.dataArray[0];
-    
-    YSImagePickModel *model1 = self.dataArray[1];
-    YSImagePickInfo *info1 = model1.dataArray[0];
+    YSImagePickInfo *info   = model.dataArray[0];
+    YSImagePickInfo *info1  = model.dataArray[1];
     
     UIImage *image = info.selectImage;
     UIImage *image1 = info1.selectImage;
     
-    if (image && image1) {
+    //合同资料
+    YSImagePickModel *certModel = self.dataArray[1];
+    NSArray *certInfoArr = certModel.dataArray;
+    NSMutableArray *certImages = @[].mutableCopy;
+    for (YSImagePickInfo *infoModel in certInfoArr) {
+        if (infoModel.selectImage) {
+            [certImages addObject:infoModel.selectImage];
+        }
+    }
+    
+    //其他资料
+    YSImagePickModel *otherModel = self.dataArray[2];
+    NSArray *otherInfoArr = otherModel.dataArray;
+    NSMutableArray *otherImages = @[].mutableCopy;
+    for (YSImagePickInfo *infoModel in otherInfoArr) {
+        if (infoModel.selectImage) {
+            [otherImages addObject:infoModel.selectImage];
+        }
+    }
+    
+    if (image &&
+        image1 &&
+        certImages.count > 0 &&
+        otherImages.count == 2) {
         self.confirmBtn.backgroundColor = UIColor_AA;
         self.confirmBtn.userInteractionEnabled = YES;
+        
+        NSMutableDictionary *dic = @{}.mutableCopy;
+        [dic setValue:image forKey:@"front"];
+        [dic setValue:image1 forKey:@"back"];
+        [dic setValue:certImages forKey:@"cert"];
+        [dic setValue:otherImages forKey:@"other"];
+        _imgeDic = dic.copy;
     }else{
         self.confirmBtn.backgroundColor = UIColor_9B;
         self.confirmBtn.userInteractionEnabled = NO;
     }
-    
-    NSMutableDictionary *dic = @{}.mutableCopy;
-    [dic setValue:image forKey:@"image"];
-    [dic setValue:image1 forKey:@"image1"];
-    _imgeDic = dic.copy;
-    
-    return dic;
 }
 
 #pragma mark - *********** lazy ***********
 
-- (UICollectionView *)collectionView{
-    
-    if (!_collectionView) {
-        
-        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        flowLayout.sectionInset = UIEdgeInsetsMake(12, 12, 12, 12);
-        flowLayout.minimumLineSpacing = 12;
-        flowLayout.minimumInteritemSpacing = 12;
-        flowLayout.headerReferenceSize = CGSizeMake(SCREEN_WIDTH,40);
-        
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
-        _collectionView.backgroundColor = UIColor.whiteColor;
-        _collectionView.delegate   = self;
-        _collectionView.dataSource = self;
-        _collectionView.showsVerticalScrollIndicator   = NO;
-        _collectionView.showsHorizontalScrollIndicator = NO;
-        
-        [_collectionView registerClass:[YSImagePickSmallCell class] forCellWithReuseIdentifier:@"YSImagePickSmallCell"];
-        
-        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UICollectionViewHead"];
+- (UITableView *)baseTableView{
+    if (!_baseTableView) {
+        _baseTableView = UITableView.new;
+        _baseTableView.delegate = self;
+        _baseTableView.dataSource = self;
+        _baseTableView.tableFooterView = UIView.new;
     }
-    return _collectionView;
+    return _baseTableView;
 }
 
 - (NSMutableArray *)dataArray{
@@ -208,30 +311,57 @@
         
         {
             YSImagePickModel *model = YSImagePickModel.new;
-            model.title = @"客户人车合影";
+            model.title = @"网约车驾驶员证";
             model.canSelectMore = NO;
+            model.onlyTakePhoto = YES;
+            model.type = YSImagePickType_large;
+            
+            YSImagePickInfo *front = YSImagePickInfo.new;
+            front.desc = @"点击拍摄封面";
+            front.backGroundImage = [UIImage imageNamed:@"drive_front"];
+            
+            YSImagePickInfo *back = YSImagePickInfo.new;
+            back.desc = @"点击拍摄内页";
+            back.backGroundImage = [UIImage imageNamed:@"drive_back"];
+            
+            model.dataArray = @[front,back];
+            [_dataArray addObject:model];
+        }
+        
+        {
+            YSImagePickModel *model = YSImagePickModel.new;
+            model.title = @"合同资料";
+            model.canSelectMore = YES;
             model.onlyTakePhoto = YES;
             model.type = YSImagePickType_small;
             
             YSImagePickInfo *info = YSImagePickInfo.new;
+            info.backGroundImage = [UIImage imageNamed:@"相机"];
             info.desc = @"点击拍摄";
             info.isFirst = YES;
-            model.dataArray = @[info].mutableCopy;
+            model.dataArray = @[info];
             
             [_dataArray addObject:model];
         }
         
         {
             YSImagePickModel *model = YSImagePickModel.new;
-            model.title = @"车辆移交清单";
+            model.title = @"其他资料";
             model.canSelectMore = NO;
             model.onlyTakePhoto = YES;
             model.type = YSImagePickType_small;
             
             YSImagePickInfo *info = YSImagePickInfo.new;
-            info.desc = @"点击拍摄";
+            info.backGroundImage = [UIImage imageNamed:@"相机"];
+            info.desc = @"与客户合影";
             info.isFirst = YES;
-            model.dataArray = @[info].mutableCopy;
+            
+            YSImagePickInfo *info1 = YSImagePickInfo.new;
+            info1.backGroundImage = [UIImage imageNamed:@"相机"];
+            info1.desc = @"客户签单照片";
+            info1.isFirst = YES;
+            
+            model.dataArray = @[info,info1];
             
             [_dataArray addObject:model];
         }

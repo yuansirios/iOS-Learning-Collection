@@ -12,11 +12,11 @@
 
 - (void)setupViews{
     
-    [self.contentView addSubview:self.imageView];
-    [self.contentView addSubview:self.failView];
-    [self.contentView addSubview:self.removeButton];
+    [self.contentView addSubview:self.backGroundButton];
+//    [self.contentView addSubview:self.failView];
+//    [self.contentView addSubview:self.removeButton];
     
-    self.imageView.sd_layout
+    self.backGroundButton.sd_layout
     .spaceToSuperView(UIEdgeInsetsMake(5, 5, 5, 5));
     
     self.failView.sd_layout
@@ -57,12 +57,25 @@
 
 #pragma mark - *********** lazy ***********
 
+- (UIButton *)backGroundButton{
+    if (!_backGroundButton) {
+        _backGroundButton = UIButton.new;
+        _backGroundButton.backgroundColor = UIColor.greenColor;
+//        _backGroundButton.layer.masksToBounds = YES;
+        _backGroundButton.layer.cornerRadius = 6;
+        _backGroundButton.layer.shadowColor = UIColor.redColor.CGColor;
+        _backGroundButton.layer.shadowOffset = CGSizeMake(0, 8);
+        _backGroundButton.layer.shadowOpacity = 1;
+        _backGroundButton.layer.shadowRadius = 8;
+    }
+    return _backGroundButton;
+}
+
 - (UIImageView *)imageView{
     if (!_imageView) {
         _imageView = UIImageView.new;
         _imageView.contentMode = UIViewContentModeRedraw;
-        _imageView.layer.masksToBounds = YES;
-        _imageView.layer.cornerRadius = 6;
+        
     }
     return _imageView;
 }

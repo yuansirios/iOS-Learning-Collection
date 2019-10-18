@@ -24,6 +24,9 @@
 		1C1965E323272B23009FCF3F /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965E223272B23009FCF3F /* A.m */; };
 		1C1965E623272B35009FCF3F /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965E523272B35009FCF3F /* B.m */; };
 		1C1965E923272B46009FCF3F /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965E823272B46009FCF3F /* C.m */; };
+		1C1965ED232F6081009FCF3F /* MixedViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965EC232F6081009FCF3F /* MixedViewController.mm */; };
+		1C1965FA232F6D66009FCF3F /* ObjectCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965F8232F6D66009FCF3F /* ObjectCpp.cpp */; };
+		1C1965FE232F77A2009FCF3F /* ObjectOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965FD232F77A2009FCF3F /* ObjectOC.m */; };
 		1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9222769194004188ED /* YSImagePickViewController.m */; };
 		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
 		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
@@ -108,6 +111,8 @@
 		1CE55D2522A900B0000D54A3 /* YSLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D2422A900B0000D54A3 /* YSLocationService.m */; };
 		1CE55D2822A918DB000D54A3 /* YSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D2722A918DB000D54A3 /* YSMapView.m */; };
 		1CE55D2D22AE0517000D54A3 /* YSMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE55D2C22AE0517000D54A3 /* YSMapAnnotationView.m */; };
+		1CF276F4235872C100C9AB7A /* YSImageLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF276F3235872C100C9AB7A /* YSImageLargeCell.m */; };
+		1CF276F823598BA400C9AB7A /* YSImageSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF276F723598BA400C9AB7A /* YSImageSmallCell.m */; };
 		1CF3943622A4E98000C430E1 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3943522A4E98000C430E1 /* File.m */; };
 		1CF3943922A4E9CB00C430E1 /* FileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3943822A4E9CB00C430E1 /* FileCell.m */; };
 		1CF3943D22A4EA4300C430E1 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3943C22A4EA4300C430E1 /* UIView+SetRect.m */; };
@@ -217,6 +222,13 @@
 		1C1965E523272B35009FCF3F /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
 		1C1965E723272B46009FCF3F /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
 		1C1965E823272B46009FCF3F /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
+		1C1965EB232F6081009FCF3F /* MixedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedViewController.h; sourceTree = "<group>"; };
+		1C1965EC232F6081009FCF3F /* MixedViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MixedViewController.mm; sourceTree = "<group>"; };
+		1C1965F8232F6D66009FCF3F /* ObjectCpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = ObjectCpp.cpp; sourceTree = "<group>"; };
+		1C1965F9232F6D66009FCF3F /* ObjectCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectCpp.hpp; sourceTree = "<group>"; };
+		1C1965FC232F77A2009FCF3F /* ObjectOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectOC.h; sourceTree = "<group>"; };
+		1C1965FD232F77A2009FCF3F /* ObjectOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectOC.m; sourceTree = "<group>"; };
+		1C1965FF232F77F0009FCF3F /* ObjectInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectInterface.h; sourceTree = "<group>"; };
 		1C843C9122769194004188ED /* YSImagePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickViewController.h; sourceTree = "<group>"; };
 		1C843C9222769194004188ED /* YSImagePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickViewController.m; sourceTree = "<group>"; };
 		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
@@ -379,6 +391,11 @@
 		1CE55D2722A918DB000D54A3 /* YSMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMapView.m; sourceTree = "<group>"; };
 		1CE55D2B22AE0517000D54A3 /* YSMapAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMapAnnotationView.h; sourceTree = "<group>"; };
 		1CE55D2C22AE0517000D54A3 /* YSMapAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMapAnnotationView.m; sourceTree = "<group>"; };
+		1CF276F2235872C100C9AB7A /* YSImageLargeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImageLargeCell.h; sourceTree = "<group>"; };
+		1CF276F3235872C100C9AB7A /* YSImageLargeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImageLargeCell.m; sourceTree = "<group>"; };
+		1CF276F623598BA400C9AB7A /* YSImageSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImageSmallCell.h; sourceTree = "<group>"; };
+		1CF276F723598BA400C9AB7A /* YSImageSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImageSmallCell.m; sourceTree = "<group>"; };
+		1CF276F92359BCC600C9AB7A /* YSProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSProtocol.h; sourceTree = "<group>"; };
 		1CF3943422A4E98000C430E1 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
 		1CF3943522A4E98000C430E1 /* File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		1CF3943722A4E9CB00C430E1 /* FileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileCell.h; sourceTree = "<group>"; };
@@ -664,6 +681,36 @@
 			path = "[4]super.class";
 			sourceTree = "<group>";
 		};
+		1C1965EA232F5FDE009FCF3F /* [14]OC和C++混编 */ = {
+			isa = PBXGroup;
+			children = (
+				1C1965FB232F7797009FCF3F /* OC */,
+				1C1965F1232F621A009FCF3F /* C++ */,
+				1C1965EB232F6081009FCF3F /* MixedViewController.h */,
+				1C1965EC232F6081009FCF3F /* MixedViewController.mm */,
+			);
+			path = "[14]OC和C++混编";
+			sourceTree = "<group>";
+		};
+		1C1965F1232F621A009FCF3F /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				1C1965F9232F6D66009FCF3F /* ObjectCpp.hpp */,
+				1C1965F8232F6D66009FCF3F /* ObjectCpp.cpp */,
+			);
+			path = "C++";
+			sourceTree = "<group>";
+		};
+		1C1965FB232F7797009FCF3F /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				1C1965FC232F77A2009FCF3F /* ObjectOC.h */,
+				1C1965FD232F77A2009FCF3F /* ObjectOC.m */,
+				1C1965FF232F77F0009FCF3F /* ObjectInterface.h */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
 		1C843C9022769128004188ED /* [7]图片选择器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -678,8 +725,11 @@
 		1C843C94227694D7004188ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1CF276F523598B8E00C9AB7A /* YSImageSmallCell */,
+				1CF276F1235872A100C9AB7A /* YSImageLargeCell */,
 				1C843CA92276D1B6004188ED /* YSImagePickSmallCell */,
 				1C843CA12276C587004188ED /* YSImagePickLargeCell */,
+				1CF276F92359BCC600C9AB7A /* YSProtocol.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1140,6 +1190,24 @@
 			path = "[10]百度地图";
 			sourceTree = "<group>";
 		};
+		1CF276F1235872A100C9AB7A /* YSImageLargeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF276F2235872C100C9AB7A /* YSImageLargeCell.h */,
+				1CF276F3235872C100C9AB7A /* YSImageLargeCell.m */,
+			);
+			path = YSImageLargeCell;
+			sourceTree = "<group>";
+		};
+		1CF276F523598B8E00C9AB7A /* YSImageSmallCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF276F623598BA400C9AB7A /* YSImageSmallCell.h */,
+				1CF276F723598BA400C9AB7A /* YSImageSmallCell.m */,
+			);
+			path = YSImageSmallCell;
+			sourceTree = "<group>";
+		};
 		1CF3943322A4CC6D00C430E1 /* [13]组合 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1349,6 +1417,7 @@
 				1C16FC9D22B33C090095CFD9 /* [11]标签视图 */,
 				1C16FCC122B88F5C0095CFD9 /* [12]带指示器按钮 */,
 				1C01F4582306A39000845E11 /* [13]带图标的按钮 */,
+				1C1965EA232F5FDE009FCF3F /* [14]OC和C++混编 */,
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -1787,9 +1856,11 @@
 				1CA5BADB229FDAB800560D11 /* CoffeeShop.m in Sources */,
 				1CF3945022A4F08600C430E1 /* Invoker.m in Sources */,
 				1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */,
+				1C1965ED232F6081009FCF3F /* MixedViewController.mm in Sources */,
 				1CCBFD5322A76B6400E99A62 /* YSNSURLProtocol.m in Sources */,
 				1CA5BABF229F737D00560D11 /* ConcreteProxy.m in Sources */,
 				1CF3943D22A4EA4300C430E1 /* UIView+SetRect.m in Sources */,
+				1C1965FE232F77A2009FCF3F /* ObjectOC.m in Sources */,
 				1CCBFD5022A76B1500E99A62 /* NSURLProtocolViewController.m in Sources */,
 				1CF8CDDB221D4B5C00B223D4 /* main.m in Sources */,
 				1CF3944322A4EB1300C430E1 /* CompositeViewController.m in Sources */,
@@ -1812,6 +1883,7 @@
 				1CF8CE0E22252C7500B223D4 /* SDTabelViewCell.m in Sources */,
 				1CA5BAE822A0CDC600560D11 /* RegExCategories.m in Sources */,
 				1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */,
+				1C1965FA232F6D66009FCF3F /* ObjectCpp.cpp in Sources */,
 				1CF8CE382226368300B223D4 /* HomeViewModel.m in Sources */,
 				1CF394C622A50BDC00C430E1 /* BinaryTree.m in Sources */,
 				1C16FCA322B33D1E0095CFD9 /* NSString+addtion.m in Sources */,
@@ -1839,6 +1911,7 @@
 				1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
 				1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */,
+				1CF276F823598BA400C9AB7A /* YSImageSmallCell.m in Sources */,
 				1CF394A922A4FEFB00C430E1 /* BusinessCardView.m in Sources */,
 				1CA5BAC4229F7F5900560D11 /* NSProxyViewController.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
@@ -1853,6 +1926,7 @@
 				1C1965E323272B23009FCF3F /* A.m in Sources */,
 				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
 				1C16FCC722B892900095CFD9 /* ActivityButtonViewController.m in Sources */,
+				1CF276F4235872C100C9AB7A /* YSImageLargeCell.m in Sources */,
 				1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */,
 				1CD78C1B2255E3090075662E /* UIAlertView+Block.m in Sources */,
 				1CA5BA9D229E6F4900560D11 /* WindowsDevice.m in Sources */,
@@ -1992,6 +2066,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-Learning-Demo/[10]百度地图",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
@@ -2019,6 +2094,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-Learning-Demo/[10]百度地图",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";

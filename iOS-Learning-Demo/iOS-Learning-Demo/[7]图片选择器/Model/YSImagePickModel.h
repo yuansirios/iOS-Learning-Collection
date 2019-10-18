@@ -17,8 +17,9 @@ typedef enum : NSUInteger {
 
 @interface YSImagePickInfo : YSBaseModel
 
-@property (nonatomic,copy) UIImage *normalImage;            // 默认图片 image
-@property (nonatomic,copy,nullable) UIImage *selectImage;   // 选择的图片 image
+@property (nonatomic,copy) NSString *imageUrl;              // 网络图片
+@property (nonatomic,copy) UIImage *selectImage;            // 选择的图片
+@property (nonatomic,copy) UIImage *backGroundImage;        // 背景图片
 @property (nonatomic,copy) NSString *desc;                  // 描述
 
 @property (nonatomic,assign) BOOL isFirst;                  // 第一个按钮
@@ -31,8 +32,9 @@ typedef enum : NSUInteger {
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,assign) YSImagePickType type; // 显示样式
 @property (nonatomic,assign) BOOL onlyTakePhoto;   // 只允许拍照
-@property (nonatomic,assign) BOOL canSelectMore;     // 允许多张
-@property (nonatomic,strong) NSMutableArray <YSImagePickInfo *> *dataArray;
+@property (nonatomic,assign) BOOL canSelectMore;   // 允许多张
+@property (nonatomic,strong) NSArray <YSImagePickInfo *> *dataArray;
+@property (nonatomic,assign) CGFloat rowHeight;
 
 @end
 
