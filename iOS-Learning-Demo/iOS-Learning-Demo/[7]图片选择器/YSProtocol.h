@@ -10,3 +10,5 @@
 
 typedef void(^YSImageCellAddItemBlock)(YSImagePickModel *pickModel,NSInteger index);
 typedef void(^YSImageCellRemoveItemBlock)(YSImagePickInfo *pickInfo,NSInteger index);
+
+typedef void(^YSImageCellShowLearnBlock)(YSImagePickModel *pickModel,BOOL show);

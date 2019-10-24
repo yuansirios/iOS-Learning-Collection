@@ -16,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YSBaseViewController : UIViewController<ControllerProtocol>
 
+//状态栏
+@property(nonatomic,assign) BOOL statusHiden;
+//状态栏样式
+@property(nonatomic,assign) NSInteger barStyle;
+
 #pragma mark - *********** 是否开启手势返回 ***********
 
 - (void)openGestureRecongnizer:(BOOL)isOpen;

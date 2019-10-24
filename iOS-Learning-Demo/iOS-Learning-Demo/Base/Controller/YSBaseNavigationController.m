@@ -42,4 +42,14 @@
     return [self.topViewController supportedInterfaceOrientations];
 }
 
+#pragma mark - *********** 状态栏 ***********
+- (UIStatusBarStyle)preferredStatusBarStyle{
+     return self.barStyle;
+}
+
+- (void)setBarStyle:(NSInteger)barStyle{
+    _barStyle = barStyle;
+    [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+}
+
 @end

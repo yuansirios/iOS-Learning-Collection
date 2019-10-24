@@ -27,11 +27,10 @@
 		1C1965ED232F6081009FCF3F /* MixedViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965EC232F6081009FCF3F /* MixedViewController.mm */; };
 		1C1965FA232F6D66009FCF3F /* ObjectCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965F8232F6D66009FCF3F /* ObjectCpp.cpp */; };
 		1C1965FE232F77A2009FCF3F /* ObjectOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965FD232F77A2009FCF3F /* ObjectOC.m */; };
-		1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9222769194004188ED /* YSImagePickViewController.m */; };
+		1C1D5C0F2361493E00E1B422 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1D5C0E2361493E00E1B422 /* LaunchStoryboard.storyboard */; };
+		1C1D5C1623614FFC00E1B422 /* StatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D5C1523614FFC00E1B422 /* StatusBarViewController.m */; };
 		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
-		1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */; };
 		1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA72276C86E004188ED /* YSImagePicker.m */; };
-		1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */; };
 		1CA20C5E22A7949D00345064 /* YSCheckLockStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */; };
 		1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6A229E307400560D11 /* StrategyPatternViewController.m */; };
 		1CA5BA6F229E30DA00560D11 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BA6E229E30DA00560D11 /* InputValidator.m */; };
@@ -229,16 +228,13 @@
 		1C1965FC232F77A2009FCF3F /* ObjectOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectOC.h; sourceTree = "<group>"; };
 		1C1965FD232F77A2009FCF3F /* ObjectOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectOC.m; sourceTree = "<group>"; };
 		1C1965FF232F77F0009FCF3F /* ObjectInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectInterface.h; sourceTree = "<group>"; };
-		1C843C9122769194004188ED /* YSImagePickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickViewController.h; sourceTree = "<group>"; };
-		1C843C9222769194004188ED /* YSImagePickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickViewController.m; sourceTree = "<group>"; };
+		1C1D5C0E2361493E00E1B422 /* LaunchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchStoryboard.storyboard; sourceTree = "<group>"; };
+		1C1D5C1423614FFC00E1B422 /* StatusBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusBarViewController.h; sourceTree = "<group>"; };
+		1C1D5C1523614FFC00E1B422 /* StatusBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarViewController.m; sourceTree = "<group>"; };
 		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
 		1C843C9B22769AE5004188ED /* YSImagePickModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickModel.m; sourceTree = "<group>"; };
-		1C843CA22276C5C7004188ED /* YSImagePickLargeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickLargeCell.h; sourceTree = "<group>"; };
-		1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickLargeCell.m; sourceTree = "<group>"; };
 		1C843CA62276C86E004188ED /* YSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImagePicker.h; sourceTree = "<group>"; };
 		1C843CA72276C86E004188ED /* YSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImagePicker.m; sourceTree = "<group>"; };
-		1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickSmallCell.h; sourceTree = "<group>"; };
-		1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickSmallCell.m; sourceTree = "<group>"; };
 		1CA20C5C22A7949D00345064 /* YSCheckLockStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSCheckLockStatus.h; sourceTree = "<group>"; };
 		1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSCheckLockStatus.m; sourceTree = "<group>"; };
 		1CA5BA69229E307400560D11 /* StrategyPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyPatternViewController.h; sourceTree = "<group>"; };
@@ -561,8 +557,6 @@
 		1C01F44122F17CC900845E11 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1C843C9122769194004188ED /* YSImagePickViewController.h */,
-				1C843C9222769194004188ED /* YSImagePickViewController.m */,
 				1C01F44222F17D3600845E11 /* YSImageSelectViewController.h */,
 				1C01F44322F17D3600845E11 /* YSImageSelectViewController.m */,
 			);
@@ -711,9 +705,19 @@
 			path = OC;
 			sourceTree = "<group>";
 		};
+		1C1D5C1323614FDE00E1B422 /* [15]状态栏设置 */ = {
+			isa = PBXGroup;
+			children = (
+				1C1D5C1423614FFC00E1B422 /* StatusBarViewController.h */,
+				1C1D5C1523614FFC00E1B422 /* StatusBarViewController.m */,
+			);
+			path = "[15]状态栏设置";
+			sourceTree = "<group>";
+		};
 		1C843C9022769128004188ED /* [7]图片选择器 */ = {
 			isa = PBXGroup;
 			children = (
+				1CF276F92359BCC600C9AB7A /* YSProtocol.h */,
 				1C01F44122F17CC900845E11 /* Demo */,
 				1C843CA52276C86E004188ED /* YSImagePicker */,
 				1C843C9922769AC2004188ED /* Model */,
@@ -725,11 +729,8 @@
 		1C843C94227694D7004188ED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1CF276F523598B8E00C9AB7A /* YSImageSmallCell */,
 				1CF276F1235872A100C9AB7A /* YSImageLargeCell */,
-				1C843CA92276D1B6004188ED /* YSImagePickSmallCell */,
-				1C843CA12276C587004188ED /* YSImagePickLargeCell */,
-				1CF276F92359BCC600C9AB7A /* YSProtocol.h */,
+				1CF276F523598B8E00C9AB7A /* YSImageSmallCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -743,15 +744,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1C843CA12276C587004188ED /* YSImagePickLargeCell */ = {
-			isa = PBXGroup;
-			children = (
-				1C843CA22276C5C7004188ED /* YSImagePickLargeCell.h */,
-				1C843CA32276C5C7004188ED /* YSImagePickLargeCell.m */,
-			);
-			path = YSImagePickLargeCell;
-			sourceTree = "<group>";
-		};
 		1C843CA52276C86E004188ED /* YSImagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -759,15 +751,6 @@
 				1C843CA72276C86E004188ED /* YSImagePicker.m */,
 			);
 			path = YSImagePicker;
-			sourceTree = "<group>";
-		};
-		1C843CA92276D1B6004188ED /* YSImagePickSmallCell */ = {
-			isa = PBXGroup;
-			children = (
-				1C843CAA2276D1CF004188ED /* YSImagePickSmallCell.h */,
-				1C843CAB2276D1CF004188ED /* YSImagePickSmallCell.m */,
-			);
-			path = YSImagePickSmallCell;
 			sourceTree = "<group>";
 		};
 		1CA5BA67229E2FFE00560D11 /* [8]设计模式 */ = {
@@ -1421,6 +1404,7 @@
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
+				1C1D5C1323614FDE00E1B422 /* [15]状态栏设置 */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
 				1CF8CDCE221D4B5900B223D4 /* ViewController.h */,
 				1CF8CDCF221D4B5900B223D4 /* ViewController.m */,
@@ -1428,6 +1412,7 @@
 				1CF8CDD9221D4B5C00B223D4 /* Info.plist */,
 				1CF8CDDA221D4B5C00B223D4 /* main.m */,
 				1CF8CDEF221F87F900B223D4 /* PrefixHeader.pch */,
+				1C1D5C0E2361493E00E1B422 /* LaunchStoryboard.storyboard */,
 			);
 			path = "iOS-Learning-Demo";
 			sourceTree = "<group>";
@@ -1711,6 +1696,7 @@
 				1CA5BAD4229FD92A00560D11 /* 代理原理图.png in Resources */,
 				1CA5BB1422A0FF8F00560D11 /* 访问者原理图.png in Resources */,
 				1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */,
+				1C1D5C0F2361493E00E1B422 /* LaunchStoryboard.storyboard in Resources */,
 				1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1789,7 +1775,6 @@
 				1CA5BAFE22A0F67000560D11 /* Chess.m in Sources */,
 				1CF3947322A4F6AA00C430E1 /* MementoCenter.m in Sources */,
 				1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */,
-				1C843CA42276C5C7004188ED /* YSImagePickLargeCell.m in Sources */,
 				1CF394A622A4FEBE00C430E1 /* BusinessCardAdapter.m in Sources */,
 				1CA5BB0122A0F6A700560D11 /* Monopoly.m in Sources */,
 				1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */,
@@ -1809,7 +1794,6 @@
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1CA5BAD2229FA64800560D11 /* Student.m in Sources */,
-				1C843C9322769194004188ED /* YSImagePickViewController.m in Sources */,
 				1CF394AF22A4FF6D00C430E1 /* NormalModel.m in Sources */,
 				1CF8CE282226295B00B223D4 /* YSBaseTableViewCell.m in Sources */,
 				1CA5BB0C22A0FCEC00560D11 /* ElementB.m in Sources */,
@@ -1844,6 +1828,7 @@
 				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
 				1CE55D1F22A8F028000D54A3 /* BaiduMapViewController.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
+				1C1D5C1623614FFC00E1B422 /* StatusBarViewController.m in Sources */,
 				1CE55D2D22AE0517000D54A3 /* YSMapAnnotationView.m in Sources */,
 				1CA5BACC229FA5C000560D11 /* NCProxy.m in Sources */,
 				1CA20C5E22A7949D00345064 /* YSCheckLockStatus.m in Sources */,
@@ -1889,7 +1874,6 @@
 				1C16FCA322B33D1E0095CFD9 /* NSString+addtion.m in Sources */,
 				1CF3946322A4F49F00C430E1 /* VehicleBuilder.m in Sources */,
 				1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */,
-				1C843CAC2276D1CF004188ED /* YSImagePickSmallCell.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
 				1C01F44422F17D3600845E11 /* YSImageSelectViewController.m in Sources */,
 				1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */,
@@ -1993,7 +1977,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2046,7 +2030,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -2059,7 +2043,7 @@
 			baseConfigurationReference = E517468561F480CF7CA7D6C4 /* Pods-iOS-Learning-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YJY25FSP7R;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2070,7 +2054,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2087,7 +2071,7 @@
 			baseConfigurationReference = 5AA5B22FCC454A2EE8317C4B /* Pods-iOS-Learning-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YJY25FSP7R;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2098,7 +2082,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Learning-Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-Learning-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,8 +1,8 @@
 //
-//  YSImagePickViewController.h
+//  StatusBarViewController.h
 //  iOS-Learning-Demo
 //
-//  Created by yuan on 2019/4/29.
+//  Created by yuan on 2019/10/24.
 //  Copyright © 2019 yuan. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YSImagePickViewController : YSBaseViewController
+@interface StatusBarViewController : YSBaseViewController
 
 @end
 

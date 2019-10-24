@@ -7,6 +7,7 @@
 //
 
 #import "YSBaseViewController.h"
+#import "YSBaseNavigationController.h"
 #import "YSBaseViewController+Navgation.h"
 
 @interface YSBaseViewController ()
@@ -75,5 +76,32 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
+
+#pragma mark - *********** 状态栏显示处理 ***********
+
+- (BOOL)prefersStatusBarHidden{
+    return self.statusHiden;
+}
+
+- (void)setStatusHiden:(BOOL)statusHiden{
+    _statusHiden = statusHiden;
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+     return self.barStyle;
+}
+
+- (void)setBarStyle:(NSInteger)barStyle{
+    _barStyle = barStyle;
+    
+    YSBaseNavigationController *nv = (YSBaseNavigationController *)self.navigationController;
+    if (nv) {
+        nv.barStyle = barStyle;
+    }else{
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
 
 @end

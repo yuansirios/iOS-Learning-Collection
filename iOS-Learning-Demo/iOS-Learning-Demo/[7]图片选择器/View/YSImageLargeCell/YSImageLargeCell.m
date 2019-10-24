@@ -7,6 +7,7 @@
 //
 
 #import "YSImageLargeCell.h"
+#import "YSButton.h"
 
 #pragma mark - *********** YSImageLargeCollectionCell ***********
 
@@ -67,15 +68,14 @@ typedef void(^LargeCollectionCellRemove)(YSImagePickInfo *infoModel);
         self.frontImageView.image = infoModel.backGroundImage;
     }
     
+    self.backImageView.image = infoModel.selectImage;
     if (infoModel.selectImage) {
         self.removeButton.hidden = NO;
         self.frontImageView.hidden = YES;
-        self.backImageView.image = infoModel.selectImage;
         self.backImageView.layer.masksToBounds = YES;
     }else{
         self.removeButton.hidden = YES;
         self.frontImageView.hidden = NO;
-        self.backImageView.image = infoModel.normalImage;
         self.backImageView.layer.masksToBounds = NO;
     }
     self.backImageView.layer.cornerRadius = 6;
@@ -149,8 +149,11 @@ typedef void(^LargeCollectionCellRemove)(YSImagePickInfo *infoModel);
 
 NSString * const ImageLargeCell = @"YSImageLargeCollectionCell";
 
-@interface YSImageLargeCell()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface YSImageLargeCell()<UICollectionViewDataSource,UICollectionViewDelegate>{
+    BOOL _checkRadio;
+}
 
+@property (nonatomic,strong) UIView *topHeadView;
 @property (nonatomic,strong) UICollectionView *collectionView;
 
 @end
@@ -158,18 +161,61 @@ NSString * const ImageLargeCell = @"YSImageLargeCollectionCell";
 @implementation YSImageLargeCell
 
 - (void)setupViews{
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [self.contentView addSubview:self.topHeadView];
     [self.contentView addSubview:self.collectionView];
+    
+    CGFloat topH = 40;
+    self.topHeadView
+    .sd_layout
+    .leftEqualToView(self.contentView)
+    .rightEqualToView(self.contentView)
+    .topEqualToView(self.contentView)
+    .heightIs(topH);
+    
     self.collectionView
     .sd_layout
-    .spaceToSuperView(UIEdgeInsetsZero);
+    .spaceToSuperView(UIEdgeInsetsMake(topH, 0, 0, 0));
 }
 
 #pragma mark - *********** get & set ***********
 
 - (void)setPickModel:(YSImagePickModel *)pickModel{
     _pickModel = pickModel;
-    _pickModel.rowHeight = 140;
+    
+    _pickModel.rowHeight = 130 + self.topHeadView.height;
     [self.collectionView reloadData];
+    
+    //处理标题
+    UILabel *topLabel = [_topHeadView viewWithTag:1000];
+    topLabel.text = pickModel.title;
+    [topLabel sizeToFit];
+    
+    topLabel.sd_layout
+    .leftSpaceToView(self.topHeadView, 12)
+    .widthIs(topLabel.width)
+    .heightIs(topLabel.height)
+    .bottomEqualToView(self.topHeadView);
+    
+    //处理按钮
+    NSString *title = @"暂无网约车驾驶员证";
+    float iconW = 20;
+    UIFont *font = [UIFont systemFontOfSize:14];
+    
+    UIButton *button = [_topHeadView viewWithTag:2000];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button.titleLabel setFont:font];
+    CGSize titleSize = [title boundingRectWithSize:CGSizeMake(MAXFLOAT, _topHeadView.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+    float btnW = titleSize.width + 5 + 10 + iconW;
+    
+    button.sd_layout
+    .rightSpaceToView(self.topHeadView, 12)
+    .widthIs(btnW)
+    .heightIs(iconW+10)
+    .centerYEqualToView(topLabel);
+    
+//    self.topHeadView.backgroundColor = UIColor.greenColor;
+//    topLabel.backgroundColor = UIColor.redColor;
 }
 
 #pragma mark - *********** UICollectionViewDataSource ***********
@@ -194,6 +240,10 @@ NSString * const ImageLargeCell = @"YSImageLargeCollectionCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     YSImagePickInfo *infoModel = _pickModel.dataArray[indexPath.row];
+    if (infoModel.unable) {
+        NSLog(@"按钮不能点击");
+        return;
+    }
     if (infoModel.selectImage) {
         NSMutableArray *imageViewArr = @[].mutableCopy;
         for (int i = 0; i < _pickModel.dataArray.count; i++) {
@@ -220,7 +270,51 @@ NSString * const ImageLargeCell = @"YSImageLargeCollectionCell";
     }
 }
 
+#pragma mark - *********** event ***********
+
+- (void)checkRadioEvent{
+    _checkRadio = !_checkRadio;
+    
+    UIButton *btn = [_topHeadView viewWithTag:2000];
+    if (_checkRadio){
+        [btn setImage:[UIImage imageNamed:@"icon_criedt_yes"] forState:UIControlStateNormal];
+    }else{
+        [btn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateNormal];
+    }
+    
+    if (_showLearnBlock) {
+        _showLearnBlock(_pickModel,_checkRadio);
+    }
+}
+
 #pragma mark - *********** lazy ***********
+
+- (UIView *)topHeadView{
+    if (!_topHeadView) {
+        _topHeadView = UIView.new;
+        
+        UILabel *label = UILabel.new;
+        label.font = [UIFont systemFontOfSize:14];
+        label.textColor = UIColorFromRGB(0x4A4A4A);
+        label.tag = 1000;
+        [_topHeadView addSubview:label];
+        
+        if (!_isDuplicates) {
+            YSButton *btn = [YSButton buttonWithType:UIButtonTypeCustom withSpace:5 withPadding:0 withType:YSButtonImageStyle_Left];
+            btn.tag = 2000;
+            if (_checkRadio){
+                [btn setImage:[UIImage imageNamed:@"icon_criedt_yes"] forState:UIControlStateNormal];
+            }else{
+                [btn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateNormal];
+            }
+            [btn setTitleColor:UIColorFromRGB(0x4A4A4A) forState:UIControlStateNormal];
+            
+            [btn addTarget:self action:@selector(checkRadioEvent) forControlEvents:UIControlEventTouchUpInside];
+            [_topHeadView addSubview:btn];
+        }
+    }
+    return _topHeadView;
+}
 
 - (UICollectionView *)collectionView{
     

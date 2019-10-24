@@ -84,22 +84,20 @@ typedef void(^SmallCollectionCellRemove)(YSImagePickInfo *infoModel);
         }
     }
     
+    self.backImageView.image = infoModel.selectImage;
     if (infoModel.selectImage) {
         self.removeButton.hidden = NO;
         self.frontImageView.hidden = YES;
         self.defaultLabel.hidden = YES;
-        self.backImageView.image = infoModel.selectImage;
         self.backImageView.layer.masksToBounds = YES;
     }else{
         self.removeButton.hidden = YES;
         self.frontImageView.hidden = NO;
         self.defaultLabel.hidden = NO;
-        self.backImageView.image = infoModel.normalImage;
         self.backImageView.layer.masksToBounds = NO;
     }
     
     self.backImageView.layer.cornerRadius = 6;
-    YSButtonShadow(_backImageView);
     
     if (infoModel.isUploadFailer) {
         self.failView.hidden = NO;
@@ -181,6 +179,7 @@ NSString * const ImageSmallCell = @"YSImageSmallCollectionCell";
 
 @interface YSImageSmallCell()<UICollectionViewDataSource,UICollectionViewDelegate>
 
+@property (nonatomic,strong) UIView *topHeadView;
 @property (nonatomic,strong) UICollectionView *collectionView;
 
 @end
@@ -188,10 +187,24 @@ NSString * const ImageSmallCell = @"YSImageSmallCollectionCell";
 @implementation YSImageSmallCell
 
 - (void)setupViews{
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [self.contentView addSubview:self.topHeadView];
     [self.contentView addSubview:self.collectionView];
+    
+    CGFloat topH = 40;
+    self.topHeadView
+    .sd_layout
+    .leftEqualToView(self.contentView)
+    .rightEqualToView(self.contentView)
+    .topEqualToView(self.contentView)
+    .heightIs(topH);
+    
     self.collectionView
     .sd_layout
-    .spaceToSuperView(UIEdgeInsetsMake(20, 12, 0, 12));
+    .spaceToSuperView(UIEdgeInsetsMake(topH, 12, 0, 12));
+    
+//    self.collectionView.backgroundColor = UIColor.blueColor;
+//    self.topHeadView.backgroundColor = UIColor.orangeColor;
 }
 
 #pragma mark - *********** get & set ***********
@@ -199,6 +212,17 @@ NSString * const ImageSmallCell = @"YSImageSmallCollectionCell";
 - (void)setPickModel:(YSImagePickModel *)pickModel{
  
     _pickModel = pickModel;
+    
+    //处理标题
+    UILabel *topLabel = [_topHeadView viewWithTag:1000];
+    topLabel.text = pickModel.title;
+    [topLabel sizeToFit];
+    
+    topLabel.sd_layout
+    .leftSpaceToView(self.topHeadView, 12)
+    .widthIs(topLabel.width)
+    .heightIs(topLabel.height)
+    .bottomSpaceToView(self.topHeadView, 10);
     
     [self reloadView];
 }
@@ -213,7 +237,7 @@ NSString * const ImageSmallCell = @"YSImageSmallCollectionCell";
     NSUInteger row = _pickModel.dataArray.count / 4 + num;
     CGFloat itemW = ((SCREEN_WIDTH - 12*2) - 12*3)/4.;
     CGFloat contentHeight = row * itemW + (row - 1)*12;
-    _pickModel.rowHeight = contentHeight + 20;
+    _pickModel.rowHeight = contentHeight + self.topHeadView.height;
     [self.collectionView reloadData];
 }
 
@@ -273,6 +297,19 @@ NSString * const ImageSmallCell = @"YSImageSmallCollectionCell";
 
 #pragma mark - *********** lazy ***********
 
+- (UIView *)topHeadView{
+    if (!_topHeadView) {
+        _topHeadView = UIView.new;
+        
+        UILabel *label = UILabel.new;
+        label.font = [UIFont systemFontOfSize:14];
+        label.textColor = UIColorFromRGB(0x4A4A4A);
+        label.tag = 1000;
+        [_topHeadView addSubview:label];
+    }
+    return _topHeadView;
+}
+
 - (UICollectionView *)collectionView{
     
     if (!_collectionView) {
@@ -282,11 +319,11 @@ NSString * const ImageSmallCell = @"YSImageSmallCollectionCell";
         flowLayout.minimumInteritemSpacing = 12;
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
-        _collectionView.backgroundColor = UIColor.greenColor;
         _collectionView.delegate   = self;
         _collectionView.dataSource = self;
         _collectionView.showsVerticalScrollIndicator   = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.backgroundColor = UIColor.whiteColor;
         
         [_collectionView registerClass:NSClassFromString(ImageSmallCell) forCellWithReuseIdentifier:ImageSmallCell];
     }

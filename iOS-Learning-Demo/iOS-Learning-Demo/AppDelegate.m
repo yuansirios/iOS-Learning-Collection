@@ -21,7 +21,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
-    YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:YSImageSelectViewController.new];
+    YSBaseNavigationController *nv = [[YSBaseNavigationController alloc]initWithRootViewController:ViewController.new];
     _window.rootViewController = nv;
     [_window makeKeyAndVisible];
     

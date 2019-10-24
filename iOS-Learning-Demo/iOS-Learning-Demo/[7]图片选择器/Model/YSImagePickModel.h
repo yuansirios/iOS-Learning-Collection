@@ -18,10 +18,11 @@ typedef enum : NSUInteger {
 @interface YSImagePickInfo : YSBaseModel
 
 @property (nonatomic,copy) NSString *imageUrl;              // 网络图片
-@property (nonatomic,copy) UIImage *selectImage;            // 选择的图片
+@property (nonatomic,copy) UIImage * __nullable selectImage;            // 选择的图片
 @property (nonatomic,copy) UIImage *backGroundImage;        // 背景图片
 @property (nonatomic,copy) NSString *desc;                  // 描述
 
+@property (nonatomic,assign) BOOL unable;                   // 是否可以点击
 @property (nonatomic,assign) BOOL isFirst;                  // 第一个按钮
 @property (nonatomic,assign) BOOL isUploadFailer;           // 是否上传成功
 

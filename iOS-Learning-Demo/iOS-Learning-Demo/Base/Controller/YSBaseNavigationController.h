@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YSBaseNavigationController : UINavigationController
 
+@property(nonatomic,assign) NSInteger barStyle;
+
 @end
 
 NS_ASSUME_NONNULL_END

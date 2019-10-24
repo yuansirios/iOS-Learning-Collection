@@ -15,7 +15,6 @@
 #import "YSPopViewController.h"
 #import "CoreGraphicsViewController.h"
 #import "PdiDefectViewController.h"
-#import "YSImagePickViewController.h"
 #import "YSImageSelectViewController.h"
 #import "NSProxyViewController.h"
 #import "DesignPattarnViewController.h"
@@ -25,10 +24,13 @@
 #import "ActivityButtonViewController.h"
 #import "IconButtonViewController.h"
 #import "MixedViewController.h"
+#import "StatusBarViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
 }
+
+@property(nonatomic,assign) NSInteger barStyle;
 
 @property (nonatomic,strong) UITableView *listTableView;
 
@@ -55,7 +57,8 @@
                   @{YSTitleKey:@"[11]标签视图",YSEventKey:@"testMarkListView"},
                   @{YSTitleKey:@"[12]带指示器按钮",YSEventKey:@"testActivityButton"},
                   @{YSTitleKey:@"[13]带图标的按钮",YSEventKey:@"testIconButton"},
-                  @{YSTitleKey:@"[14]OC和C++混编",YSEventKey:@"testMixed"}];
+                  @{YSTitleKey:@"[14]OC和C++混编",YSEventKey:@"testMixed"},
+                  @{YSTitleKey:@"[15]状态栏设置",YSEventKey:@"testStatusBar"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -181,6 +184,10 @@
 
 - (void)testMixed{
     [self.navigationController pushViewController:MixedViewController.new animated:YES];
+}
+
+- (void)testStatusBar{
+    [self.navigationController pushViewController:StatusBarViewController.new animated:YES];
 }
 
 @end

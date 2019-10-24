@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) YSImageCellAddItemBlock addItemBlock;
 @property (nonatomic,copy) YSImageCellRemoveItemBlock removeItemBlock;
+@property (nonatomic,copy) YSImageCellShowLearnBlock showLearnBlock;
+
+@property (nonatomic,assign) BOOL isMyUse;          //自用
+@property (nonatomic,assign) BOOL isDuplicates;     //补档
 
 @end
 
