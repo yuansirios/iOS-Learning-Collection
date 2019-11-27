@@ -92,6 +92,10 @@
 		1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */; };
 		1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2722A102F400560D11 /* MediatorViewController.m */; };
 		1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2922A103E100560D11 /* 中介者原理图.png */; };
+		1CC2C86B238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C86A238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m */; };
+		1CC2C86E238E0AD70033D4CB /* NSObject+YSSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C86D238E0AD70033D4CB /* NSObject+YSSwizzling.m */; };
+		1CC2C871238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */; };
+		1CC2C874238E10A70033D4CB /* LeaksTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */; };
 		1CCBFD4222A64D9400E99A62 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4122A64D9400E99A62 /* ListNode.m */; };
 		1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4422A651B100E99A62 /* SingleLinkedList.m */; };
 		1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4722A6533D00E99A62 /* LinkedMap.m */; };
@@ -351,6 +355,14 @@
 		1CA5BB2622A102F400560D11 /* MediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorViewController.h; sourceTree = "<group>"; };
 		1CA5BB2722A102F400560D11 /* MediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorViewController.m; sourceTree = "<group>"; };
 		1CA5BB2922A103E100560D11 /* 中介者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者原理图.png"; sourceTree = "<group>"; };
+		1CC2C869238E0A9C0033D4CB /* UIViewController+YSLeaksTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YSLeaksTest.h"; sourceTree = "<group>"; };
+		1CC2C86A238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YSLeaksTest.m"; sourceTree = "<group>"; };
+		1CC2C86C238E0AD70033D4CB /* NSObject+YSSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YSSwizzling.h"; sourceTree = "<group>"; };
+		1CC2C86D238E0AD70033D4CB /* NSObject+YSSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YSSwizzling.m"; sourceTree = "<group>"; };
+		1CC2C86F238E0FC50033D4CB /* UINavigationController+YSLeaksTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YSLeaksTest.h"; sourceTree = "<group>"; };
+		1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YSLeaksTest.m"; sourceTree = "<group>"; };
+		1CC2C872238E10A70033D4CB /* LeaksTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaksTestViewController.h; sourceTree = "<group>"; };
+		1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaksTestViewController.m; sourceTree = "<group>"; };
 		1CCBFD4022A64D9400E99A62 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
 		1CCBFD4122A64D9400E99A62 /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
 		1CCBFD4322A651B100E99A62 /* SingleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleLinkedList.h; sourceTree = "<group>"; };
@@ -1024,6 +1036,21 @@
 			path = "[12]中介者";
 			sourceTree = "<group>";
 		};
+		1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */ = {
+			isa = PBXGroup;
+			children = (
+				1CC2C872238E10A70033D4CB /* LeaksTestViewController.h */,
+				1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */,
+				1CC2C869238E0A9C0033D4CB /* UIViewController+YSLeaksTest.h */,
+				1CC2C86A238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m */,
+				1CC2C86F238E0FC50033D4CB /* UINavigationController+YSLeaksTest.h */,
+				1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */,
+				1CC2C86C238E0AD70033D4CB /* NSObject+YSSwizzling.h */,
+				1CC2C86D238E0AD70033D4CB /* NSObject+YSSwizzling.m */,
+			);
+			path = "[5]自定义内存检测工具";
+			sourceTree = "<group>";
+		};
 		1CCBFD3F22A64D3400E99A62 /* [2]链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1046,6 +1073,7 @@
 				1CCBFD4D22A76AF400E99A62 /* [2] NSURLProtocol骚操作 */,
 				1CCBFD5422A793E600E99A62 /* [3]检测锁屏和解锁 */,
 				1C1965E023272AF7009FCF3F /* [4]super.class */,
+				1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */,
 			);
 			path = "[1]冷知识";
 			sourceTree = "<group>";
@@ -1401,10 +1429,10 @@
 				1C16FCC122B88F5C0095CFD9 /* [12]带指示器按钮 */,
 				1C01F4582306A39000845E11 /* [13]带图标的按钮 */,
 				1C1965EA232F5FDE009FCF3F /* [14]OC和C++混编 */,
+				1C1D5C1323614FDE00E1B422 /* [15]状态栏设置 */,
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
-				1C1D5C1323614FDE00E1B422 /* [15]状态栏设置 */,
 				1CF8CDCC221D4B5900B223D4 /* AppDelegate.m */,
 				1CF8CDCE221D4B5900B223D4 /* ViewController.h */,
 				1CF8CDCF221D4B5900B223D4 /* ViewController.m */,
@@ -1782,6 +1810,7 @@
 				1CA5BA9A229E6F3100560D11 /* AndroidDevice.m in Sources */,
 				1CF394C922A50E5700C430E1 /* TreeNodeProperty.m in Sources */,
 				1CA5BAC8229F825600560D11 /* WeakProxy.m in Sources */,
+				1CC2C871238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m in Sources */,
 				1C16FCA022B33C2D0095CFD9 /* YSMarkView.m in Sources */,
 				1CF3943622A4E98000C430E1 /* File.m in Sources */,
 				1CF3948322A4F9D500C430E1 /* Circle.m in Sources */,
@@ -1826,6 +1855,7 @@
 				1CD78C0B2255E2CE0075662E /* PdiMarkView.m in Sources */,
 				1CA5BADE229FDAFD00560D11 /* Menu.m in Sources */,
 				1CA5BACF229FA61900560D11 /* Person.m in Sources */,
+				1CC2C86E238E0AD70033D4CB /* NSObject+YSSwizzling.m in Sources */,
 				1CE55D1F22A8F028000D54A3 /* BaiduMapViewController.m in Sources */,
 				1CA5BA72229E31B300560D11 /* CustomField.m in Sources */,
 				1C1D5C1623614FFC00E1B422 /* StatusBarViewController.m in Sources */,
@@ -1854,6 +1884,7 @@
 				1CD78C0E2255E2CE0075662E /* PdiDefectListView.m in Sources */,
 				1CF8CE3C222636A700B223D4 /* HomeModel.m in Sources */,
 				1CCBFD4222A64D9400E99A62 /* ListNode.m in Sources */,
+				1CC2C86B238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m in Sources */,
 				1CA5BAF122A0CE9C00560D11 /* PhoneNumChain.m in Sources */,
 				1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */,
 				1CF3949B22A4FC0B00C430E1 /* GameGearConsoleController.m in Sources */,
@@ -1876,6 +1907,7 @@
 				1CA5BAF722A0D0B000560D11 /* DesignPattarnViewController.m in Sources */,
 				1CF8CDF9221F8B9600B223D4 /* YSBaseViewController.m in Sources */,
 				1C01F44422F17D3600845E11 /* YSImageSelectViewController.m in Sources */,
+				1CC2C874238E10A70033D4CB /* LeaksTestViewController.m in Sources */,
 				1CA5BA6B229E307400560D11 /* StrategyPatternViewController.m in Sources */,
 				1CF8CDCD221D4B5900B223D4 /* AppDelegate.m in Sources */,
 				1CA5BB0F22A0FD2000560D11 /* ElementCollection.m in Sources */,

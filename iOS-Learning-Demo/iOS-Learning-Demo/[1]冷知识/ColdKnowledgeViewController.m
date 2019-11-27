@@ -12,6 +12,8 @@
 #import "YSCheckLockStatus.h"
 #import "A.h"
 
+#import "LeaksTestViewController.h"
+
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
     YSCheckLockStatus *_checkLock;
@@ -30,7 +32,8 @@
                   @{YSTitleKey:@"[2]NSURLProtocol",YSEventKey:@"testNSURLProtocol"},
                   @{YSTitleKey:@"[3]检测锁屏和解锁",YSEventKey:@"testScreenLock"},
                   @{YSTitleKey:@"[4]super.class",YSEventKey:@"testSuperClass"},
-                  @{YSTitleKey:@"[5]NSString.copy",YSEventKey:@"testStringCopy"}];
+                  @{YSTitleKey:@"[5]NSString.copy",YSEventKey:@"testStringCopy"},
+                  @{YSTitleKey:@"[6]自定义内存检测工具",YSEventKey:@"testLeaks"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -85,6 +88,10 @@
 
 - (void)testStringCopy{
     [[A alloc]testCopy];
+}
+
+- (void)testLeaks{
+    [self.navigationController pushViewController:LeaksTestViewController.new animated:YES];
 }
 
 #pragma mark - *********** layout ***********
