@@ -96,6 +96,8 @@
 		1CC2C86E238E0AD70033D4CB /* NSObject+YSSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C86D238E0AD70033D4CB /* NSObject+YSSwizzling.m */; };
 		1CC2C871238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */; };
 		1CC2C874238E10A70033D4CB /* LeaksTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */; };
+		1CC2C878238E53AB0033D4CB /* MessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C877238E53AB0033D4CB /* MessageForwardViewController.m */; };
+		1CC2C87B238E63F30033D4CB /* NSObject+CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C87A238E63F30033D4CB /* NSObject+CrashHandle.m */; };
 		1CCBFD4222A64D9400E99A62 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4122A64D9400E99A62 /* ListNode.m */; };
 		1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4422A651B100E99A62 /* SingleLinkedList.m */; };
 		1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4722A6533D00E99A62 /* LinkedMap.m */; };
@@ -363,6 +365,10 @@
 		1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YSLeaksTest.m"; sourceTree = "<group>"; };
 		1CC2C872238E10A70033D4CB /* LeaksTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaksTestViewController.h; sourceTree = "<group>"; };
 		1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaksTestViewController.m; sourceTree = "<group>"; };
+		1CC2C876238E53AB0033D4CB /* MessageForwardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardViewController.h; sourceTree = "<group>"; };
+		1CC2C877238E53AB0033D4CB /* MessageForwardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardViewController.m; sourceTree = "<group>"; };
+		1CC2C879238E63F30033D4CB /* NSObject+CrashHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CrashHandle.h"; sourceTree = "<group>"; };
+		1CC2C87A238E63F30033D4CB /* NSObject+CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CrashHandle.m"; sourceTree = "<group>"; };
 		1CCBFD4022A64D9400E99A62 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
 		1CCBFD4122A64D9400E99A62 /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
 		1CCBFD4322A651B100E99A62 /* SingleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleLinkedList.h; sourceTree = "<group>"; };
@@ -1051,6 +1057,17 @@
 			path = "[5]自定义内存检测工具";
 			sourceTree = "<group>";
 		};
+		1CC2C875238E53580033D4CB /* [6]消息转发机制 */ = {
+			isa = PBXGroup;
+			children = (
+				1CC2C876238E53AB0033D4CB /* MessageForwardViewController.h */,
+				1CC2C877238E53AB0033D4CB /* MessageForwardViewController.m */,
+				1CC2C879238E63F30033D4CB /* NSObject+CrashHandle.h */,
+				1CC2C87A238E63F30033D4CB /* NSObject+CrashHandle.m */,
+			);
+			path = "[6]消息转发机制";
+			sourceTree = "<group>";
+		};
 		1CCBFD3F22A64D3400E99A62 /* [2]链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1074,6 +1091,7 @@
 				1CCBFD5422A793E600E99A62 /* [3]检测锁屏和解锁 */,
 				1C1965E023272AF7009FCF3F /* [4]super.class */,
 				1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */,
+				1CC2C875238E53580033D4CB /* [6]消息转发机制 */,
 			);
 			path = "[1]冷知识";
 			sourceTree = "<group>";
@@ -1815,6 +1833,7 @@
 				1CF3943622A4E98000C430E1 /* File.m in Sources */,
 				1CF3948322A4F9D500C430E1 /* Circle.m in Sources */,
 				1CF3947A22A4F79600C430E1 /* Model.m in Sources */,
+				1CC2C87B238E63F30033D4CB /* NSObject+CrashHandle.m in Sources */,
 				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CA5BAF422A0CEC400560D11 /* UserNameChain.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
@@ -1845,6 +1864,7 @@
 				1CD78C1A2255E3090075662E /* UIGestureRecognizer+addtion.m in Sources */,
 				1CF394A122A4FCEC00C430E1 /* GameGearEmulator.m in Sources */,
 				1CA5BA78229E524300560D11 /* PhoneNumValidator.m in Sources */,
+				1CC2C878238E53AB0033D4CB /* MessageForwardViewController.m in Sources */,
 				1CF394C322A50ABB00C430E1 /* BinaryTreeNode.m in Sources */,
 				1CF394B222A4FF8D00C430E1 /* NormalModelAdapter.m in Sources */,
 				1CF394B522A4FFAD00C430E1 /* SpecialModel.m in Sources */,

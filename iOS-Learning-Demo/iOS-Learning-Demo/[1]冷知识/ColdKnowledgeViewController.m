@@ -13,6 +13,7 @@
 #import "A.h"
 
 #import "LeaksTestViewController.h"
+#import "MessageForwardViewController.h"
 
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -33,7 +34,8 @@
                   @{YSTitleKey:@"[3]检测锁屏和解锁",YSEventKey:@"testScreenLock"},
                   @{YSTitleKey:@"[4]super.class",YSEventKey:@"testSuperClass"},
                   @{YSTitleKey:@"[5]NSString.copy",YSEventKey:@"testStringCopy"},
-                  @{YSTitleKey:@"[6]自定义内存检测工具",YSEventKey:@"testLeaks"}];
+                  @{YSTitleKey:@"[6]自定义内存检测工具",YSEventKey:@"testLeaks"},
+    @{YSTitleKey:@"[7]消息转发机制",YSEventKey:@"testMessageForward"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -92,6 +94,10 @@
 
 - (void)testLeaks{
     [self.navigationController pushViewController:LeaksTestViewController.new animated:YES];
+}
+
+- (void)testMessageForward{
+    [self.navigationController pushViewController:MessageForwardViewController.new animated:YES];
 }
 
 #pragma mark - *********** layout ***********
