@@ -1,0 +1,6 @@
+module Aspect {
+  umbrella header "Aspect-umbrella.h"
+
+  export *
+  module * { export * }
+}

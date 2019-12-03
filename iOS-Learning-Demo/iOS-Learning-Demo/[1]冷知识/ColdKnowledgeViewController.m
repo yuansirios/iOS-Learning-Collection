@@ -14,6 +14,7 @@
 
 #import "LeaksTestViewController.h"
 #import "MessageForwardViewController.h"
+#import "AspectUtil.h"
 
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -35,7 +36,8 @@
                   @{YSTitleKey:@"[4]super.class",YSEventKey:@"testSuperClass"},
                   @{YSTitleKey:@"[5]NSString.copy",YSEventKey:@"testStringCopy"},
                   @{YSTitleKey:@"[6]自定义内存检测工具",YSEventKey:@"testLeaks"},
-    @{YSTitleKey:@"[7]消息转发机制",YSEventKey:@"testMessageForward"}];
+    @{YSTitleKey:@"[7]消息转发机制",YSEventKey:@"testMessageForward"},
+    @{YSTitleKey:@"[8]Aspect框架使用",YSEventKey:@"testAspect"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -98,6 +100,18 @@
 
 - (void)testMessageForward{
     [self.navigationController pushViewController:MessageForwardViewController.new animated:YES];
+}
+
+- (void)testAspect{
+    
+    // [AspectUtil setUp];
+    
+    AspectUtil *as = AspectUtil.new;
+        
+    [AspectUtil setUpObj:as];
+    
+    [as show];
+    
 }
 
 #pragma mark - *********** layout ***********

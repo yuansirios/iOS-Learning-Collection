@@ -42,6 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.title = @"示例";
     _itemList = @[@{YSTitleKey:@"[1]冷知识",YSEventKey:@"testColdKnowledge"},
                   @{YSTitleKey:@"[2]屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
