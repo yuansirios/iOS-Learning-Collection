@@ -46,6 +46,7 @@
                   @{YSTitleKey:@"N个台阶，一次可以走一步或者两步，求走这N个台阶有多少种走法",YSEventKey:@"sort9"},
                   @{YSTitleKey:@"一个数组有 N 个元素，求连续子数组的最大和",YSEventKey:@"sort10"},
                   @{YSTitleKey:@"N对括号的所有的有效组合",YSEventKey:@"sort11"},
+                  @{YSTitleKey:@"不用三方变量，交换值",YSEventKey:@"sort12"},
                   
                   
                 ];
@@ -227,9 +228,8 @@ int max(int a, int b) {
     
 }
 
-/**
- //TODO:N对括号的所有的有效组合
- */
+//TODO:N对括号的所有的有效组合
+
 - (void)sort11{
     NSLog(@"N对括号的所有的有效组合:%@",[self getAllKH:3]);
 }
@@ -247,6 +247,43 @@ int max(int a, int b) {
         }
     }
     return result.copy;
+}
+
+//TODO:不用三方变量，交换值
+
+- (void)sort12{
+    [self swap:10 b:20];
+    [self swap1:10 b:20];
+    [self swap2:10 b:20];
+    [self swap3:10 b:20];
+}
+
+- (void)swap:(int)a b:(int)b{
+    int temp = a;
+    a = b;
+    b = temp;
+    NSLog(@"%d:%d",a,b);
+}
+
+- (void)swap1:(int)a b:(int)b{
+    b = a + b;
+    a = b - a;
+    b = b - a;
+    NSLog(@"%d:%d",a,b);
+}
+
+- (void)swap2:(int)a b:(int)b{
+    a = a * b;
+    b = a / b;
+    a = a / b;
+    NSLog(@"%d:%d",a,b);
+}
+
+- (void)swap3:(int)a b:(int)b{
+    a = a ^ b;
+    b = a ^ b; //b = a ^ b ^ b = a;
+    a = a ^ b;
+    NSLog(@"%d:%d",a,b);
 }
 
 #pragma mark - *********** 算法 ***********
