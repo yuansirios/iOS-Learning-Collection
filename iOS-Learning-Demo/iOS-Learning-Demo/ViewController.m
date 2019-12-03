@@ -25,6 +25,7 @@
 #import "IconButtonViewController.h"
 #import "MixedViewController.h"
 #import "StatusBarViewController.h"
+#import "AlgorithmViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -44,22 +45,23 @@
     [super viewDidLoad];
     
     self.title = @"示例";
-    _itemList = @[@{YSTitleKey:@"[1]冷知识",YSEventKey:@"testColdKnowledge"},
-                  @{YSTitleKey:@"[2]屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
-                  @{YSTitleKey:@"--屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
-                  @{YSTitleKey:@"[3]SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
-                  @{YSTitleKey:@"[4]MVVM",YSEventKey:@"testMVVM"},
-                  @{YSTitleKey:@"[5]自定义PopView",YSEventKey:@"testPopView"},
-                  @{YSTitleKey:@"[6]自定义标注视图",YSEventKey:@"testMarkView"},
-                  @{YSTitleKey:@"[7]图片选择器",YSEventKey:@"testImagePick"},
-                  @{YSTitleKey:@"[8]设计模式",YSEventKey:@"testDesignPattern"},
-                  @{YSTitleKey:@"[9]数据结构",YSEventKey:@"testDataStructure"},
-                  @{YSTitleKey:@"[10]百度地图",YSEventKey:@"testBaiduMap"},
-                  @{YSTitleKey:@"[11]标签视图",YSEventKey:@"testMarkListView"},
-                  @{YSTitleKey:@"[12]带指示器按钮",YSEventKey:@"testActivityButton"},
-                  @{YSTitleKey:@"[13]带图标的按钮",YSEventKey:@"testIconButton"},
-                  @{YSTitleKey:@"[14]OC和C++混编",YSEventKey:@"testMixed"},
-                  @{YSTitleKey:@"[15]状态栏设置",YSEventKey:@"testStatusBar"}];
+    _itemList = @[@{YSTitleKey:@"冷知识",YSEventKey:@"testColdKnowledge"},
+                  @{YSTitleKey:@"屏幕旋转-方案一",YSEventKey:@"testScreenRotation"},
+                  @{YSTitleKey:@"屏幕旋转-方案二",YSEventKey:@"testScreenRotation2"},
+                  @{YSTitleKey:@"SDAutoLayout",YSEventKey:@"testSDAutoLayout"},
+                  @{YSTitleKey:@"MVVM",YSEventKey:@"testMVVM"},
+                  @{YSTitleKey:@"自定义PopView",YSEventKey:@"testPopView"},
+                  @{YSTitleKey:@"自定义标注视图",YSEventKey:@"testMarkView"},
+                  @{YSTitleKey:@"图片选择器",YSEventKey:@"testImagePick"},
+                  @{YSTitleKey:@"设计模式",YSEventKey:@"testDesignPattern"},
+                  @{YSTitleKey:@"数据结构",YSEventKey:@"testDataStructure"},
+                  @{YSTitleKey:@"常用算法",YSEventKey:@"testAlgorithm"},
+                  @{YSTitleKey:@"百度地图",YSEventKey:@"testBaiduMap"},
+                  @{YSTitleKey:@"标签视图",YSEventKey:@"testMarkListView"},
+                  @{YSTitleKey:@"带指示器按钮",YSEventKey:@"testActivityButton"},
+                  @{YSTitleKey:@"带图标的按钮",YSEventKey:@"testIconButton"},
+                  @{YSTitleKey:@"OC和C++混编",YSEventKey:@"testMixed"},
+                  @{YSTitleKey:@"状态栏设置",YSEventKey:@"testStatusBar"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -99,7 +101,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     NSDictionary *dic = _itemList[indexPath.row];
-    cell.textLabel.text = dic[YSTitleKey];
+    cell.textLabel.text = [NSString stringWithFormat:@"[%zd] %@",indexPath.row,dic[YSTitleKey]];
     return cell;
 }
 
@@ -161,6 +163,10 @@
 
 - (void)testDesignPattern{
     [self.navigationController pushViewController:DesignPattarnViewController.new animated:YES];
+}
+
+- (void)testAlgorithm{
+    [self.navigationController pushViewController:AlgorithmViewController.new animated:YES];
 }
 
 - (void)testDataStructure{

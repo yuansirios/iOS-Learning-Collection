@@ -10,6 +10,7 @@
 		1C01F44422F17D3600845E11 /* YSImageSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C01F44322F17D3600845E11 /* YSImageSelectViewController.m */; };
 		1C01F45B2306A3BF00845E11 /* IconButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C01F45A2306A3BF00845E11 /* IconButtonViewController.m */; };
 		1C01F45E2306A41D00845E11 /* YSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C01F45D2306A41D00845E11 /* YSButton.m */; };
+		1C0386822395F42800252E94 /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0386812395F42800252E94 /* AlgorithmViewController.m */; };
 		1C129FF622375F5500982910 /* CoreGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF522375F5500982910 /* CoreGraphicsViewController.m */; };
 		1C129FFA22377CC600982910 /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FF922377CC600982910 /* CoreGraphicsView.m */; };
 		1C129FFE2237921F00982910 /* YSRunloopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C129FFD2237921E00982910 /* YSRunloopObserver.m */; };
@@ -200,6 +201,8 @@
 		1C01F45A2306A3BF00845E11 /* IconButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconButtonViewController.m; sourceTree = "<group>"; };
 		1C01F45C2306A41D00845E11 /* YSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSButton.h; sourceTree = "<group>"; };
 		1C01F45D2306A41D00845E11 /* YSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSButton.m; sourceTree = "<group>"; };
+		1C0386802395F42800252E94 /* AlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmViewController.h; sourceTree = "<group>"; };
+		1C0386812395F42800252E94 /* AlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmViewController.m; sourceTree = "<group>"; };
 		1C129FF422375F5500982910 /* CoreGraphicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsViewController.h; sourceTree = "<group>"; };
 		1C129FF522375F5500982910 /* CoreGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsViewController.m; sourceTree = "<group>"; };
 		1C129FF822377CC600982910 /* CoreGraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsView.h; sourceTree = "<group>"; };
@@ -593,6 +596,15 @@
 				1C01F45A2306A3BF00845E11 /* IconButtonViewController.m */,
 			);
 			path = "[13]带图标的按钮";
+			sourceTree = "<group>";
+		};
+		1C03867E2395F3CA00252E94 /* 常用算法 */ = {
+			isa = PBXGroup;
+			children = (
+				1C0386802395F42800252E94 /* AlgorithmViewController.h */,
+				1C0386812395F42800252E94 /* AlgorithmViewController.m */,
+			);
+			path = "常用算法";
 			sourceTree = "<group>";
 		};
 		1C129FF022375DFB00982910 /* CoreGraphics */ = {
@@ -1461,6 +1473,7 @@
 				1C01F4582306A39000845E11 /* [13]带图标的按钮 */,
 				1C1965EA232F5FDE009FCF3F /* [14]OC和C++混编 */,
 				1C1D5C1323614FDE00E1B422 /* [15]状态栏设置 */,
+				1C03867E2395F3CA00252E94 /* 常用算法 */,
 				1CA5BAC1229F7F3C00560D11 /* NSProxy */,
 				1C129FFB223791DE00982910 /* RunLoop */,
 				1CF8CDCB221D4B5900B223D4 /* AppDelegate.h */,
@@ -1834,6 +1847,7 @@
 				1CE55D2522A900B0000D54A3 /* YSLocationService.m in Sources */,
 				1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */,
 				1CD78C0C2255E2CE0075662E /* PdiMarkModel.m in Sources */,
+				1C0386822395F42800252E94 /* AlgorithmViewController.m in Sources */,
 				1CF8CDD0221D4B5900B223D4 /* ViewController.m in Sources */,
 				1CC2C87F2394BABA0033D4CB /* AspectUtil.m in Sources */,
 				1CA5BAD2229FA64800560D11 /* Student.m in Sources */,
