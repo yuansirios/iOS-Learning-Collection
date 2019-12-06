@@ -19,7 +19,12 @@
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
     YSCheckLockStatus *_checkLock;
+    NSString *_str;
 }
+
+@property (nonatomic,copy) dispatch_block_t block;
+@property (nonatomic,copy) dispatch_block_t block2;
+
 
 @property (nonatomic,strong) UITableView *listTableView;
 
@@ -37,7 +42,8 @@
                   @{YSTitleKey:@"[5]NSString.copy",YSEventKey:@"testStringCopy"},
                   @{YSTitleKey:@"[6]自定义内存检测工具",YSEventKey:@"testLeaks"},
     @{YSTitleKey:@"[7]消息转发机制",YSEventKey:@"testMessageForward"},
-    @{YSTitleKey:@"[8]Aspect框架使用",YSEventKey:@"testAspect"}];
+    @{YSTitleKey:@"[8]Aspect框架使用",YSEventKey:@"testAspect"},
+    @{YSTitleKey:@"[9]Block嵌套使用，内存怎么管理",YSEventKey:@"testBlock"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -112,6 +118,22 @@
     
     [as show];
     
+}
+
+- (void)testBlock{
+    _str = @"123123";
+    __weak typeof(self) weakSelf = self;
+    weakSelf.block = ^{
+        __strong typeof(self) strongSelf = weakSelf;
+        NSLog(@"block：%@",strongSelf->_str);
+       
+        weakSelf.block2 = ^{
+            __strong typeof(self) strongSelf2 = weakSelf;
+            NSLog(@"block2：%@",strongSelf2->_str);
+        };
+        weakSelf.block2();
+    };
+    self.block();
 }
 
 #pragma mark - *********** layout ***********
