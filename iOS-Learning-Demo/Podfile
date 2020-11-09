@@ -3,11 +3,11 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 
 target ‘iOS-Learning-Demo’ do
-    pod 'SDAutoLayout'
-    pod 'ReactiveObjC'
-    pod 'YYModel'
-    pod 'YBImageBrowser'
-    pod 'TZImagePickerController'
+    pod 'SDAutoLayout', '~> 2.2.1'
+    pod 'ReactiveObjC', '~> 3.1.0'
+    pod 'YYModel', '~> 1.0.4'
+    pod 'YBImageBrowser', '~> 2.1.0'
+    pod 'TZImagePickerController', '~> 3.1.6'
     
     pod 'BaiduMapKit', '~> 4.2.1'
     pod 'BMKLocationKit', '~> 1.4.0'
