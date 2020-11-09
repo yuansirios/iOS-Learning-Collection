@@ -1,6 +1,0 @@
-module Pods_iOS_Learning_Demo {
-  umbrella header "Pods-iOS-Learning-Demo-umbrella.h"
-
-  export *
-  module * { export * }
-}
