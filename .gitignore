@@ -1,0 +1,5 @@
+# 只忽略Pods目录，不忽略Pods文件
+Pods/
+
+# 只忽略Podfile.lock文件
+Podfile.lock
