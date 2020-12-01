@@ -12,7 +12,7 @@
 @interface LinkedListIterator ()
 
 @property (nonatomic, weak) LinkedList *linkedList;
-@property (nonatomic, weak) Node       *currentNode;
+@property (nonatomic, weak) NodeItem   *currentNode;
 
 @end
 

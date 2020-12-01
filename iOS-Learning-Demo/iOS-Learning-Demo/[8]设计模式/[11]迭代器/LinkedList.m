@@ -13,7 +13,7 @@
 /**
  *  头结点
  */
-@property (nonatomic, strong, readwrite) Node      *headNode;
+@property (nonatomic, strong, readwrite) NodeItem      *headNode;
 
 /**
  *  节点的数量
@@ -28,7 +28,7 @@
     
     if (self.headNode == nil) {
         
-        self.headNode = [[Node alloc] initWithItem:item];
+        self.headNode = [[NodeItem alloc] initWithItem:item];
         
     } else {
         
@@ -44,11 +44,11 @@
 }
 
 #pragma mark - Private Methods
-- (void)addItem:(id)item node:(Node *)node {
+- (void)addItem:(id)item node:(NodeItem *)node {
     
     if (node.nextNode == nil) {
         
-        node.nextNode = [[Node alloc] initWithItem:item];
+        node.nextNode = [[NodeItem alloc] initWithItem:item];
         
     } else {
         

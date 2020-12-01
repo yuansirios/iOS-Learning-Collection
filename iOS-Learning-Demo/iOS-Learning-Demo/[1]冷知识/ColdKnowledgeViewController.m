@@ -16,6 +16,8 @@
 #import "MessageForwardViewController.h"
 #import "AspectUtil.h"
 
+#import "SVGImageViewController.h"
+
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
     YSCheckLockStatus *_checkLock;
@@ -43,7 +45,8 @@
                   @{YSTitleKey:@"[6]自定义内存检测工具",YSEventKey:@"testLeaks"},
     @{YSTitleKey:@"[7]消息转发机制",YSEventKey:@"testMessageForward"},
     @{YSTitleKey:@"[8]Aspect框架使用",YSEventKey:@"testAspect"},
-    @{YSTitleKey:@"[9]Block嵌套使用，内存怎么管理",YSEventKey:@"testBlock"}];
+    @{YSTitleKey:@"[9]Block嵌套使用，内存怎么管理",YSEventKey:@"testBlock"},
+    @{YSTitleKey:@"[10]SVG图片加载",YSEventKey:@"testSVGImage"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -134,6 +137,10 @@
         weakSelf.block2();
     };
     self.block();
+}
+
+- (void)testSVGImage{
+    [self.navigationController pushViewController:SVGImageViewController.new animated:YES];
 }
 
 #pragma mark - *********** layout ***********

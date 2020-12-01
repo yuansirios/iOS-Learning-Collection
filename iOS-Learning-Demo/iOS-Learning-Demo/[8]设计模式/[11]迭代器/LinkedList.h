@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Node.h"
+#import "NodeItem.h"
 #import "IteratorProtocol.h"
 #import "LinkedListIterator.h"
 
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  头结点
  */
-@property (nonatomic, strong, readonly) Node      *headNode;
+@property (nonatomic, strong, readonly) NodeItem      *headNode;
 
 /**
  *  节点的数目

@@ -1,4 +1,5 @@
-platform :ios, '10.0'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+platform :ios ,'10.0'
 
 inhibit_all_warnings!
 
@@ -11,5 +12,6 @@ target ‘iOS-Learning-Demo’ do
     
     pod 'BaiduMapKit', '~> 4.2.1'
     pod 'BMKLocationKit', '~> 1.4.0'
-    pod 'Aspect', '~> 1.3.2'
+    pod 'Aspect'
+    pod 'SVGKit'
 end

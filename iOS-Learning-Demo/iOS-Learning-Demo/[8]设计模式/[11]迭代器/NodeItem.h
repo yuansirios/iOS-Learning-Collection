@@ -1,5 +1,5 @@
 //
-//  Node.h
+//  NodeItem.h
 //  iOS-Learning-Demo
 //
 //  Created by yuan on 2019/5/31.
@@ -10,12 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Node : NSObject
+@interface NodeItem : NSObject
 
 /**
  *  下一个节点
  */
-@property (nonatomic, strong) Node *nextNode;
+@property (nonatomic, strong) NodeItem *nextNode;
 
 /**
  *  节点里面的内容

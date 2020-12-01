@@ -30,6 +30,8 @@
 		1C1965FE232F77A2009FCF3F /* ObjectOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1965FD232F77A2009FCF3F /* ObjectOC.m */; };
 		1C1D5C0F2361493E00E1B422 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1D5C0E2361493E00E1B422 /* LaunchStoryboard.storyboard */; };
 		1C1D5C1623614FFC00E1B422 /* StatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D5C1523614FFC00E1B422 /* StatusBarViewController.m */; };
+		1C5B116825766342008759E3 /* a.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B116725766342008759E3 /* a.svg */; };
+		1C5B116B25766358008759E3 /* b.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B116A25766358008759E3 /* b.svg */; };
 		1C843C9C22769AE5004188ED /* YSImagePickModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843C9B22769AE5004188ED /* YSImagePickModel.m */; };
 		1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C843CA72276C86E004188ED /* YSImagePicker.m */; };
 		1CA20C5E22A7949D00345064 /* YSCheckLockStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */; };
@@ -86,13 +88,18 @@
 		1CA5BB0F22A0FD2000560D11 /* ElementCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB0E22A0FD2000560D11 /* ElementCollection.m */; };
 		1CA5BB1222A0FD5400560D11 /* Visitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1122A0FD5400560D11 /* Visitor.m */; };
 		1CA5BB1422A0FF8F00560D11 /* 访问者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1322A0FF8E00560D11 /* 访问者原理图.png */; };
-		1CA5BB1922A1007500560D11 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1822A1007500560D11 /* Node.m */; };
+		1CA5BB1922A1007500560D11 /* NodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1822A1007500560D11 /* NodeItem.m */; };
 		1CA5BB1C22A100B600560D11 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1B22A100B600560D11 /* LinkedList.m */; };
 		1CA5BB1F22A100F700560D11 /* LinkedListIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB1E22A100F700560D11 /* LinkedListIterator.m */; };
 		1CA5BB2122A1021D00560D11 /* 迭代器原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2022A1021D00560D11 /* 迭代器原理图.png */; };
 		1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */; };
 		1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2722A102F400560D11 /* MediatorViewController.m */; };
 		1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2922A103E100560D11 /* 中介者原理图.png */; };
+		1CACE6E2256FCCC100948861 /* SVGImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACE6E1256FCCC100948861 /* SVGImageViewController.m */; };
+		1CACE6E8256FCD4100948861 /* UIImage+SVGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACE6E7256FCD4100948861 /* UIImage+SVGManager.m */; };
+		1CACE6EF256FCD7E00948861 /* icons_filled_gift.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1CACE6EC256FCD7E00948861 /* icons_filled_gift.svg */; };
+		1CACE6F0256FCD7E00948861 /* icons_filled_game.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1CACE6ED256FCD7E00948861 /* icons_filled_game.svg */; };
+		1CACE6F1256FCD7E00948861 /* icons_filled_group_detail.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1CACE6EE256FCD7E00948861 /* icons_filled_group_detail.svg */; };
 		1CC2C86B238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C86A238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m */; };
 		1CC2C86E238E0AD70033D4CB /* NSObject+YSSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C86D238E0AD70033D4CB /* NSObject+YSSwizzling.m */; };
 		1CC2C871238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */; };
@@ -241,6 +248,8 @@
 		1C1D5C0E2361493E00E1B422 /* LaunchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		1C1D5C1423614FFC00E1B422 /* StatusBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusBarViewController.h; sourceTree = "<group>"; };
 		1C1D5C1523614FFC00E1B422 /* StatusBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarViewController.m; sourceTree = "<group>"; };
+		1C5B116725766342008759E3 /* a.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = a.svg; sourceTree = "<group>"; };
+		1C5B116A25766358008759E3 /* b.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = b.svg; sourceTree = "<group>"; };
 		1C843C9A22769AE5004188ED /* YSImagePickModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSImagePickModel.h; sourceTree = "<group>"; };
 		1C843C9B22769AE5004188ED /* YSImagePickModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSImagePickModel.m; sourceTree = "<group>"; };
 		1C843CA62276C86E004188ED /* YSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImagePicker.h; sourceTree = "<group>"; };
@@ -349,8 +358,8 @@
 		1CA5BB1122A0FD5400560D11 /* Visitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visitor.m; sourceTree = "<group>"; };
 		1CA5BB1322A0FF8E00560D11 /* 访问者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "访问者原理图.png"; sourceTree = "<group>"; };
 		1CA5BB1622A1005700560D11 /* IteratorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IteratorProtocol.h; sourceTree = "<group>"; };
-		1CA5BB1722A1007500560D11 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		1CA5BB1822A1007500560D11 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		1CA5BB1722A1007500560D11 /* NodeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeItem.h; sourceTree = "<group>"; };
+		1CA5BB1822A1007500560D11 /* NodeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeItem.m; sourceTree = "<group>"; };
 		1CA5BB1A22A100B600560D11 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		1CA5BB1B22A100B600560D11 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 		1CA5BB1D22A100F700560D11 /* LinkedListIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListIterator.h; sourceTree = "<group>"; };
@@ -361,6 +370,13 @@
 		1CA5BB2622A102F400560D11 /* MediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorViewController.h; sourceTree = "<group>"; };
 		1CA5BB2722A102F400560D11 /* MediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorViewController.m; sourceTree = "<group>"; };
 		1CA5BB2922A103E100560D11 /* 中介者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者原理图.png"; sourceTree = "<group>"; };
+		1CACE6E0256FCCC100948861 /* SVGImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGImageViewController.h; sourceTree = "<group>"; };
+		1CACE6E1256FCCC100948861 /* SVGImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVGImageViewController.m; sourceTree = "<group>"; };
+		1CACE6E6256FCD4100948861 /* UIImage+SVGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVGManager.h"; sourceTree = "<group>"; };
+		1CACE6E7256FCD4100948861 /* UIImage+SVGManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVGManager.m"; sourceTree = "<group>"; };
+		1CACE6EC256FCD7E00948861 /* icons_filled_gift.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = icons_filled_gift.svg; sourceTree = "<group>"; };
+		1CACE6ED256FCD7E00948861 /* icons_filled_game.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = icons_filled_game.svg; sourceTree = "<group>"; };
+		1CACE6EE256FCD7E00948861 /* icons_filled_group_detail.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = icons_filled_group_detail.svg; sourceTree = "<group>"; };
 		1CC2C869238E0A9C0033D4CB /* UIViewController+YSLeaksTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YSLeaksTest.h"; sourceTree = "<group>"; };
 		1CC2C86A238E0A9C0033D4CB /* UIViewController+YSLeaksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YSLeaksTest.m"; sourceTree = "<group>"; };
 		1CC2C86C238E0AD70033D4CB /* NSObject+YSSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YSSwizzling.h"; sourceTree = "<group>"; };
@@ -1035,8 +1051,8 @@
 			children = (
 				1CA5BB2022A1021D00560D11 /* 迭代器原理图.png */,
 				1CA5BB1622A1005700560D11 /* IteratorProtocol.h */,
-				1CA5BB1722A1007500560D11 /* Node.h */,
-				1CA5BB1822A1007500560D11 /* Node.m */,
+				1CA5BB1722A1007500560D11 /* NodeItem.h */,
+				1CA5BB1822A1007500560D11 /* NodeItem.m */,
 				1CA5BB1A22A100B600560D11 /* LinkedList.h */,
 				1CA5BB1B22A100B600560D11 /* LinkedList.m */,
 				1CA5BB1D22A100F700560D11 /* LinkedListIterator.h */,
@@ -1055,6 +1071,38 @@
 				1CA5BB2722A102F400560D11 /* MediatorViewController.m */,
 			);
 			path = "[12]中介者";
+			sourceTree = "<group>";
+		};
+		1CACE6DF256FCC9800948861 /* [8]SVG图片 */ = {
+			isa = PBXGroup;
+			children = (
+				1CACE6EB256FCD6100948861 /* SVG */,
+				1CACE6E5256FCD2F00948861 /* UIImage+SVGManager */,
+				1CACE6E0256FCCC100948861 /* SVGImageViewController.h */,
+				1CACE6E1256FCCC100948861 /* SVGImageViewController.m */,
+			);
+			path = "[8]SVG图片";
+			sourceTree = "<group>";
+		};
+		1CACE6E5256FCD2F00948861 /* UIImage+SVGManager */ = {
+			isa = PBXGroup;
+			children = (
+				1CACE6E6256FCD4100948861 /* UIImage+SVGManager.h */,
+				1CACE6E7256FCD4100948861 /* UIImage+SVGManager.m */,
+			);
+			path = "UIImage+SVGManager";
+			sourceTree = "<group>";
+		};
+		1CACE6EB256FCD6100948861 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				1C5B116725766342008759E3 /* a.svg */,
+				1C5B116A25766358008759E3 /* b.svg */,
+				1CACE6ED256FCD7E00948861 /* icons_filled_game.svg */,
+				1CACE6EC256FCD7E00948861 /* icons_filled_gift.svg */,
+				1CACE6EE256FCD7E00948861 /* icons_filled_group_detail.svg */,
+			);
+			path = SVG;
 			sourceTree = "<group>";
 		};
 		1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */ = {
@@ -1117,6 +1165,7 @@
 				1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */,
 				1CC2C875238E53580033D4CB /* [6]消息转发机制 */,
 				1CC2C87C2394B9770033D4CB /* [7]Aspect框架使用 */,
+				1CACE6DF256FCC9800948861 /* [8]SVG图片 */,
 			);
 			path = "[1]冷知识";
 			sourceTree = "<group>";
@@ -1746,6 +1795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CF3948E22A4FAD200C430E1 /* 外观原理图.jpg in Resources */,
+				1C5B116B25766358008759E3 /* b.svg in Resources */,
 				1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */,
 				1CF3946E22A4F64400C430E1 /* 生成器原理.png in Resources */,
 				1CA5BA8B229E6D5600560D11 /* 装饰器.png in Resources */,
@@ -1753,9 +1803,11 @@
 				1CF3945E22A4F3F800C430E1 /* 命令模式原理.png in Resources */,
 				1CF3944722A4EB3800C430E1 /* Folder@2x.png in Resources */,
 				1CA5BA7A229E569700560D11 /* 策略模式.png in Resources */,
+				1CACE6EF256FCD7E00948861 /* icons_filled_gift.svg in Resources */,
 				1CF3944B22A4EBBE00C430E1 /* 组合原理图.png in Resources */,
 				1CA5BA8C229E6D5600560D11 /* 装饰器2.png in Resources */,
 				1CA5BAA1229E6FE800560D11 /* 简单工厂关系伦理图.png in Resources */,
+				1CACE6F1256FCD7E00948861 /* icons_filled_group_detail.svg in Resources */,
 				1CF3947C22A4F90900C430E1 /* 备忘录原理.gif in Resources */,
 				1CA5BAF922A0D4DB00560D11 /* 责任链.gif in Resources */,
 				1CA5BAA2229E6FE800560D11 /* 简单工厂制造者与具体的子类.png in Resources */,
@@ -1764,11 +1816,13 @@
 				1CF3944A22A4EBBE00C430E1 /* 组合原理2.jpg in Resources */,
 				1CA5BB2122A1021D00560D11 /* 迭代器原理图.png in Resources */,
 				1CF8CDD5221D4B5C00B223D4 /* Assets.xcassets in Resources */,
+				1C5B116825766342008759E3 /* a.svg in Resources */,
 				1CA5BAD4229FD92A00560D11 /* 代理原理图.png in Resources */,
 				1CA5BB1422A0FF8F00560D11 /* 访问者原理图.png in Resources */,
 				1CA5BAB5229E7C5F00560D11 /* 观察者原理图.png in Resources */,
 				1C1D5C0F2361493E00E1B422 /* LaunchStoryboard.storyboard in Resources */,
 				1CA5BAAE229E73BF00560D11 /* 抽象工厂原理图.png in Resources */,
+				1CACE6F0256FCD7E00948861 /* icons_filled_game.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1895,6 +1949,7 @@
 				1CF8CE212226267900B223D4 /* YSBaseViewModel.m in Sources */,
 				1CF3946C22A4F52400C430E1 /* VehicleAssemblyPlant.m in Sources */,
 				1CA5BAAC229E738700560D11 /* SierraBrandingFactory.m in Sources */,
+				1CACE6E8256FCD4100948861 /* UIImage+SVGManager.m in Sources */,
 				1CE55D2822A918DB000D54A3 /* YSMapView.m in Sources */,
 				1CF3945C22A4F19E00C430E1 /* CommandViewController.m in Sources */,
 				1CA5BADB229FDAB800560D11 /* CoffeeShop.m in Sources */,
@@ -1918,6 +1973,7 @@
 				1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */,
 				1CF3949B22A4FC0B00C430E1 /* GameGearConsoleController.m in Sources */,
 				1CA5BB0922A0FCAE00560D11 /* ElementA.m in Sources */,
+				1CACE6E2256FCCC100948861 /* SVGImageViewController.m in Sources */,
 				1C1965E923272B46009FCF3F /* C.m in Sources */,
 				1CA5BA84229E656D00560D11 /* DecoratorGamePlay.m in Sources */,
 				1CCBFD4C22A769AC00E99A62 /* ColdKnowledgeViewController.m in Sources */,
@@ -1961,7 +2017,7 @@
 				1CA5BAC4229F7F5900560D11 /* NSProxyViewController.m in Sources */,
 				1CF8CE342226366800B223D4 /* HomeView.m in Sources */,
 				1CD78C0D2255E2CE0075662E /* PdiDefectMarkView.m in Sources */,
-				1CA5BB1922A1007500560D11 /* Node.m in Sources */,
+				1CA5BB1922A1007500560D11 /* NodeItem.m in Sources */,
 				1CD78C192255E3090075662E /* UIView+Draggable.m in Sources */,
 				1CA5BAD8229FDA4E00560D11 /* CoffeeFlavor.m in Sources */,
 				1CF394BB22A4FFF600C430E1 /* AdapterViewController.m in Sources */,
@@ -2104,9 +2160,9 @@
 			baseConfigurationReference = E517468561F480CF7CA7D6C4 /* Pods-iOS-Learning-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = YJY25FSP7R;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N38YRW4D2Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-Learning-Demo/[10]百度地图",
@@ -2120,9 +2176,69 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsjry.HSCarShop;
+				OTHER_LDFLAGS = (
+					"-l\"Aspect\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"SDAutoLayout\"",
+					"-l\"SDWebImage\"",
+					"-l\"TZImagePickerController\"",
+					"-l\"YBImageBrowser\"",
+					"-l\"YYImage\"",
+					"-l\"YYModel\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"BMKLocationKit\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuansirios.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HSCarShop_dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2132,9 +2248,9 @@
 			baseConfigurationReference = 5AA5B22FCC454A2EE8317C4B /* Pods-iOS-Learning-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = YJY25FSP7R;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N38YRW4D2Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-Learning-Demo/[10]百度地图",
@@ -2148,9 +2264,69 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsjry.HSCarShop;
+				OTHER_LDFLAGS = (
+					"-l\"Aspect\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"SDAutoLayout\"",
+					"-l\"SDWebImage\"",
+					"-l\"TZImagePickerController\"",
+					"-l\"YBImageBrowser\"",
+					"-l\"YYImage\"",
+					"-l\"YYModel\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"BMKLocationKit\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuansirios.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HSCarShop_dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

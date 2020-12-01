@@ -31,8 +31,6 @@
     NSArray *_itemList;
 }
 
-@property(nonatomic,assign) NSInteger barStyle;
-
 @property (nonatomic,strong) UITableView *listTableView;
 
 @property (nonatomic,strong) UIView *topView;
