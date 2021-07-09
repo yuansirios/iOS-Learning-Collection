@@ -95,6 +95,8 @@
 		1CA5BB2522A1029E00560D11 /* TextFieldMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2422A1029E00560D11 /* TextFieldMediator.m */; };
 		1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2722A102F400560D11 /* MediatorViewController.m */; };
 		1CA5BB2A22A103E200560D11 /* 中介者原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5BB2922A103E100560D11 /* 中介者原理图.png */; };
+		1CA9C983259D7CFB00084F7C /* PwdInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9C982259D7CFB00084F7C /* PwdInputViewController.m */; };
+		1CA9C9C8259D812700084F7C /* RegistInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9C9C7259D812700084F7C /* RegistInputViewController.m */; };
 		1CACE6E2256FCCC100948861 /* SVGImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACE6E1256FCCC100948861 /* SVGImageViewController.m */; };
 		1CACE6E8256FCD4100948861 /* UIImage+SVGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACE6E7256FCD4100948861 /* UIImage+SVGManager.m */; };
 		1CACE6EF256FCD7E00948861 /* icons_filled_gift.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1CACE6EC256FCD7E00948861 /* icons_filled_gift.svg */; };
@@ -105,7 +107,6 @@
 		1CC2C871238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C870238E0FC50033D4CB /* UINavigationController+YSLeaksTest.m */; };
 		1CC2C874238E10A70033D4CB /* LeaksTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */; };
 		1CC2C878238E53AB0033D4CB /* MessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C877238E53AB0033D4CB /* MessageForwardViewController.m */; };
-		1CC2C87B238E63F30033D4CB /* NSObject+CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C87A238E63F30033D4CB /* NSObject+CrashHandle.m */; };
 		1CC2C87F2394BABA0033D4CB /* AspectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2C87E2394BABA0033D4CB /* AspectUtil.m */; };
 		1CCBFD4222A64D9400E99A62 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4122A64D9400E99A62 /* ListNode.m */; };
 		1CCBFD4522A651B100E99A62 /* SingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBFD4422A651B100E99A62 /* SingleLinkedList.m */; };
@@ -370,6 +371,10 @@
 		1CA5BB2622A102F400560D11 /* MediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorViewController.h; sourceTree = "<group>"; };
 		1CA5BB2722A102F400560D11 /* MediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorViewController.m; sourceTree = "<group>"; };
 		1CA5BB2922A103E100560D11 /* 中介者原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者原理图.png"; sourceTree = "<group>"; };
+		1CA9C981259D7CFB00084F7C /* PwdInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdInputViewController.h; sourceTree = "<group>"; };
+		1CA9C982259D7CFB00084F7C /* PwdInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdInputViewController.m; sourceTree = "<group>"; };
+		1CA9C9C6259D812700084F7C /* RegistInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistInputViewController.h; sourceTree = "<group>"; };
+		1CA9C9C7259D812700084F7C /* RegistInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistInputViewController.m; sourceTree = "<group>"; };
 		1CACE6E0256FCCC100948861 /* SVGImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGImageViewController.h; sourceTree = "<group>"; };
 		1CACE6E1256FCCC100948861 /* SVGImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVGImageViewController.m; sourceTree = "<group>"; };
 		1CACE6E6256FCD4100948861 /* UIImage+SVGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVGManager.h"; sourceTree = "<group>"; };
@@ -387,8 +392,6 @@
 		1CC2C873238E10A70033D4CB /* LeaksTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaksTestViewController.m; sourceTree = "<group>"; };
 		1CC2C876238E53AB0033D4CB /* MessageForwardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardViewController.h; sourceTree = "<group>"; };
 		1CC2C877238E53AB0033D4CB /* MessageForwardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardViewController.m; sourceTree = "<group>"; };
-		1CC2C879238E63F30033D4CB /* NSObject+CrashHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CrashHandle.h"; sourceTree = "<group>"; };
-		1CC2C87A238E63F30033D4CB /* NSObject+CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CrashHandle.m"; sourceTree = "<group>"; };
 		1CC2C87D2394BABA0033D4CB /* AspectUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectUtil.h; sourceTree = "<group>"; };
 		1CC2C87E2394BABA0033D4CB /* AspectUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectUtil.m; sourceTree = "<group>"; };
 		1CCBFD4022A64D9400E99A62 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
@@ -1073,7 +1076,7 @@
 			path = "[12]中介者";
 			sourceTree = "<group>";
 		};
-		1CACE6DF256FCC9800948861 /* [8]SVG图片 */ = {
+		1CACE6DF256FCC9800948861 /* [10]SVG图片 */ = {
 			isa = PBXGroup;
 			children = (
 				1CACE6EB256FCD6100948861 /* SVG */,
@@ -1081,7 +1084,7 @@
 				1CACE6E0256FCCC100948861 /* SVGImageViewController.h */,
 				1CACE6E1256FCCC100948861 /* SVGImageViewController.m */,
 			);
-			path = "[8]SVG图片";
+			path = "[10]SVG图片";
 			sourceTree = "<group>";
 		};
 		1CACE6E5256FCD2F00948861 /* UIImage+SVGManager */ = {
@@ -1105,7 +1108,7 @@
 			path = SVG;
 			sourceTree = "<group>";
 		};
-		1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */ = {
+		1CC2C868238E0A6C0033D4CB /* [6]自定义内存检测工具 */ = {
 			isa = PBXGroup;
 			children = (
 				1CC2C872238E10A70033D4CB /* LeaksTestViewController.h */,
@@ -1117,27 +1120,25 @@
 				1CC2C86C238E0AD70033D4CB /* NSObject+YSSwizzling.h */,
 				1CC2C86D238E0AD70033D4CB /* NSObject+YSSwizzling.m */,
 			);
-			path = "[5]自定义内存检测工具";
+			path = "[6]自定义内存检测工具";
 			sourceTree = "<group>";
 		};
-		1CC2C875238E53580033D4CB /* [6]消息转发机制 */ = {
+		1CC2C875238E53580033D4CB /* [7]消息转发机制 */ = {
 			isa = PBXGroup;
 			children = (
 				1CC2C876238E53AB0033D4CB /* MessageForwardViewController.h */,
 				1CC2C877238E53AB0033D4CB /* MessageForwardViewController.m */,
-				1CC2C879238E63F30033D4CB /* NSObject+CrashHandle.h */,
-				1CC2C87A238E63F30033D4CB /* NSObject+CrashHandle.m */,
 			);
-			path = "[6]消息转发机制";
+			path = "[7]消息转发机制";
 			sourceTree = "<group>";
 		};
-		1CC2C87C2394B9770033D4CB /* [7]Aspect框架使用 */ = {
+		1CC2C87C2394B9770033D4CB /* [8]Aspect框架使用 */ = {
 			isa = PBXGroup;
 			children = (
 				1CC2C87D2394BABA0033D4CB /* AspectUtil.h */,
 				1CC2C87E2394BABA0033D4CB /* AspectUtil.m */,
 			);
-			path = "[7]Aspect框架使用";
+			path = "[8]Aspect框架使用";
 			sourceTree = "<group>";
 		};
 		1CCBFD3F22A64D3400E99A62 /* [2]链表 */ = {
@@ -1162,10 +1163,11 @@
 				1CCBFD4D22A76AF400E99A62 /* [2] NSURLProtocol骚操作 */,
 				1CCBFD5422A793E600E99A62 /* [3]检测锁屏和解锁 */,
 				1C1965E023272AF7009FCF3F /* [4]super.class */,
-				1CC2C868238E0A6C0033D4CB /* [5]自定义内存检测工具 */,
-				1CC2C875238E53580033D4CB /* [6]消息转发机制 */,
-				1CC2C87C2394B9770033D4CB /* [7]Aspect框架使用 */,
-				1CACE6DF256FCC9800948861 /* [8]SVG图片 */,
+				1CC2C868238E0A6C0033D4CB /* [6]自定义内存检测工具 */,
+				1CC2C875238E53580033D4CB /* [7]消息转发机制 */,
+				1CC2C87C2394B9770033D4CB /* [8]Aspect框架使用 */,
+				1CACE6DF256FCC9800948861 /* [10]SVG图片 */,
+				1CD18AAD259D627E00A8C13B /* [11]iOS 14刘海屏九宫格输入密码的问题 */,
 			);
 			path = "[1]冷知识";
 			sourceTree = "<group>";
@@ -1188,6 +1190,17 @@
 				1CA20C5D22A7949D00345064 /* YSCheckLockStatus.m */,
 			);
 			path = "[3]检测锁屏和解锁";
+			sourceTree = "<group>";
+		};
+		1CD18AAD259D627E00A8C13B /* [11]iOS 14刘海屏九宫格输入密码的问题 */ = {
+			isa = PBXGroup;
+			children = (
+				1CA9C981259D7CFB00084F7C /* PwdInputViewController.h */,
+				1CA9C982259D7CFB00084F7C /* PwdInputViewController.m */,
+				1CA9C9C6259D812700084F7C /* RegistInputViewController.h */,
+				1CA9C9C7259D812700084F7C /* RegistInputViewController.m */,
+			);
+			path = "[11]iOS 14刘海屏九宫格输入密码的问题";
 			sourceTree = "<group>";
 		};
 		1CD78B862254A8080075662E /* [6]自定义标注视图 */ = {
@@ -1894,7 +1907,6 @@
 				1CF3943622A4E98000C430E1 /* File.m in Sources */,
 				1CF3948322A4F9D500C430E1 /* Circle.m in Sources */,
 				1CF3947A22A4F79600C430E1 /* Model.m in Sources */,
-				1CC2C87B238E63F30033D4CB /* NSObject+CrashHandle.m in Sources */,
 				1C843CA82276C86E004188ED /* YSImagePicker.m in Sources */,
 				1CA5BAF422A0CEC400560D11 /* UserNameChain.m in Sources */,
 				1CD78C0A2255E2CD0075662E /* PdiDefectViewController.m in Sources */,
@@ -2011,6 +2023,7 @@
 				1CA5BB2822A102F400560D11 /* MediatorViewController.m in Sources */,
 				1CA5BA88229E696500560D11 /* GamePlay+More.m in Sources */,
 				1CF8CE0722250FDB00B223D4 /* SDListViewController.m in Sources */,
+				1CA9C9C8259D812700084F7C /* RegistInputViewController.m in Sources */,
 				1CA5BA96229E6EA200560D11 /* iPhoneDevice.m in Sources */,
 				1CF276F823598BA400C9AB7A /* YSImageSmallCell.m in Sources */,
 				1CF394A922A4FEFB00C430E1 /* BusinessCardView.m in Sources */,
@@ -2024,6 +2037,7 @@
 				1CF3945622A4F11300C430E1 /* MakeDarkerCommand.m in Sources */,
 				1CF8CE302226363F00B223D4 /* HomeViewController.m in Sources */,
 				1CCBFD4822A6533D00E99A62 /* LinkedMap.m in Sources */,
+				1CA9C983259D7CFB00084F7C /* PwdInputViewController.m in Sources */,
 				1C1965E323272B23009FCF3F /* A.m in Sources */,
 				1CA5BAA9229E736D00560D11 /* AcmeBrandingFactory.m in Sources */,
 				1C16FCC722B892900095CFD9 /* ActivityButtonViewController.m in Sources */,

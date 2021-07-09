@@ -17,6 +17,8 @@
 #import "AspectUtil.h"
 
 #import "SVGImageViewController.h"
+#import "PwdInputViewController.h"
+#import "RegistInputViewController.h"
 
 @interface ColdKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_itemList;
@@ -46,7 +48,8 @@
     @{YSTitleKey:@"[7]消息转发机制",YSEventKey:@"testMessageForward"},
     @{YSTitleKey:@"[8]Aspect框架使用",YSEventKey:@"testAspect"},
     @{YSTitleKey:@"[9]Block嵌套使用，内存怎么管理",YSEventKey:@"testBlock"},
-    @{YSTitleKey:@"[10]SVG图片加载",YSEventKey:@"testSVGImage"}];
+    @{YSTitleKey:@"[10]SVG图片加载",YSEventKey:@"testSVGImage"},
+    @{YSTitleKey:@"[11]关于iOS 14刘海屏手机，九宫格输入密码的问题",YSEventKey:@"testKeyBoardInput"}];
     
     [self.view addSubview:self.listTableView];
     [self layout];
@@ -141,6 +144,12 @@
 
 - (void)testSVGImage{
     [self.navigationController pushViewController:SVGImageViewController.new animated:YES];
+}
+
+- (void)testKeyBoardInput{
+    YSBaseViewController *vc = RegistInputViewController.new;
+//    vc = PwdInputViewController.new;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - *********** layout ***********
